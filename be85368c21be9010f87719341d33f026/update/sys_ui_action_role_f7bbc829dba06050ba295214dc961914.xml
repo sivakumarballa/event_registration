@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_action_role">
+    <sys_ui_action_role action="INSERT_OR_UPDATE">
+        <sys_class_name>sys_ui_action_role</sys_class_name>
+        <sys_created_by>joe.dames</sys_created_by>
+        <sys_created_on>2020-11-17 16:40:06</sys_created_on>
+        <sys_id>f7bbc829dba06050ba295214dc961914</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Cancel Event.x_snc_event_reg.admin</sys_name>
+        <sys_package display_value="Event Registration" source="x_snc_event_reg">be85368c21be9010f87719341d33f026</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Event Registration">be85368c21be9010f87719341d33f026</sys_scope>
+        <sys_ui_action display_value="Cancel Event">de0f3e1321765810f87719341d33f04c</sys_ui_action>
+        <sys_update_name>sys_ui_action_role_f7bbc829dba06050ba295214dc961914</sys_update_name>
+        <sys_updated_by>joe.dames</sys_updated_by>
+        <sys_updated_on>2020-11-17 16:40:06</sys_updated_on>
+        <sys_user_role display_value="x_snc_event_reg.admin" name="x_snc_event_reg.admin">12b5b68c21be9010f87719341d33f0be</sys_user_role>
+    </sys_ui_action_role>
+</record_update>

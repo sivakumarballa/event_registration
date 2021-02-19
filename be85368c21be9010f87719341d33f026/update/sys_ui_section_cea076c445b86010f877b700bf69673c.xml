@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_section caption="Location details" section_id="cea076c445b86010f877b700bf69673c" sys_domain="global" table="x_snc_event_reg_event" version="3" view="workspace">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>location</element>
+            <position>0</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-11-25 23:01:09</sys_created_on>
+            <sys_id>7bf0360845b86010f877b700bf6967a4</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Location details" display_value="Location details" name="x_snc_event_reg_event" sys_domain="global" view="c0000996c1162010f877538420acbe6a">cea076c445b86010f877b700bf69673c</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-11-25 23:01:09</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.begin_split</element>
+            <position>1</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-11-25 23:01:09</sys_created_on>
+            <sys_id>fff0360845b86010f877b700bf6967a4</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Location details" display_value="Location details" name="x_snc_event_reg_event" sys_domain="global" view="c0000996c1162010f877538420acbe6a">cea076c445b86010f877b700bf69673c</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-11-25 23:01:09</sys_updated_on>
+            <sys_user/>
+            <type>.begin_split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>date_from</element>
+            <position>2</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-11-25 23:01:09</sys_created_on>
+            <sys_id>77f0360845b86010f877b700bf6967a5</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Location details" display_value="Location details" name="x_snc_event_reg_event" sys_domain="global" view="c0000996c1162010f877538420acbe6a">cea076c445b86010f877b700bf69673c</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-11-25 23:01:09</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>capacity</element>
+            <position>3</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-11-25 23:01:09</sys_created_on>
+            <sys_id>fbf0360845b86010f877b700bf6967a5</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Location details" display_value="Location details" name="x_snc_event_reg_event" sys_domain="global" view="c0000996c1162010f877538420acbe6a">cea076c445b86010f877b700bf69673c</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-11-25 23:01:09</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.split</element>
+            <position>4</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-11-25 23:01:09</sys_created_on>
+            <sys_id>73f0360845b86010f877b700bf6967a6</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Location details" display_value="Location details" name="x_snc_event_reg_event" sys_domain="global" view="c0000996c1162010f877538420acbe6a">cea076c445b86010f877b700bf69673c</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-11-25 23:01:09</sys_updated_on>
+            <sys_user/>
+            <type>.split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>date_to</element>
+            <position>5</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-11-25 23:01:09</sys_created_on>
+            <sys_id>f7f0360845b86010f877b700bf6967a6</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Location details" display_value="Location details" name="x_snc_event_reg_event" sys_domain="global" view="c0000996c1162010f877538420acbe6a">cea076c445b86010f877b700bf69673c</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-11-25 23:01:09</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>waitlist_size</element>
+            <position>6</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-11-25 23:01:09</sys_created_on>
+            <sys_id>7ff0360845b86010f877b700bf6967a6</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Location details" display_value="Location details" name="x_snc_event_reg_event" sys_domain="global" view="c0000996c1162010f877538420acbe6a">cea076c445b86010f877b700bf69673c</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-11-25 23:01:09</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.end_split</element>
+            <position>7</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-11-25 23:01:09</sys_created_on>
+            <sys_id>f3f0360845b86010f877b700bf6967a7</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Location details" display_value="Location details" name="x_snc_event_reg_event" sys_domain="global" view="c0000996c1162010f877538420acbe6a">cea076c445b86010f877b700bf69673c</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-11-25 23:01:09</sys_updated_on>
+            <sys_user/>
+            <type>.end_split</type>
+        </sys_ui_element>
+        <sys_ui_section action="INSERT_OR_UPDATE">
+            <caption>Location details</caption>
+            <header>false</header>
+            <name>x_snc_event_reg_event</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-11-25 22:59:41</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>cea076c445b86010f877b700bf69673c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_snc_event_reg_event</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Event Registration" source="x_snc_event_reg">be85368c21be9010f87719341d33f026</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Event Registration">be85368c21be9010f87719341d33f026</sys_scope>
+            <sys_update_name>sys_ui_section_cea076c445b86010f877b700bf69673c</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-11-25 22:59:41</sys_updated_on>
+            <sys_user/>
+            <title>false</title>
+            <view display_value="Workspace" name="workspace">c0000996c1162010f877538420acbe6a</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+</record_update>

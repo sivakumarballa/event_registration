@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_client_script">
+    <sys_ux_client_script action="INSERT_OR_UPDATE">
+        <includes/>
+        <macroponent display_value="Record">13cca24445b86010f877b700bf696765</macroponent>
+        <name>initializeSidebarRatioPreference</name>
+        <required_translations>[ ]</required_translations>
+        <script><![CDATA[/**
+ * @param {params} params
+ * @param {api} params.api
+ * @param {any} params.event
+ * @param {any} params.imports
+ */
+function handler({
+    api,
+    event,
+    helpers,
+    imports
+}) {
+    const prefix = "workspace.layout.sidebar_ratio.";
+    const table = api.context.props.table || 'global';
+    const sidebarRatioPreference = prefix + table;
+
+    api.setState('sidebarRatioPreference', sidebarRatioPreference);
+    
+    api.data.getSidebarRatioPreference.refresh();
+}]]></script>
+        <script_api_version>2.0.0</script_api_version>
+        <sys_class_name>sys_ux_client_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-12-02 22:07:54</sys_created_on>
+        <sys_id>7fe7225e8c386010f8777141affe7d51</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>initializeSidebarRatioPreference</sys_name>
+        <sys_package display_value="Event Registration" source="x_snc_event_reg">be85368c21be9010f87719341d33f026</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Event Registration">be85368c21be9010f87719341d33f026</sys_scope>
+        <sys_update_name>sys_ux_client_script_7fe7225e8c386010f8777141affe7d51</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-12-02 22:08:15</sys_updated_on>
+    </sys_ux_client_script>
+</record_update>

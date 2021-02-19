@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ux_page_property">
+    <sys_ux_page_property action="INSERT_OR_UPDATE">
+        <choices/>
+        <description>L1 configuration</description>
+        <name>chrome_toolbar</name>
+        <page display_value="Event Registration Workspace">b9f3568045786010f877b700bf69670e</page>
+        <required_translations>[{"message":"Call","comment":""},{"message":"List","comment":""},{"message":"Home","comment":""}]</required_translations>
+        <route/>
+        <suffix/>
+        <sys_class_name>sys_ux_page_property</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-25 21:02:38</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>7fd51ec045786010f877b700bf69672a</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_name>chrome_toolbar</sys_name>
+        <sys_package display_value="Event Registration" source="x_snc_event_reg">be85368c21be9010f87719341d33f026</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Event Registration">be85368c21be9010f87719341d33f026</sys_scope>
+        <sys_update_name>sys_ux_page_property_7fd51ec045786010f877b700bf69672a</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-25 22:34:15</sys_updated_on>
+        <type>json</type>
+        <unique_name>x_snc_event_reg.b9f3568045786010f877b700bf69670e.root.chrome_toolbar</unique_name>
+        <value>[&#13;
+  {&#13;
+    "id": "home",&#13;
+    "label": "Home",&#13;
+    "icon": "home-outline",&#13;
+    "viewportInfo": {},&#13;
+    "routeInfo": {&#13;
+      "route": "home"&#13;
+    },&#13;
+    "group": "top",&#13;
+    "badge": {},&#13;
+    "presence": {},&#13;
+    "availability": {}&#13;
+  },&#13;
+  {&#13;
+    "id": "list",&#13;
+    "label": "List",&#13;
+    "icon": "list-outline",&#13;
+    "viewportInfo": {},&#13;
+    "routeInfo": {&#13;
+      "route": "list"&#13;
+    },&#13;
+    "group": "top",&#13;
+    "badge":{},&#13;
+    "presence": {},&#13;
+    "availability": {}&#13;
+  },&#13;
+  {&#13;
+    "id": "call",&#13;
+    "label": "Call",&#13;
+    "icon": "phone-outline",&#13;
+    "routeInfo": {},&#13;
+    "viewportInfo": {&#13;
+      "route": "cti",&#13;
+      "fields": {&#13;
+        "opened": false&#13;
+      },&#13;
+      "viewportElementId": "wsCornerDialog"&#13;
+    },&#13;
+    "group": "bottom",&#13;
+    "badge":{},&#13;
+    "presence": {},&#13;
+    "availability": {}&#13;
+  }&#13;
+]</value>
+    </sys_ux_page_property>
+    <sys_translated_text action="delete_multiple" query="documentkey=7fd51ec045786010f877b700bf69672a"/>
+</record_update>

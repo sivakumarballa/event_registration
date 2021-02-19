@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="attendee_status" table="x_snc_event_reg_attendee" version="3">
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>attendee_status</element>
+            <name>x_snc_event_reg_attendee</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>jeremy.duncan</sys_created_by>
+            <sys_created_on>2020-08-19 16:58:44</sys_created_on>
+            <sys_id>23d4bedac1166010f877538420acbe1f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>attendee_status</sys_name>
+            <sys_package display_value="Event Registration" source="x_snc_event_reg">be85368c21be9010f87719341d33f026</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Event Registration">be85368c21be9010f87719341d33f026</sys_scope>
+            <sys_update_name>sys_choice_x_snc_event_reg_attendee_attendee_status</sys_update_name>
+            <sys_updated_by>jeremy.duncan</sys_updated_by>
+            <sys_updated_on>2020-08-19 16:58:44</sys_updated_on>
+        </sys_choice_set>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>attendee_status</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Not submitted</label>
+            <language>en</language>
+            <name>x_snc_event_reg_attendee</name>
+            <sequence>0</sequence>
+            <synonyms/>
+            <sys_created_by>jeremy.duncan</sys_created_by>
+            <sys_created_on>2020-08-19 16:58:44</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>ef32fc2c21bad010f87719341d33f06b</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>jeremy.duncan</sys_updated_by>
+            <sys_updated_on>2020-08-19 16:59:58</sys_updated_on>
+            <value>not_submitted</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>attendee_status</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Confirmed</label>
+            <language>en</language>
+            <name>x_snc_event_reg_attendee</name>
+            <sequence>1</sequence>
+            <synonyms/>
+            <sys_created_by>jeremy.duncan</sys_created_by>
+            <sys_created_on>2020-08-19 16:58:44</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>6732fc2c21bad010f87719341d33f06d</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>jeremy.duncan</sys_updated_by>
+            <sys_updated_on>2020-08-19 17:00:01</sys_updated_on>
+            <value>confirmed</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>attendee_status</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Waitlisted</label>
+            <language>en</language>
+            <name>x_snc_event_reg_attendee</name>
+            <sequence>2</sequence>
+            <synonyms/>
+            <sys_created_by>jeremy.duncan</sys_created_by>
+            <sys_created_on>2020-08-19 16:58:44</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>2732fc2c21bad010f87719341d33f06e</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>jeremy.duncan</sys_updated_by>
+            <sys_updated_on>2020-08-19 17:00:05</sys_updated_on>
+            <value>waitlisted</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>attendee_status</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Cancelled</label>
+            <language>en</language>
+            <name>x_snc_event_reg_attendee</name>
+            <sequence>3</sequence>
+            <synonyms/>
+            <sys_created_by>jeremy.duncan</sys_created_by>
+            <sys_created_on>2020-08-19 16:58:44</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>e332fc2c21bad010f87719341d33f06f</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>jeremy.duncan</sys_updated_by>
+            <sys_updated_on>2020-08-19 17:00:07</sys_updated_on>
+            <value>cancelled</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>attendee_status</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Event ended</label>
+            <language>en</language>
+            <name>x_snc_event_reg_attendee</name>
+            <sequence>4</sequence>
+            <synonyms/>
+            <sys_created_by>jeremy.duncan</sys_created_by>
+            <sys_created_on>2020-08-19 16:58:44</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>a332fc2c21bad010f87719341d33f070</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>jeremy.duncan</sys_updated_by>
+            <sys_updated_on>2020-08-19 17:00:10</sys_updated_on>
+            <value>event_ended</value>
+        </sys_choice>
+    </sys_choice>
+</record_update>

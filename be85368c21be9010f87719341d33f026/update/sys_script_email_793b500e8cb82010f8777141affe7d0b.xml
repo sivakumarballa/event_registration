@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_email">
+    <sys_script_email action="INSERT_OR_UPDATE">
+        <name>event_registration_header</name>
+        <new_lines_to_html>false</new_lines_to_html>
+        <script><![CDATA[(function runMailScript(/* GlideRecord */ current, /* TemplatePrinter */ template,
+          /* Optional EmailOutbound */ email, /* Optional GlideRecord */ email_action,
+          /* Optional GlideRecord */ event) {
+
+
+
+var renderedHtml = '<table'+
+'            class="es-content"'+
+'            style="'+
+'              mso-table-lspace: 0pt;'+
+'             mso-table-rspace: 0pt;'+
+'             border-collapse: collapse;'+
+'             border-spacing: 0px;'+
+'             table-layout: fixed !important;'+
+'             width: 100%;"'+
+'            cellspacing="0"'+
+'           cellpadding="0"'+
+'            align="center">'+
+'            <tbody>'+
+'             <tr style="border-collapse: collapse">'+
+'              <td style="padding: 0; margin: 0" align="center">'+
+'<table'+
+'                    class="es-content-body"'+
+'                    style="'+
+'                      mso-table-lspace: 0pt;'+
+'                      mso-table-rspace: 0pt;'+
+'                      border-collapse: collapse;'+
+'                      border-spacing: 0px;'+
+'                      background-color: transparent;'+
+'                      width: 100%;'+
+'                    "'+
+'                    cellspacing="0"'+
+'                    cellpadding="0"'+
+'                    align="center"'+
+'                    bgcolor="#ffffff"'+
+'                  >'+
+'                    <tbody>'+
+'                      <tr style="border-collapse: collapse">'+
+'                        <td'+
+'                          style="'+
+'                            margin: 0;'+
+'                            background-color: #505556;'+
+'                            padding: 20px 20px 20px 20px;'+
+'                            border-top-left-radius: 10px;'+
+'                            border-top-right-radius: 10px;'+
+'                          "'+
+'                          align="center"'+
+'                          bgcolor="#6aa84f"'+
+'                        >'+
+'                          <!-- [if mso]></td><td dir="ltr" style="width:20px"></td><td dir="ltr" style="width:270px" valign="top"><![endif]-->'+
+'                          <table'+
+'                            class="es-left"'+
+'                            style="'+
+'                              mso-table-lspace: 0pt;'+
+'                              mso-table-rspace: 0pt;'+
+'                              border-collapse: collapse;'+
+'                              border-spacing: 0px;'+
+'                            "'+
+'                            cellspacing="0"'+
+'                            cellpadding="0"'+
+'                            align="center"'+
+'                          >'+
+'                            <tbody>'+
+'                              <tr style="border-collapse: collapse">'+
+'                                <td'+
+'                                  style="'+
+'                                    padding: 0;'+
+'                                    margin: 0;'+
+'                                    width: 270px;'+
+'                                    border-top-left-radius: 25px;'+
+'                                  "'+
+'                                  align="center"'+
+'                                >'+
+'                                  <table'+
+'                                    style="'+
+'                                      border-collapse: collapse;'+
+'                                      border-spacing: 0px;'+
+'                                      height: 14px;'+
+'                                      width: 205.926%;'+
+'                                    "'+
+'                                    role="presentation"'+
+'                                    width="556"'+
+'                                    cellspacing="0"'+
+'                                    cellpadding="0"'+
+'                                    align="center"'+
+'                                  >'+
+'                                    <tbody>'+
+'                                      <tr style="border-collapse: collapse">'+
+'                                        <td'+
+'                                          class="es-infoblock es-m-txt-c"'+
+'                                          style="'+
+'                                            padding-left: 45px;'+
+'                                            margin: 0px;'+
+'                                            line-height: 14px;'+
+'                                            font-size: 16px;'+
+'                                            color: #ffffff;'+
+'                                            height: 14px;'+
+'                                          "'+
+'                                          align="left"'+
+'                                        >'+
+'                                          <span'+
+'                                            style="'+
+'                                              display: block;'+
+'                                              font-size: 16px;'+
+'                                              border: 0;'+
+'                                              outline: none;'+
+'                                              text-decoration: none;'+
+'                                              -ms-interpolation-mode: bicubic;'+
+'                                            "'+
+'                                          >'+
+'                                            <!-- Start Email Banner -->'+
+'${attendee_name.company}'+
+'                                            <!-- End Email Banner -->'+
+'                                          </span>'+
+'                                        </td>'+
+'                                      </tr>'+
+'                                    </tbody>'+
+'                                  </table>'+
+'                                </td>'+
+'                              </tr>'+
+'                            </tbody>'+
+'                          </table>'+
+'                          <!-- [if mso]></td></tr></table><![endif]-->'+
+'                        </td>'+
+'                      </tr>'+
+'                    </tbody>'+
+'                  </table>'+
+'                </td>'+
+'             </tr>'+
+'           </tbody>'+
+'         </table>';
+	
+template.print(renderedHtml);
+
+})(current, template, email, email_action, event);]]></script>
+        <sys_class_name>sys_script_email</sys_class_name>
+        <sys_created_by>gregory.burger</sys_created_by>
+        <sys_created_on>2020-12-01 17:16:03</sys_created_on>
+        <sys_id>793b500e8cb82010f8777141affe7d0b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>event_registration_header</sys_name>
+        <sys_package display_value="Event Registration" source="x_snc_event_reg">be85368c21be9010f87719341d33f026</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Event Registration">be85368c21be9010f87719341d33f026</sys_scope>
+        <sys_update_name>sys_script_email_793b500e8cb82010f8777141affe7d0b</sys_update_name>
+        <sys_updated_by>gregory.burger</sys_updated_by>
+        <sys_updated_on>2020-12-01 17:16:03</sys_updated_on>
+    </sys_script_email>
+</record_update>

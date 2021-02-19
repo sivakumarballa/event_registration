@@ -1,0 +1,1970 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+    <sys_hub_flow action="DELETE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation>Decrements the Waitlisted field on Event by 1</annotation>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <compiler_build/>
+        <copied_from/>
+        <copied_from_name/>
+        <description>Decrements the Waitlisted field on Event by 1</description>
+        <internal_name>decrement_waitlisted_by_1</internal_name>
+        <label_cache>[{"name":"7e00e0b4-8fba-4d66-be02-2b93927af928.table_name","label":"2➛Event Table","reference":"x_snc_event_reg_event","reference_display":"Event","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"7e00e0b4-8fba-4d66-be02-2b93927af928.record","label":"2➛Event Record","reference":"x_snc_event_reg_event","reference_display":"Event","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"subflow.event_sysid","label":"Input➛Event Record sys_id","type":"string","base_type":"string","attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"b07d76ed-3518-416a-a34a-ad4c21288b08"}},{"name":"24a52dc0-a896-4062-a033-fc0b8da1e665.error_message","label":"1➛Error Message","reference_display":"Error Message","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"87687532-9e3d-4497-a88e-90f45bfb9adb"}},{"name":"24a52dc0-a896-4062-a033-fc0b8da1e665.status","label":"1➛Status","reference_display":"Status","type":"choice","base_type":"choice","attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"5e478657-3a84-4a60-a92b-d3e80005ad34"}},{"name":"24a52dc0-a896-4062-a033-fc0b8da1e665.Table","label":"1➛Event Table","reference":"x_snc_event_reg_event","reference_display":"Event","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"24a52dc0-a896-4062-a033-fc0b8da1e665.Record","label":"1➛Event Record","reference":"x_snc_event_reg_event","reference_display":"Event","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}}]</label_cache>
+        <latest_snapshot>e4eab86e30a02010f8779128c972bd81</latest_snapshot>
+        <master_snapshot>e4eab86e30a02010f8779128c972bd81</master_snapshot>
+        <name>Decrement Waitlisted by 1</name>
+        <natlang/>
+        <outputs/>
+        <remote_trigger_id/>
+        <run_as>user</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>maint</sys_created_by>
+        <sys_created_on>2020-11-20 22:31:11</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>803a7c2e30a02010f8779128c972bd21</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>Decrement Waitlisted by 1</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Event Registration" source="x_snc_event_reg">be85368c21be9010f87719341d33f026</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Event Registration">be85368c21be9010f87719341d33f026</sys_scope>
+        <sys_update_name>sys_hub_flow_803a7c2e30a02010f8779128c972bd21</sys_update_name>
+        <sys_updated_by>maint</sys_updated_by>
+        <sys_updated_on>2020-11-20 22:34:14</sys_updated_on>
+        <type>subflow</type>
+    </sys_hub_flow>
+    <sys_translated_text action="DELETE" query="documentkey=803a7c2e30a02010f8779128c972bd21"/>
+    <sys_variable_value action="DELETE" query="document_key=803a7c2e30a02010f8779128c972bd21"/>
+    <sys_hub_flow_component action="DELETE" query="flow=803a7c2e30a02010f8779128c972bd21^sys_idNOT IN23da786e30a02010f8779128c972bdbb,efda786e30a02010f8779128c972bdb4"/>
+    <sys_hub_action_instance action="DELETE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent/>
+        <comment>Decrement the Waitlisted field by 1</comment>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="Decrement Waitlisted by 1">803a7c2e30a02010f8779128c972bd21</flow>
+        <order>2</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>maint</sys_created_by>
+        <sys_created_on>2020-11-20 22:34:10</sys_created_on>
+        <sys_id>23da786e30a02010f8779128c972bdbb</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_scope display_value="Event Registration">be85368c21be9010f87719341d33f026</sys_scope>
+        <sys_updated_by>maint</sys_updated_by>
+        <sys_updated_on>2020-11-20 22:34:14</sys_updated_on>
+        <ui_id>7e00e0b4-8fba-4d66-be02-2b93927af928</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="DELETE" query="document_key=23da786e30a02010f8779128c972bdbb"/>
+    <sys_variable_value action="DELETE">
+        <document>sys_hub_action_instance</document>
+        <document_key>23da786e30a02010f8779128c972bdbb</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>maint</sys_created_by>
+        <sys_created_on>2020-11-20 22:34:10</sys_created_on>
+        <sys_id>27da786e30a02010f8779128c972bdbd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>maint</sys_updated_by>
+        <sys_updated_on>2020-11-20 22:34:10</sys_updated_on>
+        <value>waitlisted=fd-scripted</value>
+        <variable display_value="Fields">02d01916c31332002841b63b12d3aeee</variable>
+    </sys_variable_value>
+    <sys_variable_value action="DELETE">
+        <document>sys_hub_action_instance</document>
+        <document_key>23da786e30a02010f8779128c972bdbb</document_key>
+        <order>50</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>maint</sys_created_by>
+        <sys_created_on>2020-11-20 22:34:10</sys_created_on>
+        <sys_id>e7da786e30a02010f8779128c972bdbd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>maint</sys_updated_by>
+        <sys_updated_on>2020-11-20 22:34:10</sys_updated_on>
+        <value>x_snc_event_reg_event</value>
+        <variable display_value="Table">b5d01916c31332002841b63b12d3aec9</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="DELETE" query="id=23da786e30a02010f8779128c972bdbb"/>
+    <sys_element_mapping action="DELETE">
+        <field>record</field>
+        <id>23da786e30a02010f8779128c972bdbb</id>
+        <sys_created_by>maint</sys_created_by>
+        <sys_created_on>2020-11-20 22:34:10</sys_created_on>
+        <sys_id>efda786e30a02010f8779128c972bdbc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>maint</sys_updated_by>
+        <sys_updated_on>2020-11-20 22:34:10</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value>{{24a52dc0-a896-4062-a033-fc0b8da1e665.Record}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="DELETE">
+        <field>table_name</field>
+        <id>23da786e30a02010f8779128c972bdbb</id>
+        <sys_created_by>maint</sys_created_by>
+        <sys_created_on>2020-11-20 22:34:10</sys_created_on>
+        <sys_id>2fda786e30a02010f8779128c972bdbc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>maint</sys_updated_by>
+        <sys_updated_on>2020-11-20 22:34:10</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="DELETE">
+        <field>values</field>
+        <id>23da786e30a02010f8779128c972bdbb</id>
+        <sys_created_by>maint</sys_created_by>
+        <sys_created_on>2020-11-20 22:34:10</sys_created_on>
+        <sys_id>a3da786e30a02010f8779128c972bdbd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>maint</sys_updated_by>
+        <sys_updated_on>2020-11-20 22:34:10</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_action_instance action="DELETE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Look Up Record">9d09f99587003300663ca1bb36cb0ba3</action_type>
+        <action_type_parent/>
+        <comment>Get event record</comment>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="Decrement Waitlisted by 1">803a7c2e30a02010f8779128c972bd21</flow>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>maint</sys_created_by>
+        <sys_created_on>2020-11-20 22:34:10</sys_created_on>
+        <sys_id>efda786e30a02010f8779128c972bdb4</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_scope display_value="Event Registration">be85368c21be9010f87719341d33f026</sys_scope>
+        <sys_updated_by>maint</sys_updated_by>
+        <sys_updated_on>2020-11-20 22:34:14</sys_updated_on>
+        <ui_id>24a52dc0-a896-4062-a033-fc0b8da1e665</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="DELETE" query="document_key=efda786e30a02010f8779128c972bdb4"/>
+    <sys_variable_value action="DELETE">
+        <document>sys_hub_action_instance</document>
+        <document_key>efda786e30a02010f8779128c972bdb4</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>maint</sys_created_by>
+        <sys_created_on>2020-11-20 22:34:10</sys_created_on>
+        <sys_id>efda786e30a02010f8779128c972bdb6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>maint</sys_updated_by>
+        <sys_updated_on>2020-11-20 22:34:10</sys_updated_on>
+        <value>x_snc_event_reg_event</value>
+        <variable display_value="Table">d909f99587003300663ca1bb36cb0ba4</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="DELETE" query="id=efda786e30a02010f8779128c972bdb4"/>
+    <sys_element_mapping action="DELETE">
+        <field>conditions</field>
+        <id>efda786e30a02010f8779128c972bdb4</id>
+        <sys_created_by>maint</sys_created_by>
+        <sys_created_on>2020-11-20 22:34:10</sys_created_on>
+        <sys_id>abda786e30a02010f8779128c972bdb6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>maint</sys_updated_by>
+        <sys_updated_on>2020-11-20 22:34:10</sys_updated_on>
+        <table>var__m_sys_hub_action_input_9d09f99587003300663ca1bb36cb0ba3</table>
+        <value>sys_id={{subflow.event_sysid}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="DELETE">
+        <field>table</field>
+        <id>efda786e30a02010f8779128c972bdb4</id>
+        <sys_created_by>maint</sys_created_by>
+        <sys_created_on>2020-11-20 22:34:10</sys_created_on>
+        <sys_id>6fda786e30a02010f8779128c972bdb6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>maint</sys_updated_by>
+        <sys_updated_on>2020-11-20 22:34:10</sys_updated_on>
+        <table>var__m_sys_hub_action_input_9d09f99587003300663ca1bb36cb0ba3</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_flow_cat_variable_model action="DELETE" query="id=803a7c2e30a02010f8779128c972bd21^sys_idNOT IN8c3a7c2e30a02010f8779128c972bd21"/>
+    <sys_flow_cat_variable_model action="DELETE">
+        <id>803a7c2e30a02010f8779128c972bd21</id>
+        <name>Decrement Waitlisted by 1</name>
+        <sys_created_by>maint</sys_created_by>
+        <sys_created_on>2020-11-20 22:31:11</sys_created_on>
+        <sys_id>8c3a7c2e30a02010f8779128c972bd21</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>maint</sys_updated_by>
+        <sys_updated_on>2020-11-20 22:31:11</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_hub_flow_input action="DELETE" query="model=803a7c2e30a02010f8779128c972bd21^sys_idNOT INe7da786e30a02010f8779128c972bda5"/>
+    <sys_hub_flow_input action="DELETE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=b07d76ed-3518-416a-a34a-ad4c21288b08</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>event_sysid</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Event Record sys_id</label>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Decrement Waitlisted by 1">803a7c2e30a02010f8779128c972bd21</model>
+        <model_id>803a7c2e30a02010f8779128c972bd21</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_803a7c2e30a02010f8779128c972bd21</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>maint</sys_created_by>
+        <sys_created_on>2020-11-20 22:34:09</sys_created_on>
+        <sys_id>e7da786e30a02010f8779128c972bda5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Event Registration">be85368c21be9010f87719341d33f026</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>maint</sys_updated_by>
+        <sys_updated_on>2020-11-20 22:34:09</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_instance action="DELETE" query="flow=803a7c2e30a02010f8779128c972bd21^sys_idNOT IN23da786e30a02010f8779128c972bdbb,efda786e30a02010f8779128c972bdb4"/>
+    <sys_hub_action_instance action="DELETE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent/>
+        <comment>Decrement the Waitlisted field by 1</comment>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="Decrement Waitlisted by 1">803a7c2e30a02010f8779128c972bd21</flow>
+        <order>2</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>maint</sys_created_by>
+        <sys_created_on>2020-11-20 22:34:10</sys_created_on>
+        <sys_id>23da786e30a02010f8779128c972bdbb</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_scope display_value="Event Registration">be85368c21be9010f87719341d33f026</sys_scope>
+        <sys_updated_by>maint</sys_updated_by>
+        <sys_updated_on>2020-11-20 22:34:14</sys_updated_on>
+        <ui_id>7e00e0b4-8fba-4d66-be02-2b93927af928</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="DELETE" query="document_key=23da786e30a02010f8779128c972bdbb"/>
+    <sys_variable_value action="DELETE">
+        <document>sys_hub_action_instance</document>
+        <document_key>23da786e30a02010f8779128c972bdbb</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>maint</sys_created_by>
+        <sys_created_on>2020-11-20 22:34:10</sys_created_on>
+        <sys_id>27da786e30a02010f8779128c972bdbd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>maint</sys_updated_by>
+        <sys_updated_on>2020-11-20 22:34:10</sys_updated_on>
+        <value>waitlisted=fd-scripted</value>
+        <variable display_value="Fields">02d01916c31332002841b63b12d3aeee</variable>
+    </sys_variable_value>
+    <sys_variable_value action="DELETE">
+        <document>sys_hub_action_instance</document>
+        <document_key>23da786e30a02010f8779128c972bdbb</document_key>
+        <order>50</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>maint</sys_created_by>
+        <sys_created_on>2020-11-20 22:34:10</sys_created_on>
+        <sys_id>e7da786e30a02010f8779128c972bdbd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>maint</sys_updated_by>
+        <sys_updated_on>2020-11-20 22:34:10</sys_updated_on>
+        <value>x_snc_event_reg_event</value>
+        <variable display_value="Table">b5d01916c31332002841b63b12d3aec9</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="DELETE" query="id=23da786e30a02010f8779128c972bdbb"/>
+    <sys_element_mapping action="DELETE">
+        <field>record</field>
+        <id>23da786e30a02010f8779128c972bdbb</id>
+        <sys_created_by>maint</sys_created_by>
+        <sys_created_on>2020-11-20 22:34:10</sys_created_on>
+        <sys_id>efda786e30a02010f8779128c972bdbc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>maint</sys_updated_by>
+        <sys_updated_on>2020-11-20 22:34:10</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value>{{24a52dc0-a896-4062-a033-fc0b8da1e665.Record}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="DELETE">
+        <field>table_name</field>
+        <id>23da786e30a02010f8779128c972bdbb</id>
+        <sys_created_by>maint</sys_created_by>
+        <sys_created_on>2020-11-20 22:34:10</sys_created_on>
+        <sys_id>2fda786e30a02010f8779128c972bdbc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>maint</sys_updated_by>
+        <sys_updated_on>2020-11-20 22:34:10</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="DELETE">
+        <field>values</field>
+        <id>23da786e30a02010f8779128c972bdbb</id>
+        <sys_created_by>maint</sys_created_by>
+        <sys_created_on>2020-11-20 22:34:10</sys_created_on>
+        <sys_id>a3da786e30a02010f8779128c972bdbd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>maint</sys_updated_by>
+        <sys_updated_on>2020-11-20 22:34:10</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="DELETE" query="instance=23da786e30a02010f8779128c972bdbb^sys_idNOT IN23da786e30a02010f8779128c972bdbc"/>
+    <sys_hub_input_scripts action="DELETE">
+        <active>true</active>
+        <input_name>values</input_name>
+        <instance>23da786e30a02010f8779128c972bdbb</instance>
+        <referenced_table>sys_hub_action_instance</referenced_table>
+        <script>{"waitlisted":{"scriptActive":true,"script":"/*\n**Access Flow/Action data using the fd_data object. Script must return a value.\n**example: var shortDesc \u003d fd_data.trigger.current.short_description;\n**return shortDesc;\n*/\nvar waitlistCount \u003d fd_data._1__look_up_record.record.waitlisted -1;\nreturn waitlistCount;","savedValue":""}}</script>
+        <sys_created_by>maint</sys_created_by>
+        <sys_created_on>2020-11-20 22:34:10</sys_created_on>
+        <sys_id>23da786e30a02010f8779128c972bdbc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>maint</sys_updated_by>
+        <sys_updated_on>2020-11-20 22:34:10</sys_updated_on>
+    </sys_hub_input_scripts>
+    <sys_hub_action_instance action="DELETE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Look Up Record">9d09f99587003300663ca1bb36cb0ba3</action_type>
+        <action_type_parent/>
+        <comment>Get event record</comment>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="Decrement Waitlisted by 1">803a7c2e30a02010f8779128c972bd21</flow>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>maint</sys_created_by>
+        <sys_created_on>2020-11-20 22:34:10</sys_created_on>
+        <sys_id>efda786e30a02010f8779128c972bdb4</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_scope display_value="Event Registration">be85368c21be9010f87719341d33f026</sys_scope>
+        <sys_updated_by>maint</sys_updated_by>
+        <sys_updated_on>2020-11-20 22:34:14</sys_updated_on>
+        <ui_id>24a52dc0-a896-4062-a033-fc0b8da1e665</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="DELETE" query="document_key=efda786e30a02010f8779128c972bdb4"/>
+    <sys_variable_value action="DELETE">
+        <document>sys_hub_action_instance</document>
+        <document_key>efda786e30a02010f8779128c972bdb4</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>maint</sys_created_by>
+        <sys_created_on>2020-11-20 22:34:10</sys_created_on>
+        <sys_id>efda786e30a02010f8779128c972bdb6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>maint</sys_updated_by>
+        <sys_updated_on>2020-11-20 22:34:10</sys_updated_on>
+        <value>x_snc_event_reg_event</value>
+        <variable display_value="Table">d909f99587003300663ca1bb36cb0ba4</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="DELETE" query="id=efda786e30a02010f8779128c972bdb4"/>
+    <sys_element_mapping action="DELETE">
+        <field>conditions</field>
+        <id>efda786e30a02010f8779128c972bdb4</id>
+        <sys_created_by>maint</sys_created_by>
+        <sys_created_on>2020-11-20 22:34:10</sys_created_on>
+        <sys_id>abda786e30a02010f8779128c972bdb6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>maint</sys_updated_by>
+        <sys_updated_on>2020-11-20 22:34:10</sys_updated_on>
+        <table>var__m_sys_hub_action_input_9d09f99587003300663ca1bb36cb0ba3</table>
+        <value>sys_id={{subflow.event_sysid}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="DELETE">
+        <field>table</field>
+        <id>efda786e30a02010f8779128c972bdb4</id>
+        <sys_created_by>maint</sys_created_by>
+        <sys_created_on>2020-11-20 22:34:10</sys_created_on>
+        <sys_id>6fda786e30a02010f8779128c972bdb6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>maint</sys_updated_by>
+        <sys_updated_on>2020-11-20 22:34:10</sys_updated_on>
+        <table>var__m_sys_hub_action_input_9d09f99587003300663ca1bb36cb0ba3</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_documentation action="DELETE" query="name=var__m_sys_hub_flow_input_803a7c2e30a02010f8779128c972bd21^sys_idNOT IN6fda786e30a02010f8779128c972bda9"/>
+    <sys_documentation action="DELETE">
+        <element>event_sysid</element>
+        <help/>
+        <hint/>
+        <label>Event Record sys_id</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_803a7c2e30a02010f8779128c972bd21</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>maint</sys_created_by>
+        <sys_created_on>2020-11-20 22:34:09</sys_created_on>
+        <sys_id>6fda786e30a02010f8779128c972bda9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Event Registration" source="x_snc_event_reg">be85368c21be9010f87719341d33f026</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Event Registration">be85368c21be9010f87719341d33f026</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>maint</sys_updated_by>
+        <sys_updated_on>2020-11-20 22:34:09</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_flow_subflow_plan action="DELETE" query="plan_id=803a7c2e30a02010f8779128c972bd21^sys_idNOT INeceab86e30a02010f8779128c972bde0"/>
+    <sys_flow_subflow_plan action="DELETE">
+        <plan>com.snc.process_flow.engine.ProcessPlan@6d3a6b50</plan>
+        <plan_id display_value="Decrement Waitlisted by 1">803a7c2e30a02010f8779128c972bd21</plan_id>
+        <snapshot>e4eab86e30a02010f8779128c972bd81</snapshot>
+        <sys_created_by>maint</sys_created_by>
+        <sys_created_on>2020-11-20 22:34:14</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>eceab86e30a02010f8779128c972bde0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope/>
+        <sys_updated_by>maint</sys_updated_by>
+        <sys_updated_on>2020-11-20 22:34:14</sys_updated_on>
+    </sys_flow_subflow_plan>
+    <sys_hub_flow_snapshot action="DELETE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation>Decrements the Waitlisted field on Event by 1</annotation>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description>Decrements the Waitlisted field on Event by 1</description>
+        <internal_name>decrement_waitlisted_by_1</internal_name>
+        <label_cache>[{"name":"7e00e0b4-8fba-4d66-be02-2b93927af928.table_name","label":"2➛Event Table","reference":"x_snc_event_reg_event","reference_display":"Event","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"7e00e0b4-8fba-4d66-be02-2b93927af928.record","label":"2➛Event Record","reference":"x_snc_event_reg_event","reference_display":"Event","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"subflow.event_sysid","label":"Input➛Event Record sys_id","type":"string","base_type":"string","attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"b07d76ed-3518-416a-a34a-ad4c21288b08"}},{"name":"24a52dc0-a896-4062-a033-fc0b8da1e665.error_message","label":"1➛Error Message","reference_display":"Error Message","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"87687532-9e3d-4497-a88e-90f45bfb9adb"}},{"name":"24a52dc0-a896-4062-a033-fc0b8da1e665.status","label":"1➛Status","reference_display":"Status","type":"choice","base_type":"choice","attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"5e478657-3a84-4a60-a92b-d3e80005ad34"}},{"name":"24a52dc0-a896-4062-a033-fc0b8da1e665.Table","label":"1➛Event Table","reference":"x_snc_event_reg_event","reference_display":"Event","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"24a52dc0-a896-4062-a033-fc0b8da1e665.Record","label":"1➛Event Record","reference":"x_snc_event_reg_event","reference_display":"Event","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}}]</label_cache>
+        <master>true</master>
+        <name>Decrement Waitlisted by 1</name>
+        <natlang/>
+        <outputs/>
+        <parent_flow display_value="Decrement Waitlisted by 1">803a7c2e30a02010f8779128c972bd21</parent_flow>
+        <remote_trigger_id/>
+        <run_as>user</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow_snapshot</sys_class_name>
+        <sys_created_by>maint</sys_created_by>
+        <sys_created_on>2020-11-20 22:34:13</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>e4eab86e30a02010f8779128c972bd81</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Event Registration">be85368c21be9010f87719341d33f026</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>maint</sys_updated_by>
+        <sys_updated_on>2020-11-20 22:34:13</sys_updated_on>
+        <type>subflow</type>
+    </sys_hub_flow_snapshot>
+    <sys_translated_text action="DELETE" query="documentkey=e4eab86e30a02010f8779128c972bd81"/>
+    <sys_variable_value action="DELETE" query="document_key=e4eab86e30a02010f8779128c972bd81"/>
+    <sys_hub_flow_component action="DELETE" query="flow=e4eab86e30a02010f8779128c972bd81^sys_idNOT IN28eab86e30a02010f8779128c972bdb9,a4eab86e30a02010f8779128c972bdb2"/>
+    <sys_hub_action_instance action="DELETE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <comment>Decrement the Waitlisted field by 1</comment>
+        <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Decrement Waitlisted by 1">e4eab86e30a02010f8779128c972bd81</flow>
+        <order>2</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>maint</sys_created_by>
+        <sys_created_on>2020-11-20 22:34:14</sys_created_on>
+        <sys_id>28eab86e30a02010f8779128c972bdb9</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="Event Registration">be85368c21be9010f87719341d33f026</sys_scope>
+        <sys_updated_by>maint</sys_updated_by>
+        <sys_updated_on>2020-11-20 22:34:14</sys_updated_on>
+        <ui_id>7e00e0b4-8fba-4d66-be02-2b93927af928</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="DELETE" query="document_key=28eab86e30a02010f8779128c972bdb9"/>
+    <sys_variable_value action="DELETE">
+        <document>sys_hub_action_instance</document>
+        <document_key>28eab86e30a02010f8779128c972bdb9</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>maint</sys_created_by>
+        <sys_created_on>2020-11-20 22:34:14</sys_created_on>
+        <sys_id>24eab86e30a02010f8779128c972bdbb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>maint</sys_updated_by>
+        <sys_updated_on>2020-11-20 22:34:14</sys_updated_on>
+        <value>waitlisted=fd-scripted</value>
+        <variable display_value="Fields">02d01916c31332002841b63b12d3aeee</variable>
+    </sys_variable_value>
+    <sys_variable_value action="DELETE">
+        <document>sys_hub_action_instance</document>
+        <document_key>28eab86e30a02010f8779128c972bdb9</document_key>
+        <order>50</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>maint</sys_created_by>
+        <sys_created_on>2020-11-20 22:34:14</sys_created_on>
+        <sys_id>e4eab86e30a02010f8779128c972bdbb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>maint</sys_updated_by>
+        <sys_updated_on>2020-11-20 22:34:14</sys_updated_on>
+        <value>x_snc_event_reg_event</value>
+        <variable display_value="Table">b5d01916c31332002841b63b12d3aec9</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="DELETE" query="id=28eab86e30a02010f8779128c972bdb9"/>
+    <sys_element_mapping action="DELETE">
+        <field>record</field>
+        <id>28eab86e30a02010f8779128c972bdb9</id>
+        <sys_created_by>maint</sys_created_by>
+        <sys_created_on>2020-11-20 22:34:14</sys_created_on>
+        <sys_id>eceab86e30a02010f8779128c972bdba</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>maint</sys_updated_by>
+        <sys_updated_on>2020-11-20 22:34:14</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value>{{24a52dc0-a896-4062-a033-fc0b8da1e665.Record}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="DELETE">
+        <field>table_name</field>
+        <id>28eab86e30a02010f8779128c972bdb9</id>
+        <sys_created_by>maint</sys_created_by>
+        <sys_created_on>2020-11-20 22:34:14</sys_created_on>
+        <sys_id>2ceab86e30a02010f8779128c972bdba</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>maint</sys_updated_by>
+        <sys_updated_on>2020-11-20 22:34:14</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="DELETE">
+        <field>values</field>
+        <id>28eab86e30a02010f8779128c972bdb9</id>
+        <sys_created_by>maint</sys_created_by>
+        <sys_created_on>2020-11-20 22:34:14</sys_created_on>
+        <sys_id>a0eab86e30a02010f8779128c972bdbb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>maint</sys_updated_by>
+        <sys_updated_on>2020-11-20 22:34:14</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_action_instance action="DELETE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Look Up Record">9d09f99587003300663ca1bb36cb0ba3</action_type>
+        <action_type_parent display_value="Look Up Record">b93f42810b30030085c083eb37673a63</action_type_parent>
+        <comment>Get event record</comment>
+        <compiled_snapshot>9d09f99587003300663ca1bb36cb0ba3</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Decrement Waitlisted by 1">e4eab86e30a02010f8779128c972bd81</flow>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>maint</sys_created_by>
+        <sys_created_on>2020-11-20 22:34:13</sys_created_on>
+        <sys_id>a4eab86e30a02010f8779128c972bdb2</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="Event Registration">be85368c21be9010f87719341d33f026</sys_scope>
+        <sys_updated_by>maint</sys_updated_by>
+        <sys_updated_on>2020-11-20 22:34:14</sys_updated_on>
+        <ui_id>24a52dc0-a896-4062-a033-fc0b8da1e665</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="DELETE" query="document_key=a4eab86e30a02010f8779128c972bdb2"/>
+    <sys_variable_value action="DELETE">
+        <document>sys_hub_action_instance</document>
+        <document_key>a4eab86e30a02010f8779128c972bdb2</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>maint</sys_created_by>
+        <sys_created_on>2020-11-20 22:34:14</sys_created_on>
+        <sys_id>a0eab86e30a02010f8779128c972bdb4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>maint</sys_updated_by>
+        <sys_updated_on>2020-11-20 22:34:14</sys_updated_on>
+        <value>x_snc_event_reg_event</value>
+        <variable display_value="Table">d909f99587003300663ca1bb36cb0ba4</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="DELETE" query="id=a4eab86e30a02010f8779128c972bdb2"/>
+    <sys_element_mapping action="DELETE">
+        <field>conditions</field>
+        <id>a4eab86e30a02010f8779128c972bdb2</id>
+        <sys_created_by>maint</sys_created_by>
+        <sys_created_on>2020-11-20 22:34:14</sys_created_on>
+        <sys_id>6ceab86e30a02010f8779128c972bdb3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>maint</sys_updated_by>
+        <sys_updated_on>2020-11-20 22:34:14</sys_updated_on>
+        <table>var__m_sys_hub_action_input_9d09f99587003300663ca1bb36cb0ba3</table>
+        <value>sys_id={{subflow.event_sysid}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="DELETE">
+        <field>table</field>
+        <id>a4eab86e30a02010f8779128c972bdb2</id>
+        <sys_created_by>maint</sys_created_by>
+        <sys_created_on>2020-11-20 22:34:14</sys_created_on>
+        <sys_id>20eab86e30a02010f8779128c972bdb4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>maint</sys_updated_by>
+        <sys_updated_on>2020-11-20 22:34:14</sys_updated_on>
+        <table>var__m_sys_hub_action_input_9d09f99587003300663ca1bb36cb0ba3</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_flow_cat_variable_model action="DELETE" query="id=e4eab86e30a02010f8779128c972bd81^sys_idNOT INeceab86e30a02010f8779128c972bd81"/>
+    <sys_flow_cat_variable_model action="DELETE">
+        <id>e4eab86e30a02010f8779128c972bd81</id>
+        <name>Decrement Waitlisted by 1</name>
+        <sys_created_by>maint</sys_created_by>
+        <sys_created_on>2020-11-20 22:34:13</sys_created_on>
+        <sys_id>eceab86e30a02010f8779128c972bd81</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>maint</sys_updated_by>
+        <sys_updated_on>2020-11-20 22:34:13</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_hub_flow_input action="DELETE" query="model=e4eab86e30a02010f8779128c972bd81^sys_idNOT INe4eab86e30a02010f8779128c972bd8f"/>
+    <sys_hub_flow_input action="DELETE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=b07d76ed-3518-416a-a34a-ad4c21288b08</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>event_sysid</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Event Record sys_id</label>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Decrement Waitlisted by 1">e4eab86e30a02010f8779128c972bd81</model>
+        <model_id>e4eab86e30a02010f8779128c972bd81</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_e4eab86e30a02010f8779128c972bd81</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>maint</sys_created_by>
+        <sys_created_on>2020-11-20 22:34:13</sys_created_on>
+        <sys_id>e4eab86e30a02010f8779128c972bd8f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Event Registration">be85368c21be9010f87719341d33f026</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>maint</sys_updated_by>
+        <sys_updated_on>2020-11-20 22:34:13</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_instance action="DELETE" query="flow=e4eab86e30a02010f8779128c972bd81^sys_idNOT IN28eab86e30a02010f8779128c972bdb9,a4eab86e30a02010f8779128c972bdb2"/>
+    <sys_hub_action_instance action="DELETE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <comment>Decrement the Waitlisted field by 1</comment>
+        <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Decrement Waitlisted by 1">e4eab86e30a02010f8779128c972bd81</flow>
+        <order>2</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>maint</sys_created_by>
+        <sys_created_on>2020-11-20 22:34:14</sys_created_on>
+        <sys_id>28eab86e30a02010f8779128c972bdb9</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="Event Registration">be85368c21be9010f87719341d33f026</sys_scope>
+        <sys_updated_by>maint</sys_updated_by>
+        <sys_updated_on>2020-11-20 22:34:14</sys_updated_on>
+        <ui_id>7e00e0b4-8fba-4d66-be02-2b93927af928</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="DELETE" query="document_key=28eab86e30a02010f8779128c972bdb9"/>
+    <sys_variable_value action="DELETE">
+        <document>sys_hub_action_instance</document>
+        <document_key>28eab86e30a02010f8779128c972bdb9</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>maint</sys_created_by>
+        <sys_created_on>2020-11-20 22:34:14</sys_created_on>
+        <sys_id>24eab86e30a02010f8779128c972bdbb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>maint</sys_updated_by>
+        <sys_updated_on>2020-11-20 22:34:14</sys_updated_on>
+        <value>waitlisted=fd-scripted</value>
+        <variable display_value="Fields">02d01916c31332002841b63b12d3aeee</variable>
+    </sys_variable_value>
+    <sys_variable_value action="DELETE">
+        <document>sys_hub_action_instance</document>
+        <document_key>28eab86e30a02010f8779128c972bdb9</document_key>
+        <order>50</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>maint</sys_created_by>
+        <sys_created_on>2020-11-20 22:34:14</sys_created_on>
+        <sys_id>e4eab86e30a02010f8779128c972bdbb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>maint</sys_updated_by>
+        <sys_updated_on>2020-11-20 22:34:14</sys_updated_on>
+        <value>x_snc_event_reg_event</value>
+        <variable display_value="Table">b5d01916c31332002841b63b12d3aec9</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="DELETE" query="id=28eab86e30a02010f8779128c972bdb9"/>
+    <sys_element_mapping action="DELETE">
+        <field>record</field>
+        <id>28eab86e30a02010f8779128c972bdb9</id>
+        <sys_created_by>maint</sys_created_by>
+        <sys_created_on>2020-11-20 22:34:14</sys_created_on>
+        <sys_id>eceab86e30a02010f8779128c972bdba</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>maint</sys_updated_by>
+        <sys_updated_on>2020-11-20 22:34:14</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value>{{24a52dc0-a896-4062-a033-fc0b8da1e665.Record}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="DELETE">
+        <field>table_name</field>
+        <id>28eab86e30a02010f8779128c972bdb9</id>
+        <sys_created_by>maint</sys_created_by>
+        <sys_created_on>2020-11-20 22:34:14</sys_created_on>
+        <sys_id>2ceab86e30a02010f8779128c972bdba</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>maint</sys_updated_by>
+        <sys_updated_on>2020-11-20 22:34:14</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="DELETE">
+        <field>values</field>
+        <id>28eab86e30a02010f8779128c972bdb9</id>
+        <sys_created_by>maint</sys_created_by>
+        <sys_created_on>2020-11-20 22:34:14</sys_created_on>
+        <sys_id>a0eab86e30a02010f8779128c972bdbb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>maint</sys_updated_by>
+        <sys_updated_on>2020-11-20 22:34:14</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="DELETE" query="instance=28eab86e30a02010f8779128c972bdb9^sys_idNOT IN28eab86e30a02010f8779128c972bdba"/>
+    <sys_hub_input_scripts action="DELETE">
+        <active>true</active>
+        <input_name>values</input_name>
+        <instance>28eab86e30a02010f8779128c972bdb9</instance>
+        <referenced_table>sys_hub_action_instance</referenced_table>
+        <script>{"waitlisted":{"scriptActive":true,"script":"/*\n**Access Flow/Action data using the fd_data object. Script must return a value.\n**example: var shortDesc \u003d fd_data.trigger.current.short_description;\n**return shortDesc;\n*/\nvar waitlistCount \u003d fd_data._1__look_up_record.record.waitlisted -1;\nreturn waitlistCount;","savedValue":""}}</script>
+        <sys_created_by>maint</sys_created_by>
+        <sys_created_on>2020-11-20 22:34:14</sys_created_on>
+        <sys_id>28eab86e30a02010f8779128c972bdba</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>maint</sys_updated_by>
+        <sys_updated_on>2020-11-20 22:34:14</sys_updated_on>
+    </sys_hub_input_scripts>
+    <sys_hub_action_instance action="DELETE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Look Up Record">9d09f99587003300663ca1bb36cb0ba3</action_type>
+        <action_type_parent display_value="Look Up Record">b93f42810b30030085c083eb37673a63</action_type_parent>
+        <comment>Get event record</comment>
+        <compiled_snapshot>9d09f99587003300663ca1bb36cb0ba3</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Decrement Waitlisted by 1">e4eab86e30a02010f8779128c972bd81</flow>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>maint</sys_created_by>
+        <sys_created_on>2020-11-20 22:34:13</sys_created_on>
+        <sys_id>a4eab86e30a02010f8779128c972bdb2</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="Event Registration">be85368c21be9010f87719341d33f026</sys_scope>
+        <sys_updated_by>maint</sys_updated_by>
+        <sys_updated_on>2020-11-20 22:34:14</sys_updated_on>
+        <ui_id>24a52dc0-a896-4062-a033-fc0b8da1e665</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="DELETE" query="document_key=a4eab86e30a02010f8779128c972bdb2"/>
+    <sys_variable_value action="DELETE">
+        <document>sys_hub_action_instance</document>
+        <document_key>a4eab86e30a02010f8779128c972bdb2</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>maint</sys_created_by>
+        <sys_created_on>2020-11-20 22:34:14</sys_created_on>
+        <sys_id>a0eab86e30a02010f8779128c972bdb4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>maint</sys_updated_by>
+        <sys_updated_on>2020-11-20 22:34:14</sys_updated_on>
+        <value>x_snc_event_reg_event</value>
+        <variable display_value="Table">d909f99587003300663ca1bb36cb0ba4</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="DELETE" query="id=a4eab86e30a02010f8779128c972bdb2"/>
+    <sys_element_mapping action="DELETE">
+        <field>conditions</field>
+        <id>a4eab86e30a02010f8779128c972bdb2</id>
+        <sys_created_by>maint</sys_created_by>
+        <sys_created_on>2020-11-20 22:34:14</sys_created_on>
+        <sys_id>6ceab86e30a02010f8779128c972bdb3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>maint</sys_updated_by>
+        <sys_updated_on>2020-11-20 22:34:14</sys_updated_on>
+        <table>var__m_sys_hub_action_input_9d09f99587003300663ca1bb36cb0ba3</table>
+        <value>sys_id={{subflow.event_sysid}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="DELETE">
+        <field>table</field>
+        <id>a4eab86e30a02010f8779128c972bdb2</id>
+        <sys_created_by>maint</sys_created_by>
+        <sys_created_on>2020-11-20 22:34:14</sys_created_on>
+        <sys_id>20eab86e30a02010f8779128c972bdb4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>maint</sys_updated_by>
+        <sys_updated_on>2020-11-20 22:34:14</sys_updated_on>
+        <table>var__m_sys_hub_action_input_9d09f99587003300663ca1bb36cb0ba3</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_documentation action="DELETE" query="name=var__m_sys_hub_flow_input_e4eab86e30a02010f8779128c972bd81^sys_idNOT INa0eab86e30a02010f8779128c972bda3"/>
+    <sys_documentation action="DELETE">
+        <element>event_sysid</element>
+        <help/>
+        <hint/>
+        <label>Event Record sys_id</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_e4eab86e30a02010f8779128c972bd81</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>maint</sys_created_by>
+        <sys_created_on>2020-11-20 22:34:13</sys_created_on>
+        <sys_id>a0eab86e30a02010f8779128c972bda3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Event Registration" source="x_snc_event_reg">be85368c21be9010f87719341d33f026</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Event Registration">be85368c21be9010f87719341d33f026</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>maint</sys_updated_by>
+        <sys_updated_on>2020-11-20 22:34:13</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+<sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Event Registration">be85368c21be9010f87719341d33f026</application>
+        <file_path/>
+        <instance_id>0ed82a1f30202010f3e091a8a60bfd20</instance_id>
+        <instance_name>glide_db_dump</instance_name>
+        <name>sys_hub_flow_803a7c2e30a02010f8779128c972bd21</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_hub_flow"&gt;
+    &lt;sys_hub_flow action="INSERT_OR_UPDATE"&gt;
+        &lt;access&gt;public&lt;/access&gt;
+        &lt;acls/&gt;
+        &lt;active&gt;true&lt;/active&gt;
+        &lt;annotation&gt;Decrements the Waitlisted field on Event by 1&lt;/annotation&gt;
+        &lt;callable_by_client_api&gt;false&lt;/callable_by_client_api&gt;
+        &lt;category/&gt;
+        &lt;compiler_build/&gt;
+        &lt;copied_from/&gt;
+        &lt;copied_from_name/&gt;
+        &lt;description&gt;Decrements the Waitlisted field on Event by 1&lt;/description&gt;
+        &lt;internal_name&gt;decrement_waitlisted_by_1&lt;/internal_name&gt;
+        &lt;label_cache&gt;[{"name":"7e00e0b4-8fba-4d66-be02-2b93927af928.table_name","label":"2➛Event Table","reference":"x_snc_event_reg_event","reference_display":"Event","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"7e00e0b4-8fba-4d66-be02-2b93927af928.record","label":"2➛Event Record","reference":"x_snc_event_reg_event","reference_display":"Event","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"subflow.event_sysid","label":"Input➛Event Record sys_id","type":"string","base_type":"string","attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"b07d76ed-3518-416a-a34a-ad4c21288b08"}},{"name":"24a52dc0-a896-4062-a033-fc0b8da1e665.error_message","label":"1➛Error Message","reference_display":"Error Message","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"87687532-9e3d-4497-a88e-90f45bfb9adb"}},{"name":"24a52dc0-a896-4062-a033-fc0b8da1e665.status","label":"1➛Status","reference_display":"Status","type":"choice","base_type":"choice","attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"5e478657-3a84-4a60-a92b-d3e80005ad34"}},{"name":"24a52dc0-a896-4062-a033-fc0b8da1e665.Table","label":"1➛Event Table","reference":"x_snc_event_reg_event","reference_display":"Event","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"24a52dc0-a896-4062-a033-fc0b8da1e665.Record","label":"1➛Event Record","reference":"x_snc_event_reg_event","reference_display":"Event","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}}]&lt;/label_cache&gt;
+        &lt;latest_snapshot&gt;e4eab86e30a02010f8779128c972bd81&lt;/latest_snapshot&gt;
+        &lt;master_snapshot&gt;e4eab86e30a02010f8779128c972bd81&lt;/master_snapshot&gt;
+        &lt;name&gt;Decrement Waitlisted by 1&lt;/name&gt;
+        &lt;natlang/&gt;
+        &lt;outputs/&gt;
+        &lt;remote_trigger_id/&gt;
+        &lt;run_as&gt;user&lt;/run_as&gt;
+        &lt;run_with_roles/&gt;
+        &lt;sc_callable&gt;false&lt;/sc_callable&gt;
+        &lt;show_draft_actions&gt;false&lt;/show_draft_actions&gt;
+        &lt;show_triggered_flows&gt;false&lt;/show_triggered_flows&gt;
+        &lt;status&gt;published&lt;/status&gt;
+        &lt;sys_class_name&gt;sys_hub_flow&lt;/sys_class_name&gt;
+        &lt;sys_created_by&gt;maint&lt;/sys_created_by&gt;
+        &lt;sys_created_on&gt;2020-11-20 22:31:11&lt;/sys_created_on&gt;
+        &lt;sys_domain&gt;global&lt;/sys_domain&gt;
+        &lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;
+        &lt;sys_id&gt;803a7c2e30a02010f8779128c972bd21&lt;/sys_id&gt;
+        &lt;sys_mod_count&gt;3&lt;/sys_mod_count&gt;
+        &lt;sys_name&gt;Decrement Waitlisted by 1&lt;/sys_name&gt;
+        &lt;sys_overrides/&gt;
+        &lt;sys_package display_value="Event Registration" source="x_snc_event_reg"&gt;be85368c21be9010f87719341d33f026&lt;/sys_package&gt;
+        &lt;sys_policy/&gt;
+        &lt;sys_scope display_value="Event Registration"&gt;be85368c21be9010f87719341d33f026&lt;/sys_scope&gt;
+        &lt;sys_update_name&gt;sys_hub_flow_803a7c2e30a02010f8779128c972bd21&lt;/sys_update_name&gt;
+        &lt;sys_updated_by&gt;maint&lt;/sys_updated_by&gt;
+        &lt;sys_updated_on&gt;2020-11-20 22:34:14&lt;/sys_updated_on&gt;
+        &lt;type&gt;subflow&lt;/type&gt;
+    &lt;/sys_hub_flow&gt;
+    &lt;sys_translated_text action="delete_multiple" query="documentkey=803a7c2e30a02010f8779128c972bd21"/&gt;
+    &lt;sys_variable_value action="delete_multiple" query="document_key=803a7c2e30a02010f8779128c972bd21"/&gt;
+    &lt;sys_hub_flow_component action="delete_multiple" query="flow=803a7c2e30a02010f8779128c972bd21^sys_idNOT IN23da786e30a02010f8779128c972bdbb,efda786e30a02010f8779128c972bdb4"/&gt;
+    &lt;sys_hub_action_instance action="INSERT_OR_UPDATE"&gt;
+        &lt;action_inputs/&gt;
+        &lt;action_inputs/&gt;
+        &lt;action_type display_value="Update Record"&gt;f9d01dd2c31332002841b63b12d3aea1&lt;/action_type&gt;
+        &lt;action_type_parent/&gt;
+        &lt;comment&gt;Decrement the Waitlisted field by 1&lt;/comment&gt;
+        &lt;compiled_snapshot/&gt;
+        &lt;display_text/&gt;
+        &lt;flow display_value="Decrement Waitlisted by 1"&gt;803a7c2e30a02010f8779128c972bd21&lt;/flow&gt;
+        &lt;order&gt;2&lt;/order&gt;
+        &lt;parent_ui_id/&gt;
+        &lt;sys_class_name&gt;sys_hub_action_instance&lt;/sys_class_name&gt;
+        &lt;sys_created_by&gt;maint&lt;/sys_created_by&gt;
+        &lt;sys_created_on&gt;2020-11-20 22:34:10&lt;/sys_created_on&gt;
+        &lt;sys_id&gt;23da786e30a02010f8779128c972bdbb&lt;/sys_id&gt;
+        &lt;sys_mod_count&gt;6&lt;/sys_mod_count&gt;
+        &lt;sys_scope display_value="Event Registration"&gt;be85368c21be9010f87719341d33f026&lt;/sys_scope&gt;
+        &lt;sys_updated_by&gt;maint&lt;/sys_updated_by&gt;
+        &lt;sys_updated_on&gt;2020-11-20 22:34:14&lt;/sys_updated_on&gt;
+        &lt;ui_id&gt;7e00e0b4-8fba-4d66-be02-2b93927af928&lt;/ui_id&gt;
+    &lt;/sys_hub_action_instance&gt;
+    &lt;sys_variable_value action="delete_multiple" query="document_key=23da786e30a02010f8779128c972bdbb"/&gt;
+    &lt;sys_variable_value action="INSERT_OR_UPDATE"&gt;
+        &lt;document&gt;sys_hub_action_instance&lt;/document&gt;
+        &lt;document_key&gt;23da786e30a02010f8779128c972bdbb&lt;/document_key&gt;
+        &lt;order&gt;100&lt;/order&gt;
+        &lt;sys_class_name&gt;sys_variable_value&lt;/sys_class_name&gt;
+        &lt;sys_created_by&gt;maint&lt;/sys_created_by&gt;
+        &lt;sys_created_on&gt;2020-11-20 22:34:10&lt;/sys_created_on&gt;
+        &lt;sys_id&gt;27da786e30a02010f8779128c972bdbd&lt;/sys_id&gt;
+        &lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;
+        &lt;sys_updated_by&gt;maint&lt;/sys_updated_by&gt;
+        &lt;sys_updated_on&gt;2020-11-20 22:34:10&lt;/sys_updated_on&gt;
+        &lt;value&gt;waitlisted=fd-scripted&lt;/value&gt;
+        &lt;variable display_value="Fields"&gt;02d01916c31332002841b63b12d3aeee&lt;/variable&gt;
+    &lt;/sys_variable_value&gt;
+    &lt;sys_variable_value action="INSERT_OR_UPDATE"&gt;
+        &lt;document&gt;sys_hub_action_instance&lt;/document&gt;
+        &lt;document_key&gt;23da786e30a02010f8779128c972bdbb&lt;/document_key&gt;
+        &lt;order&gt;50&lt;/order&gt;
+        &lt;sys_class_name&gt;sys_variable_value&lt;/sys_class_name&gt;
+        &lt;sys_created_by&gt;maint&lt;/sys_created_by&gt;
+        &lt;sys_created_on&gt;2020-11-20 22:34:10&lt;/sys_created_on&gt;
+        &lt;sys_id&gt;e7da786e30a02010f8779128c972bdbd&lt;/sys_id&gt;
+        &lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;
+        &lt;sys_updated_by&gt;maint&lt;/sys_updated_by&gt;
+        &lt;sys_updated_on&gt;2020-11-20 22:34:10&lt;/sys_updated_on&gt;
+        &lt;value&gt;x_snc_event_reg_event&lt;/value&gt;
+        &lt;variable display_value="Table"&gt;b5d01916c31332002841b63b12d3aec9&lt;/variable&gt;
+    &lt;/sys_variable_value&gt;
+    &lt;sys_element_mapping action="delete_multiple" query="id=23da786e30a02010f8779128c972bdbb"/&gt;
+    &lt;sys_element_mapping action="INSERT_OR_UPDATE"&gt;
+        &lt;field&gt;record&lt;/field&gt;
+        &lt;id&gt;23da786e30a02010f8779128c972bdbb&lt;/id&gt;
+        &lt;sys_created_by&gt;maint&lt;/sys_created_by&gt;
+        &lt;sys_created_on&gt;2020-11-20 22:34:10&lt;/sys_created_on&gt;
+        &lt;sys_id&gt;efda786e30a02010f8779128c972bdbc&lt;/sys_id&gt;
+        &lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;
+        &lt;sys_updated_by&gt;maint&lt;/sys_updated_by&gt;
+        &lt;sys_updated_on&gt;2020-11-20 22:34:10&lt;/sys_updated_on&gt;
+        &lt;table&gt;var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1&lt;/table&gt;
+        &lt;value&gt;{{24a52dc0-a896-4062-a033-fc0b8da1e665.Record}}&lt;/value&gt;
+    &lt;/sys_element_mapping&gt;
+    &lt;sys_element_mapping action="INSERT_OR_UPDATE"&gt;
+        &lt;field&gt;table_name&lt;/field&gt;
+        &lt;id&gt;23da786e30a02010f8779128c972bdbb&lt;/id&gt;
+        &lt;sys_created_by&gt;maint&lt;/sys_created_by&gt;
+        &lt;sys_created_on&gt;2020-11-20 22:34:10&lt;/sys_created_on&gt;
+        &lt;sys_id&gt;2fda786e30a02010f8779128c972bdbc&lt;/sys_id&gt;
+        &lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;
+        &lt;sys_updated_by&gt;maint&lt;/sys_updated_by&gt;
+        &lt;sys_updated_on&gt;2020-11-20 22:34:10&lt;/sys_updated_on&gt;
+        &lt;table&gt;var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1&lt;/table&gt;
+        &lt;value/&gt;
+    &lt;/sys_element_mapping&gt;
+    &lt;sys_element_mapping action="INSERT_OR_UPDATE"&gt;
+        &lt;field&gt;values&lt;/field&gt;
+        &lt;id&gt;23da786e30a02010f8779128c972bdbb&lt;/id&gt;
+        &lt;sys_created_by&gt;maint&lt;/sys_created_by&gt;
+        &lt;sys_created_on&gt;2020-11-20 22:34:10&lt;/sys_created_on&gt;
+        &lt;sys_id&gt;a3da786e30a02010f8779128c972bdbd&lt;/sys_id&gt;
+        &lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;
+        &lt;sys_updated_by&gt;maint&lt;/sys_updated_by&gt;
+        &lt;sys_updated_on&gt;2020-11-20 22:34:10&lt;/sys_updated_on&gt;
+        &lt;table&gt;var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1&lt;/table&gt;
+        &lt;value/&gt;
+    &lt;/sys_element_mapping&gt;
+    &lt;sys_hub_action_instance action="INSERT_OR_UPDATE"&gt;
+        &lt;action_inputs/&gt;
+        &lt;action_inputs/&gt;
+        &lt;action_type display_value="Look Up Record"&gt;9d09f99587003300663ca1bb36cb0ba3&lt;/action_type&gt;
+        &lt;action_type_parent/&gt;
+        &lt;comment&gt;Get event record&lt;/comment&gt;
+        &lt;compiled_snapshot/&gt;
+        &lt;display_text/&gt;
+        &lt;flow display_value="Decrement Waitlisted by 1"&gt;803a7c2e30a02010f8779128c972bd21&lt;/flow&gt;
+        &lt;order&gt;1&lt;/order&gt;
+        &lt;parent_ui_id/&gt;
+        &lt;sys_class_name&gt;sys_hub_action_instance&lt;/sys_class_name&gt;
+        &lt;sys_created_by&gt;maint&lt;/sys_created_by&gt;
+        &lt;sys_created_on&gt;2020-11-20 22:34:10&lt;/sys_created_on&gt;
+        &lt;sys_id&gt;efda786e30a02010f8779128c972bdb4&lt;/sys_id&gt;
+        &lt;sys_mod_count&gt;6&lt;/sys_mod_count&gt;
+        &lt;sys_scope display_value="Event Registration"&gt;be85368c21be9010f87719341d33f026&lt;/sys_scope&gt;
+        &lt;sys_updated_by&gt;maint&lt;/sys_updated_by&gt;
+        &lt;sys_updated_on&gt;2020-11-20 22:34:14&lt;/sys_updated_on&gt;
+        &lt;ui_id&gt;24a52dc0-a896-4062-a033-fc0b8da1e665&lt;/ui_id&gt;
+    &lt;/sys_hub_action_instance&gt;
+    &lt;sys_variable_value action="delete_multiple" query="document_key=efda786e30a02010f8779128c972bdb4"/&gt;
+    &lt;sys_variable_value action="INSERT_OR_UPDATE"&gt;
+        &lt;document&gt;sys_hub_action_instance&lt;/document&gt;
+        &lt;document_key&gt;efda786e30a02010f8779128c972bdb4&lt;/document_key&gt;
+        &lt;order&gt;0&lt;/order&gt;
+        &lt;sys_class_name&gt;sys_variable_value&lt;/sys_class_name&gt;
+        &lt;sys_created_by&gt;maint&lt;/sys_created_by&gt;
+        &lt;sys_created_on&gt;2020-11-20 22:34:10&lt;/sys_created_on&gt;
+        &lt;sys_id&gt;efda786e30a02010f8779128c972bdb6&lt;/sys_id&gt;
+        &lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;
+        &lt;sys_updated_by&gt;maint&lt;/sys_updated_by&gt;
+        &lt;sys_updated_on&gt;2020-11-20 22:34:10&lt;/sys_updated_on&gt;
+        &lt;value&gt;x_snc_event_reg_event&lt;/value&gt;
+        &lt;variable display_value="Table"&gt;d909f99587003300663ca1bb36cb0ba4&lt;/variable&gt;
+    &lt;/sys_variable_value&gt;
+    &lt;sys_element_mapping action="delete_multiple" query="id=efda786e30a02010f8779128c972bdb4"/&gt;
+    &lt;sys_element_mapping action="INSERT_OR_UPDATE"&gt;
+        &lt;field&gt;conditions&lt;/field&gt;
+        &lt;id&gt;efda786e30a02010f8779128c972bdb4&lt;/id&gt;
+        &lt;sys_created_by&gt;maint&lt;/sys_created_by&gt;
+        &lt;sys_created_on&gt;2020-11-20 22:34:10&lt;/sys_created_on&gt;
+        &lt;sys_id&gt;abda786e30a02010f8779128c972bdb6&lt;/sys_id&gt;
+        &lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;
+        &lt;sys_updated_by&gt;maint&lt;/sys_updated_by&gt;
+        &lt;sys_updated_on&gt;2020-11-20 22:34:10&lt;/sys_updated_on&gt;
+        &lt;table&gt;var__m_sys_hub_action_input_9d09f99587003300663ca1bb36cb0ba3&lt;/table&gt;
+        &lt;value&gt;sys_id={{subflow.event_sysid}}&lt;/value&gt;
+    &lt;/sys_element_mapping&gt;
+    &lt;sys_element_mapping action="INSERT_OR_UPDATE"&gt;
+        &lt;field&gt;table&lt;/field&gt;
+        &lt;id&gt;efda786e30a02010f8779128c972bdb4&lt;/id&gt;
+        &lt;sys_created_by&gt;maint&lt;/sys_created_by&gt;
+        &lt;sys_created_on&gt;2020-11-20 22:34:10&lt;/sys_created_on&gt;
+        &lt;sys_id&gt;6fda786e30a02010f8779128c972bdb6&lt;/sys_id&gt;
+        &lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;
+        &lt;sys_updated_by&gt;maint&lt;/sys_updated_by&gt;
+        &lt;sys_updated_on&gt;2020-11-20 22:34:10&lt;/sys_updated_on&gt;
+        &lt;table&gt;var__m_sys_hub_action_input_9d09f99587003300663ca1bb36cb0ba3&lt;/table&gt;
+        &lt;value/&gt;
+    &lt;/sys_element_mapping&gt;
+    &lt;sys_flow_cat_variable_model action="delete_multiple" query="id=803a7c2e30a02010f8779128c972bd21^sys_idNOT IN8c3a7c2e30a02010f8779128c972bd21"/&gt;
+    &lt;sys_flow_cat_variable_model action="INSERT_OR_UPDATE"&gt;
+        &lt;id&gt;803a7c2e30a02010f8779128c972bd21&lt;/id&gt;
+        &lt;name&gt;Decrement Waitlisted by 1&lt;/name&gt;
+        &lt;sys_created_by&gt;maint&lt;/sys_created_by&gt;
+        &lt;sys_created_on&gt;2020-11-20 22:31:11&lt;/sys_created_on&gt;
+        &lt;sys_id&gt;8c3a7c2e30a02010f8779128c972bd21&lt;/sys_id&gt;
+        &lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;
+        &lt;sys_scope/&gt;
+        &lt;sys_updated_by&gt;maint&lt;/sys_updated_by&gt;
+        &lt;sys_updated_on&gt;2020-11-20 22:31:11&lt;/sys_updated_on&gt;
+    &lt;/sys_flow_cat_variable_model&gt;
+    &lt;sys_hub_flow_input action="delete_multiple" query="model=803a7c2e30a02010f8779128c972bd21^sys_idNOT INe7da786e30a02010f8779128c972bda5"/&gt;
+    &lt;sys_hub_flow_input action="INSERT_OR_UPDATE"&gt;
+        &lt;active&gt;true&lt;/active&gt;
+        &lt;array&gt;false&lt;/array&gt;
+        &lt;array_denormalized&gt;false&lt;/array_denormalized&gt;
+        &lt;attributes&gt;element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=b07d76ed-3518-416a-a34a-ad4c21288b08&lt;/attributes&gt;
+        &lt;audit&gt;false&lt;/audit&gt;
+        &lt;calculation&gt;&lt;![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]&gt;&lt;/calculation&gt;
+        &lt;choice/&gt;
+        &lt;choice_field/&gt;
+        &lt;choice_table/&gt;
+        &lt;column_label/&gt;
+        &lt;comments/&gt;
+        &lt;create_roles/&gt;
+        &lt;default_value/&gt;
+        &lt;defaultsort/&gt;
+        &lt;delete_roles/&gt;
+        &lt;dependent/&gt;
+        &lt;dependent_on_field/&gt;
+        &lt;display&gt;false&lt;/display&gt;
+        &lt;dynamic_creation&gt;false&lt;/dynamic_creation&gt;
+        &lt;dynamic_creation_script/&gt;
+        &lt;dynamic_default_value/&gt;
+        &lt;dynamic_ref_qual/&gt;
+        &lt;element&gt;event_sysid&lt;/element&gt;
+        &lt;element_reference&gt;false&lt;/element_reference&gt;
+        &lt;foreign_database/&gt;
+        &lt;function_definition/&gt;
+        &lt;function_field&gt;false&lt;/function_field&gt;
+        &lt;help/&gt;
+        &lt;hint/&gt;
+        &lt;internal_type display_value="String"&gt;string&lt;/internal_type&gt;
+        &lt;label&gt;Event Record sys_id&lt;/label&gt;
+        &lt;mandatory&gt;true&lt;/mandatory&gt;
+        &lt;max_length&gt;8000&lt;/max_length&gt;
+        &lt;model display_value="Decrement Waitlisted by 1"&gt;803a7c2e30a02010f8779128c972bd21&lt;/model&gt;
+        &lt;model_id&gt;803a7c2e30a02010f8779128c972bd21&lt;/model_id&gt;
+        &lt;model_table&gt;sys_hub_flow&lt;/model_table&gt;
+        &lt;name&gt;var__m_sys_hub_flow_input_803a7c2e30a02010f8779128c972bd21&lt;/name&gt;
+        &lt;next_element/&gt;
+        &lt;order&gt;1&lt;/order&gt;
+        &lt;primary&gt;false&lt;/primary&gt;
+        &lt;read_only&gt;false&lt;/read_only&gt;
+        &lt;read_roles/&gt;
+        &lt;reference/&gt;
+        &lt;reference_cascade_rule/&gt;
+        &lt;reference_floats&gt;false&lt;/reference_floats&gt;
+        &lt;reference_key/&gt;
+        &lt;reference_qual/&gt;
+        &lt;reference_qual_condition/&gt;
+        &lt;reference_type/&gt;
+        &lt;sizeclass/&gt;
+        &lt;spell_check&gt;false&lt;/spell_check&gt;
+        &lt;staged&gt;false&lt;/staged&gt;
+        &lt;sys_class_name&gt;sys_hub_flow_input&lt;/sys_class_name&gt;
+        &lt;sys_created_by&gt;maint&lt;/sys_created_by&gt;
+        &lt;sys_created_on&gt;2020-11-20 22:34:09&lt;/sys_created_on&gt;
+        &lt;sys_id&gt;e7da786e30a02010f8779128c972bda5&lt;/sys_id&gt;
+        &lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;
+        &lt;sys_name/&gt;
+        &lt;sys_package/&gt;
+        &lt;sys_policy/&gt;
+        &lt;sys_scope display_value="Event Registration"&gt;be85368c21be9010f87719341d33f026&lt;/sys_scope&gt;
+        &lt;sys_update_name/&gt;
+        &lt;sys_updated_by&gt;maint&lt;/sys_updated_by&gt;
+        &lt;sys_updated_on&gt;2020-11-20 22:34:09&lt;/sys_updated_on&gt;
+        &lt;table_reference&gt;false&lt;/table_reference&gt;
+        &lt;text_index&gt;false&lt;/text_index&gt;
+        &lt;unique&gt;false&lt;/unique&gt;
+        &lt;use_dependent_field&gt;false&lt;/use_dependent_field&gt;
+        &lt;use_dynamic_default&gt;false&lt;/use_dynamic_default&gt;
+        &lt;use_reference_qualifier&gt;simple&lt;/use_reference_qualifier&gt;
+        &lt;virtual&gt;false&lt;/virtual&gt;
+        &lt;widget/&gt;
+        &lt;write_roles/&gt;
+        &lt;xml_view&gt;false&lt;/xml_view&gt;
+    &lt;/sys_hub_flow_input&gt;
+    &lt;sys_hub_action_instance action="delete_multiple" query="flow=803a7c2e30a02010f8779128c972bd21^sys_idNOT IN23da786e30a02010f8779128c972bdbb,efda786e30a02010f8779128c972bdb4"/&gt;
+    &lt;sys_hub_action_instance action="INSERT_OR_UPDATE"&gt;
+        &lt;action_inputs/&gt;
+        &lt;action_inputs/&gt;
+        &lt;action_type display_value="Update Record"&gt;f9d01dd2c31332002841b63b12d3aea1&lt;/action_type&gt;
+        &lt;action_type_parent/&gt;
+        &lt;comment&gt;Decrement the Waitlisted field by 1&lt;/comment&gt;
+        &lt;compiled_snapshot/&gt;
+        &lt;display_text/&gt;
+        &lt;flow display_value="Decrement Waitlisted by 1"&gt;803a7c2e30a02010f8779128c972bd21&lt;/flow&gt;
+        &lt;order&gt;2&lt;/order&gt;
+        &lt;parent_ui_id/&gt;
+        &lt;sys_class_name&gt;sys_hub_action_instance&lt;/sys_class_name&gt;
+        &lt;sys_created_by&gt;maint&lt;/sys_created_by&gt;
+        &lt;sys_created_on&gt;2020-11-20 22:34:10&lt;/sys_created_on&gt;
+        &lt;sys_id&gt;23da786e30a02010f8779128c972bdbb&lt;/sys_id&gt;
+        &lt;sys_mod_count&gt;6&lt;/sys_mod_count&gt;
+        &lt;sys_scope display_value="Event Registration"&gt;be85368c21be9010f87719341d33f026&lt;/sys_scope&gt;
+        &lt;sys_updated_by&gt;maint&lt;/sys_updated_by&gt;
+        &lt;sys_updated_on&gt;2020-11-20 22:34:14&lt;/sys_updated_on&gt;
+        &lt;ui_id&gt;7e00e0b4-8fba-4d66-be02-2b93927af928&lt;/ui_id&gt;
+    &lt;/sys_hub_action_instance&gt;
+    &lt;sys_variable_value action="delete_multiple" query="document_key=23da786e30a02010f8779128c972bdbb"/&gt;
+    &lt;sys_variable_value action="INSERT_OR_UPDATE"&gt;
+        &lt;document&gt;sys_hub_action_instance&lt;/document&gt;
+        &lt;document_key&gt;23da786e30a02010f8779128c972bdbb&lt;/document_key&gt;
+        &lt;order&gt;100&lt;/order&gt;
+        &lt;sys_class_name&gt;sys_variable_value&lt;/sys_class_name&gt;
+        &lt;sys_created_by&gt;maint&lt;/sys_created_by&gt;
+        &lt;sys_created_on&gt;2020-11-20 22:34:10&lt;/sys_created_on&gt;
+        &lt;sys_id&gt;27da786e30a02010f8779128c972bdbd&lt;/sys_id&gt;
+        &lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;
+        &lt;sys_updated_by&gt;maint&lt;/sys_updated_by&gt;
+        &lt;sys_updated_on&gt;2020-11-20 22:34:10&lt;/sys_updated_on&gt;
+        &lt;value&gt;waitlisted=fd-scripted&lt;/value&gt;
+        &lt;variable display_value="Fields"&gt;02d01916c31332002841b63b12d3aeee&lt;/variable&gt;
+    &lt;/sys_variable_value&gt;
+    &lt;sys_variable_value action="INSERT_OR_UPDATE"&gt;
+        &lt;document&gt;sys_hub_action_instance&lt;/document&gt;
+        &lt;document_key&gt;23da786e30a02010f8779128c972bdbb&lt;/document_key&gt;
+        &lt;order&gt;50&lt;/order&gt;
+        &lt;sys_class_name&gt;sys_variable_value&lt;/sys_class_name&gt;
+        &lt;sys_created_by&gt;maint&lt;/sys_created_by&gt;
+        &lt;sys_created_on&gt;2020-11-20 22:34:10&lt;/sys_created_on&gt;
+        &lt;sys_id&gt;e7da786e30a02010f8779128c972bdbd&lt;/sys_id&gt;
+        &lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;
+        &lt;sys_updated_by&gt;maint&lt;/sys_updated_by&gt;
+        &lt;sys_updated_on&gt;2020-11-20 22:34:10&lt;/sys_updated_on&gt;
+        &lt;value&gt;x_snc_event_reg_event&lt;/value&gt;
+        &lt;variable display_value="Table"&gt;b5d01916c31332002841b63b12d3aec9&lt;/variable&gt;
+    &lt;/sys_variable_value&gt;
+    &lt;sys_element_mapping action="delete_multiple" query="id=23da786e30a02010f8779128c972bdbb"/&gt;
+    &lt;sys_element_mapping action="INSERT_OR_UPDATE"&gt;
+        &lt;field&gt;record&lt;/field&gt;
+        &lt;id&gt;23da786e30a02010f8779128c972bdbb&lt;/id&gt;
+        &lt;sys_created_by&gt;maint&lt;/sys_created_by&gt;
+        &lt;sys_created_on&gt;2020-11-20 22:34:10&lt;/sys_created_on&gt;
+        &lt;sys_id&gt;efda786e30a02010f8779128c972bdbc&lt;/sys_id&gt;
+        &lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;
+        &lt;sys_updated_by&gt;maint&lt;/sys_updated_by&gt;
+        &lt;sys_updated_on&gt;2020-11-20 22:34:10&lt;/sys_updated_on&gt;
+        &lt;table&gt;var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1&lt;/table&gt;
+        &lt;value&gt;{{24a52dc0-a896-4062-a033-fc0b8da1e665.Record}}&lt;/value&gt;
+    &lt;/sys_element_mapping&gt;
+    &lt;sys_element_mapping action="INSERT_OR_UPDATE"&gt;
+        &lt;field&gt;table_name&lt;/field&gt;
+        &lt;id&gt;23da786e30a02010f8779128c972bdbb&lt;/id&gt;
+        &lt;sys_created_by&gt;maint&lt;/sys_created_by&gt;
+        &lt;sys_created_on&gt;2020-11-20 22:34:10&lt;/sys_created_on&gt;
+        &lt;sys_id&gt;2fda786e30a02010f8779128c972bdbc&lt;/sys_id&gt;
+        &lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;
+        &lt;sys_updated_by&gt;maint&lt;/sys_updated_by&gt;
+        &lt;sys_updated_on&gt;2020-11-20 22:34:10&lt;/sys_updated_on&gt;
+        &lt;table&gt;var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1&lt;/table&gt;
+        &lt;value/&gt;
+    &lt;/sys_element_mapping&gt;
+    &lt;sys_element_mapping action="INSERT_OR_UPDATE"&gt;
+        &lt;field&gt;values&lt;/field&gt;
+        &lt;id&gt;23da786e30a02010f8779128c972bdbb&lt;/id&gt;
+        &lt;sys_created_by&gt;maint&lt;/sys_created_by&gt;
+        &lt;sys_created_on&gt;2020-11-20 22:34:10&lt;/sys_created_on&gt;
+        &lt;sys_id&gt;a3da786e30a02010f8779128c972bdbd&lt;/sys_id&gt;
+        &lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;
+        &lt;sys_updated_by&gt;maint&lt;/sys_updated_by&gt;
+        &lt;sys_updated_on&gt;2020-11-20 22:34:10&lt;/sys_updated_on&gt;
+        &lt;table&gt;var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1&lt;/table&gt;
+        &lt;value/&gt;
+    &lt;/sys_element_mapping&gt;
+    &lt;sys_hub_input_scripts action="delete_multiple" query="instance=23da786e30a02010f8779128c972bdbb^sys_idNOT IN23da786e30a02010f8779128c972bdbc"/&gt;
+    &lt;sys_hub_input_scripts action="INSERT_OR_UPDATE"&gt;
+        &lt;active&gt;true&lt;/active&gt;
+        &lt;input_name&gt;values&lt;/input_name&gt;
+        &lt;instance&gt;23da786e30a02010f8779128c972bdbb&lt;/instance&gt;
+        &lt;referenced_table&gt;sys_hub_action_instance&lt;/referenced_table&gt;
+        &lt;script&gt;{"waitlisted":{"scriptActive":true,"script":"/*\n**Access Flow/Action data using the fd_data object. Script must return a value.\n**example: var shortDesc \u003d fd_data.trigger.current.short_description;\n**return shortDesc;\n*/\nvar waitlistCount \u003d fd_data._1__look_up_record.record.waitlisted -1;\nreturn waitlistCount;","savedValue":""}}&lt;/script&gt;
+        &lt;sys_created_by&gt;maint&lt;/sys_created_by&gt;
+        &lt;sys_created_on&gt;2020-11-20 22:34:10&lt;/sys_created_on&gt;
+        &lt;sys_id&gt;23da786e30a02010f8779128c972bdbc&lt;/sys_id&gt;
+        &lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;
+        &lt;sys_updated_by&gt;maint&lt;/sys_updated_by&gt;
+        &lt;sys_updated_on&gt;2020-11-20 22:34:10&lt;/sys_updated_on&gt;
+    &lt;/sys_hub_input_scripts&gt;
+    &lt;sys_hub_action_instance action="INSERT_OR_UPDATE"&gt;
+        &lt;action_inputs/&gt;
+        &lt;action_inputs/&gt;
+        &lt;action_type display_value="Look Up Record"&gt;9d09f99587003300663ca1bb36cb0ba3&lt;/action_type&gt;
+        &lt;action_type_parent/&gt;
+        &lt;comment&gt;Get event record&lt;/comment&gt;
+        &lt;compiled_snapshot/&gt;
+        &lt;display_text/&gt;
+        &lt;flow display_value="Decrement Waitlisted by 1"&gt;803a7c2e30a02010f8779128c972bd21&lt;/flow&gt;
+        &lt;order&gt;1&lt;/order&gt;
+        &lt;parent_ui_id/&gt;
+        &lt;sys_class_name&gt;sys_hub_action_instance&lt;/sys_class_name&gt;
+        &lt;sys_created_by&gt;maint&lt;/sys_created_by&gt;
+        &lt;sys_created_on&gt;2020-11-20 22:34:10&lt;/sys_created_on&gt;
+        &lt;sys_id&gt;efda786e30a02010f8779128c972bdb4&lt;/sys_id&gt;
+        &lt;sys_mod_count&gt;6&lt;/sys_mod_count&gt;
+        &lt;sys_scope display_value="Event Registration"&gt;be85368c21be9010f87719341d33f026&lt;/sys_scope&gt;
+        &lt;sys_updated_by&gt;maint&lt;/sys_updated_by&gt;
+        &lt;sys_updated_on&gt;2020-11-20 22:34:14&lt;/sys_updated_on&gt;
+        &lt;ui_id&gt;24a52dc0-a896-4062-a033-fc0b8da1e665&lt;/ui_id&gt;
+    &lt;/sys_hub_action_instance&gt;
+    &lt;sys_variable_value action="delete_multiple" query="document_key=efda786e30a02010f8779128c972bdb4"/&gt;
+    &lt;sys_variable_value action="INSERT_OR_UPDATE"&gt;
+        &lt;document&gt;sys_hub_action_instance&lt;/document&gt;
+        &lt;document_key&gt;efda786e30a02010f8779128c972bdb4&lt;/document_key&gt;
+        &lt;order&gt;0&lt;/order&gt;
+        &lt;sys_class_name&gt;sys_variable_value&lt;/sys_class_name&gt;
+        &lt;sys_created_by&gt;maint&lt;/sys_created_by&gt;
+        &lt;sys_created_on&gt;2020-11-20 22:34:10&lt;/sys_created_on&gt;
+        &lt;sys_id&gt;efda786e30a02010f8779128c972bdb6&lt;/sys_id&gt;
+        &lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;
+        &lt;sys_updated_by&gt;maint&lt;/sys_updated_by&gt;
+        &lt;sys_updated_on&gt;2020-11-20 22:34:10&lt;/sys_updated_on&gt;
+        &lt;value&gt;x_snc_event_reg_event&lt;/value&gt;
+        &lt;variable display_value="Table"&gt;d909f99587003300663ca1bb36cb0ba4&lt;/variable&gt;
+    &lt;/sys_variable_value&gt;
+    &lt;sys_element_mapping action="delete_multiple" query="id=efda786e30a02010f8779128c972bdb4"/&gt;
+    &lt;sys_element_mapping action="INSERT_OR_UPDATE"&gt;
+        &lt;field&gt;conditions&lt;/field&gt;
+        &lt;id&gt;efda786e30a02010f8779128c972bdb4&lt;/id&gt;
+        &lt;sys_created_by&gt;maint&lt;/sys_created_by&gt;
+        &lt;sys_created_on&gt;2020-11-20 22:34:10&lt;/sys_created_on&gt;
+        &lt;sys_id&gt;abda786e30a02010f8779128c972bdb6&lt;/sys_id&gt;
+        &lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;
+        &lt;sys_updated_by&gt;maint&lt;/sys_updated_by&gt;
+        &lt;sys_updated_on&gt;2020-11-20 22:34:10&lt;/sys_updated_on&gt;
+        &lt;table&gt;var__m_sys_hub_action_input_9d09f99587003300663ca1bb36cb0ba3&lt;/table&gt;
+        &lt;value&gt;sys_id={{subflow.event_sysid}}&lt;/value&gt;
+    &lt;/sys_element_mapping&gt;
+    &lt;sys_element_mapping action="INSERT_OR_UPDATE"&gt;
+        &lt;field&gt;table&lt;/field&gt;
+        &lt;id&gt;efda786e30a02010f8779128c972bdb4&lt;/id&gt;
+        &lt;sys_created_by&gt;maint&lt;/sys_created_by&gt;
+        &lt;sys_created_on&gt;2020-11-20 22:34:10&lt;/sys_created_on&gt;
+        &lt;sys_id&gt;6fda786e30a02010f8779128c972bdb6&lt;/sys_id&gt;
+        &lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;
+        &lt;sys_updated_by&gt;maint&lt;/sys_updated_by&gt;
+        &lt;sys_updated_on&gt;2020-11-20 22:34:10&lt;/sys_updated_on&gt;
+        &lt;table&gt;var__m_sys_hub_action_input_9d09f99587003300663ca1bb36cb0ba3&lt;/table&gt;
+        &lt;value/&gt;
+    &lt;/sys_element_mapping&gt;
+    &lt;sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_803a7c2e30a02010f8779128c972bd21^sys_idNOT IN6fda786e30a02010f8779128c972bda9"/&gt;
+    &lt;sys_documentation action="INSERT_OR_UPDATE"&gt;
+        &lt;element&gt;event_sysid&lt;/element&gt;
+        &lt;help/&gt;
+        &lt;hint/&gt;
+        &lt;label&gt;Event Record sys_id&lt;/label&gt;
+        &lt;language&gt;en&lt;/language&gt;
+        &lt;name&gt;var__m_sys_hub_flow_input_803a7c2e30a02010f8779128c972bd21&lt;/name&gt;
+        &lt;plural/&gt;
+        &lt;sys_class_name&gt;sys_documentation&lt;/sys_class_name&gt;
+        &lt;sys_created_by&gt;maint&lt;/sys_created_by&gt;
+        &lt;sys_created_on&gt;2020-11-20 22:34:09&lt;/sys_created_on&gt;
+        &lt;sys_id&gt;6fda786e30a02010f8779128c972bda9&lt;/sys_id&gt;
+        &lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;
+        &lt;sys_name/&gt;
+        &lt;sys_package display_value="Event Registration" source="x_snc_event_reg"&gt;be85368c21be9010f87719341d33f026&lt;/sys_package&gt;
+        &lt;sys_policy/&gt;
+        &lt;sys_scope display_value="Event Registration"&gt;be85368c21be9010f87719341d33f026&lt;/sys_scope&gt;
+        &lt;sys_update_name/&gt;
+        &lt;sys_updated_by&gt;maint&lt;/sys_updated_by&gt;
+        &lt;sys_updated_on&gt;2020-11-20 22:34:09&lt;/sys_updated_on&gt;
+        &lt;url/&gt;
+        &lt;url_target/&gt;
+    &lt;/sys_documentation&gt;
+    &lt;sys_flow_subflow_plan action="delete_multiple" query="plan_id=803a7c2e30a02010f8779128c972bd21^sys_idNOT INeceab86e30a02010f8779128c972bde0"/&gt;
+    &lt;sys_flow_subflow_plan action="INSERT_OR_UPDATE"&gt;
+        &lt;plan&gt;com.snc.process_flow.engine.ProcessPlan@6d3a6b50&lt;/plan&gt;
+        &lt;plan_id display_value="Decrement Waitlisted by 1"&gt;803a7c2e30a02010f8779128c972bd21&lt;/plan_id&gt;
+        &lt;snapshot&gt;e4eab86e30a02010f8779128c972bd81&lt;/snapshot&gt;
+        &lt;sys_created_by&gt;maint&lt;/sys_created_by&gt;
+        &lt;sys_created_on&gt;2020-11-20 22:34:14&lt;/sys_created_on&gt;
+        &lt;sys_domain&gt;global&lt;/sys_domain&gt;
+        &lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;
+        &lt;sys_id&gt;eceab86e30a02010f8779128c972bde0&lt;/sys_id&gt;
+        &lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;
+        &lt;sys_overrides/&gt;
+        &lt;sys_scope/&gt;
+        &lt;sys_updated_by&gt;maint&lt;/sys_updated_by&gt;
+        &lt;sys_updated_on&gt;2020-11-20 22:34:14&lt;/sys_updated_on&gt;
+    &lt;/sys_flow_subflow_plan&gt;
+    &lt;sys_hub_flow_snapshot action="INSERT_OR_UPDATE"&gt;
+        &lt;access&gt;public&lt;/access&gt;
+        &lt;acls/&gt;
+        &lt;active&gt;true&lt;/active&gt;
+        &lt;annotation&gt;Decrements the Waitlisted field on Event by 1&lt;/annotation&gt;
+        &lt;callable_by_client_api&gt;false&lt;/callable_by_client_api&gt;
+        &lt;category/&gt;
+        &lt;copied_from/&gt;
+        &lt;copied_from_name/&gt;
+        &lt;description&gt;Decrements the Waitlisted field on Event by 1&lt;/description&gt;
+        &lt;internal_name&gt;decrement_waitlisted_by_1&lt;/internal_name&gt;
+        &lt;label_cache&gt;[{"name":"7e00e0b4-8fba-4d66-be02-2b93927af928.table_name","label":"2➛Event Table","reference":"x_snc_event_reg_event","reference_display":"Event","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"7e00e0b4-8fba-4d66-be02-2b93927af928.record","label":"2➛Event Record","reference":"x_snc_event_reg_event","reference_display":"Event","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"subflow.event_sysid","label":"Input➛Event Record sys_id","type":"string","base_type":"string","attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"b07d76ed-3518-416a-a34a-ad4c21288b08"}},{"name":"24a52dc0-a896-4062-a033-fc0b8da1e665.error_message","label":"1➛Error Message","reference_display":"Error Message","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"87687532-9e3d-4497-a88e-90f45bfb9adb"}},{"name":"24a52dc0-a896-4062-a033-fc0b8da1e665.status","label":"1➛Status","reference_display":"Status","type":"choice","base_type":"choice","attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"5e478657-3a84-4a60-a92b-d3e80005ad34"}},{"name":"24a52dc0-a896-4062-a033-fc0b8da1e665.Table","label":"1➛Event Table","reference":"x_snc_event_reg_event","reference_display":"Event","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"24a52dc0-a896-4062-a033-fc0b8da1e665.Record","label":"1➛Event Record","reference":"x_snc_event_reg_event","reference_display":"Event","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}}]&lt;/label_cache&gt;
+        &lt;master&gt;true&lt;/master&gt;
+        &lt;name&gt;Decrement Waitlisted by 1&lt;/name&gt;
+        &lt;natlang/&gt;
+        &lt;outputs/&gt;
+        &lt;parent_flow display_value="Decrement Waitlisted by 1"&gt;803a7c2e30a02010f8779128c972bd21&lt;/parent_flow&gt;
+        &lt;remote_trigger_id/&gt;
+        &lt;run_as&gt;user&lt;/run_as&gt;
+        &lt;run_with_roles/&gt;
+        &lt;sc_callable&gt;false&lt;/sc_callable&gt;
+        &lt;status&gt;published&lt;/status&gt;
+        &lt;sys_class_name&gt;sys_hub_flow_snapshot&lt;/sys_class_name&gt;
+        &lt;sys_created_by&gt;maint&lt;/sys_created_by&gt;
+        &lt;sys_created_on&gt;2020-11-20 22:34:13&lt;/sys_created_on&gt;
+        &lt;sys_domain&gt;global&lt;/sys_domain&gt;
+        &lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;
+        &lt;sys_id&gt;e4eab86e30a02010f8779128c972bd81&lt;/sys_id&gt;
+        &lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;
+        &lt;sys_name/&gt;
+        &lt;sys_overrides/&gt;
+        &lt;sys_package/&gt;
+        &lt;sys_policy/&gt;
+        &lt;sys_scope display_value="Event Registration"&gt;be85368c21be9010f87719341d33f026&lt;/sys_scope&gt;
+        &lt;sys_update_name/&gt;
+        &lt;sys_updated_by&gt;maint&lt;/sys_updated_by&gt;
+        &lt;sys_updated_on&gt;2020-11-20 22:34:13&lt;/sys_updated_on&gt;
+        &lt;type&gt;subflow&lt;/type&gt;
+    &lt;/sys_hub_flow_snapshot&gt;
+    &lt;sys_translated_text action="delete_multiple" query="documentkey=e4eab86e30a02010f8779128c972bd81"/&gt;
+    &lt;sys_variable_value action="delete_multiple" query="document_key=e4eab86e30a02010f8779128c972bd81"/&gt;
+    &lt;sys_hub_flow_component action="delete_multiple" query="flow=e4eab86e30a02010f8779128c972bd81^sys_idNOT IN28eab86e30a02010f8779128c972bdb9,a4eab86e30a02010f8779128c972bdb2"/&gt;
+    &lt;sys_hub_action_instance action="INSERT_OR_UPDATE"&gt;
+        &lt;action_inputs/&gt;
+        &lt;action_inputs/&gt;
+        &lt;action_type display_value="Update Record"&gt;f9d01dd2c31332002841b63b12d3aea1&lt;/action_type&gt;
+        &lt;action_type_parent display_value="Update Record"&gt;baf174c8c3c232002841b63b12d3aee4&lt;/action_type_parent&gt;
+        &lt;comment&gt;Decrement the Waitlisted field by 1&lt;/comment&gt;
+        &lt;compiled_snapshot&gt;f9d01dd2c31332002841b63b12d3aea1&lt;/compiled_snapshot&gt;
+        &lt;display_text/&gt;
+        &lt;flow display_value="Decrement Waitlisted by 1"&gt;e4eab86e30a02010f8779128c972bd81&lt;/flow&gt;
+        &lt;order&gt;2&lt;/order&gt;
+        &lt;parent_ui_id/&gt;
+        &lt;sys_class_name&gt;sys_hub_action_instance&lt;/sys_class_name&gt;
+        &lt;sys_created_by&gt;maint&lt;/sys_created_by&gt;
+        &lt;sys_created_on&gt;2020-11-20 22:34:14&lt;/sys_created_on&gt;
+        &lt;sys_id&gt;28eab86e30a02010f8779128c972bdb9&lt;/sys_id&gt;
+        &lt;sys_mod_count&gt;2&lt;/sys_mod_count&gt;
+        &lt;sys_scope display_value="Event Registration"&gt;be85368c21be9010f87719341d33f026&lt;/sys_scope&gt;
+        &lt;sys_updated_by&gt;maint&lt;/sys_updated_by&gt;
+        &lt;sys_updated_on&gt;2020-11-20 22:34:14&lt;/sys_updated_on&gt;
+        &lt;ui_id&gt;7e00e0b4-8fba-4d66-be02-2b93927af928&lt;/ui_id&gt;
+    &lt;/sys_hub_action_instance&gt;
+    &lt;sys_variable_value action="delete_multiple" query="document_key=28eab86e30a02010f8779128c972bdb9"/&gt;
+    &lt;sys_variable_value action="INSERT_OR_UPDATE"&gt;
+        &lt;document&gt;sys_hub_action_instance&lt;/document&gt;
+        &lt;document_key&gt;28eab86e30a02010f8779128c972bdb9&lt;/document_key&gt;
+        &lt;order&gt;100&lt;/order&gt;
+        &lt;sys_class_name&gt;sys_variable_value&lt;/sys_class_name&gt;
+        &lt;sys_created_by&gt;maint&lt;/sys_created_by&gt;
+        &lt;sys_created_on&gt;2020-11-20 22:34:14&lt;/sys_created_on&gt;
+        &lt;sys_id&gt;24eab86e30a02010f8779128c972bdbb&lt;/sys_id&gt;
+        &lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;
+        &lt;sys_updated_by&gt;maint&lt;/sys_updated_by&gt;
+        &lt;sys_updated_on&gt;2020-11-20 22:34:14&lt;/sys_updated_on&gt;
+        &lt;value&gt;waitlisted=fd-scripted&lt;/value&gt;
+        &lt;variable display_value="Fields"&gt;02d01916c31332002841b63b12d3aeee&lt;/variable&gt;
+    &lt;/sys_variable_value&gt;
+    &lt;sys_variable_value action="INSERT_OR_UPDATE"&gt;
+        &lt;document&gt;sys_hub_action_instance&lt;/document&gt;
+        &lt;document_key&gt;28eab86e30a02010f8779128c972bdb9&lt;/document_key&gt;
+        &lt;order&gt;50&lt;/order&gt;
+        &lt;sys_class_name&gt;sys_variable_value&lt;/sys_class_name&gt;
+        &lt;sys_created_by&gt;maint&lt;/sys_created_by&gt;
+        &lt;sys_created_on&gt;2020-11-20 22:34:14&lt;/sys_created_on&gt;
+        &lt;sys_id&gt;e4eab86e30a02010f8779128c972bdbb&lt;/sys_id&gt;
+        &lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;
+        &lt;sys_updated_by&gt;maint&lt;/sys_updated_by&gt;
+        &lt;sys_updated_on&gt;2020-11-20 22:34:14&lt;/sys_updated_on&gt;
+        &lt;value&gt;x_snc_event_reg_event&lt;/value&gt;
+        &lt;variable display_value="Table"&gt;b5d01916c31332002841b63b12d3aec9&lt;/variable&gt;
+    &lt;/sys_variable_value&gt;
+    &lt;sys_element_mapping action="delete_multiple" query="id=28eab86e30a02010f8779128c972bdb9"/&gt;
+    &lt;sys_element_mapping action="INSERT_OR_UPDATE"&gt;
+        &lt;field&gt;record&lt;/field&gt;
+        &lt;id&gt;28eab86e30a02010f8779128c972bdb9&lt;/id&gt;
+        &lt;sys_created_by&gt;maint&lt;/sys_created_by&gt;
+        &lt;sys_created_on&gt;2020-11-20 22:34:14&lt;/sys_created_on&gt;
+        &lt;sys_id&gt;eceab86e30a02010f8779128c972bdba&lt;/sys_id&gt;
+        &lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;
+        &lt;sys_updated_by&gt;maint&lt;/sys_updated_by&gt;
+        &lt;sys_updated_on&gt;2020-11-20 22:34:14&lt;/sys_updated_on&gt;
+        &lt;table&gt;var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1&lt;/table&gt;
+        &lt;value&gt;{{24a52dc0-a896-4062-a033-fc0b8da1e665.Record}}&lt;/value&gt;
+    &lt;/sys_element_mapping&gt;
+    &lt;sys_element_mapping action="INSERT_OR_UPDATE"&gt;
+        &lt;field&gt;table_name&lt;/field&gt;
+        &lt;id&gt;28eab86e30a02010f8779128c972bdb9&lt;/id&gt;
+        &lt;sys_created_by&gt;maint&lt;/sys_created_by&gt;
+        &lt;sys_created_on&gt;2020-11-20 22:34:14&lt;/sys_created_on&gt;
+        &lt;sys_id&gt;2ceab86e30a02010f8779128c972bdba&lt;/sys_id&gt;
+        &lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;
+        &lt;sys_updated_by&gt;maint&lt;/sys_updated_by&gt;
+        &lt;sys_updated_on&gt;2020-11-20 22:34:14&lt;/sys_updated_on&gt;
+        &lt;table&gt;var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1&lt;/table&gt;
+        &lt;value/&gt;
+    &lt;/sys_element_mapping&gt;
+    &lt;sys_element_mapping action="INSERT_OR_UPDATE"&gt;
+        &lt;field&gt;values&lt;/field&gt;
+        &lt;id&gt;28eab86e30a02010f8779128c972bdb9&lt;/id&gt;
+        &lt;sys_created_by&gt;maint&lt;/sys_created_by&gt;
+        &lt;sys_created_on&gt;2020-11-20 22:34:14&lt;/sys_created_on&gt;
+        &lt;sys_id&gt;a0eab86e30a02010f8779128c972bdbb&lt;/sys_id&gt;
+        &lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;
+        &lt;sys_updated_by&gt;maint&lt;/sys_updated_by&gt;
+        &lt;sys_updated_on&gt;2020-11-20 22:34:14&lt;/sys_updated_on&gt;
+        &lt;table&gt;var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1&lt;/table&gt;
+        &lt;value/&gt;
+    &lt;/sys_element_mapping&gt;
+    &lt;sys_hub_action_instance action="INSERT_OR_UPDATE"&gt;
+        &lt;action_inputs/&gt;
+        &lt;action_inputs/&gt;
+        &lt;action_type display_value="Look Up Record"&gt;9d09f99587003300663ca1bb36cb0ba3&lt;/action_type&gt;
+        &lt;action_type_parent display_value="Look Up Record"&gt;b93f42810b30030085c083eb37673a63&lt;/action_type_parent&gt;
+        &lt;comment&gt;Get event record&lt;/comment&gt;
+        &lt;compiled_snapshot&gt;9d09f99587003300663ca1bb36cb0ba3&lt;/compiled_snapshot&gt;
+        &lt;display_text/&gt;
+        &lt;flow display_value="Decrement Waitlisted by 1"&gt;e4eab86e30a02010f8779128c972bd81&lt;/flow&gt;
+        &lt;order&gt;1&lt;/order&gt;
+        &lt;parent_ui_id/&gt;
+        &lt;sys_class_name&gt;sys_hub_action_instance&lt;/sys_class_name&gt;
+        &lt;sys_created_by&gt;maint&lt;/sys_created_by&gt;
+        &lt;sys_created_on&gt;2020-11-20 22:34:13&lt;/sys_created_on&gt;
+        &lt;sys_id&gt;a4eab86e30a02010f8779128c972bdb2&lt;/sys_id&gt;
+        &lt;sys_mod_count&gt;2&lt;/sys_mod_count&gt;
+        &lt;sys_scope display_value="Event Registration"&gt;be85368c21be9010f87719341d33f026&lt;/sys_scope&gt;
+        &lt;sys_updated_by&gt;maint&lt;/sys_updated_by&gt;
+        &lt;sys_updated_on&gt;2020-11-20 22:34:14&lt;/sys_updated_on&gt;
+        &lt;ui_id&gt;24a52dc0-a896-4062-a033-fc0b8da1e665&lt;/ui_id&gt;
+    &lt;/sys_hub_action_instance&gt;
+    &lt;sys_variable_value action="delete_multiple" query="document_key=a4eab86e30a02010f8779128c972bdb2"/&gt;
+    &lt;sys_variable_value action="INSERT_OR_UPDATE"&gt;
+        &lt;document&gt;sys_hub_action_instance&lt;/document&gt;
+        &lt;document_key&gt;a4eab86e30a02010f8779128c972bdb2&lt;/document_key&gt;
+        &lt;order&gt;0&lt;/order&gt;
+        &lt;sys_class_name&gt;sys_variable_value&lt;/sys_class_name&gt;
+        &lt;sys_created_by&gt;maint&lt;/sys_created_by&gt;
+        &lt;sys_created_on&gt;2020-11-20 22:34:14&lt;/sys_created_on&gt;
+        &lt;sys_id&gt;a0eab86e30a02010f8779128c972bdb4&lt;/sys_id&gt;
+        &lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;
+        &lt;sys_updated_by&gt;maint&lt;/sys_updated_by&gt;
+        &lt;sys_updated_on&gt;2020-11-20 22:34:14&lt;/sys_updated_on&gt;
+        &lt;value&gt;x_snc_event_reg_event&lt;/value&gt;
+        &lt;variable display_value="Table"&gt;d909f99587003300663ca1bb36cb0ba4&lt;/variable&gt;
+    &lt;/sys_variable_value&gt;
+    &lt;sys_element_mapping action="delete_multiple" query="id=a4eab86e30a02010f8779128c972bdb2"/&gt;
+    &lt;sys_element_mapping action="INSERT_OR_UPDATE"&gt;
+        &lt;field&gt;conditions&lt;/field&gt;
+        &lt;id&gt;a4eab86e30a02010f8779128c972bdb2&lt;/id&gt;
+        &lt;sys_created_by&gt;maint&lt;/sys_created_by&gt;
+        &lt;sys_created_on&gt;2020-11-20 22:34:14&lt;/sys_created_on&gt;
+        &lt;sys_id&gt;6ceab86e30a02010f8779128c972bdb3&lt;/sys_id&gt;
+        &lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;
+        &lt;sys_updated_by&gt;maint&lt;/sys_updated_by&gt;
+        &lt;sys_updated_on&gt;2020-11-20 22:34:14&lt;/sys_updated_on&gt;
+        &lt;table&gt;var__m_sys_hub_action_input_9d09f99587003300663ca1bb36cb0ba3&lt;/table&gt;
+        &lt;value&gt;sys_id={{subflow.event_sysid}}&lt;/value&gt;
+    &lt;/sys_element_mapping&gt;
+    &lt;sys_element_mapping action="INSERT_OR_UPDATE"&gt;
+        &lt;field&gt;table&lt;/field&gt;
+        &lt;id&gt;a4eab86e30a02010f8779128c972bdb2&lt;/id&gt;
+        &lt;sys_created_by&gt;maint&lt;/sys_created_by&gt;
+        &lt;sys_created_on&gt;2020-11-20 22:34:14&lt;/sys_created_on&gt;
+        &lt;sys_id&gt;20eab86e30a02010f8779128c972bdb4&lt;/sys_id&gt;
+        &lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;
+        &lt;sys_updated_by&gt;maint&lt;/sys_updated_by&gt;
+        &lt;sys_updated_on&gt;2020-11-20 22:34:14&lt;/sys_updated_on&gt;
+        &lt;table&gt;var__m_sys_hub_action_input_9d09f99587003300663ca1bb36cb0ba3&lt;/table&gt;
+        &lt;value/&gt;
+    &lt;/sys_element_mapping&gt;
+    &lt;sys_flow_cat_variable_model action="delete_multiple" query="id=e4eab86e30a02010f8779128c972bd81^sys_idNOT INeceab86e30a02010f8779128c972bd81"/&gt;
+    &lt;sys_flow_cat_variable_model action="INSERT_OR_UPDATE"&gt;
+        &lt;id&gt;e4eab86e30a02010f8779128c972bd81&lt;/id&gt;
+        &lt;name&gt;Decrement Waitlisted by 1&lt;/name&gt;
+        &lt;sys_created_by&gt;maint&lt;/sys_created_by&gt;
+        &lt;sys_created_on&gt;2020-11-20 22:34:13&lt;/sys_created_on&gt;
+        &lt;sys_id&gt;eceab86e30a02010f8779128c972bd81&lt;/sys_id&gt;
+        &lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;
+        &lt;sys_scope/&gt;
+        &lt;sys_updated_by&gt;maint&lt;/sys_updated_by&gt;
+        &lt;sys_updated_on&gt;2020-11-20 22:34:13&lt;/sys_updated_on&gt;
+    &lt;/sys_flow_cat_variable_model&gt;
+    &lt;sys_hub_flow_input action="delete_multiple" query="model=e4eab86e30a02010f8779128c972bd81^sys_idNOT INe4eab86e30a02010f8779128c972bd8f"/&gt;
+    &lt;sys_hub_flow_input action="INSERT_OR_UPDATE"&gt;
+        &lt;active&gt;true&lt;/active&gt;
+        &lt;array&gt;false&lt;/array&gt;
+        &lt;array_denormalized&gt;false&lt;/array_denormalized&gt;
+        &lt;attributes&gt;element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=b07d76ed-3518-416a-a34a-ad4c21288b08&lt;/attributes&gt;
+        &lt;audit&gt;false&lt;/audit&gt;
+        &lt;calculation&gt;&lt;![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]&gt;&lt;/calculation&gt;
+        &lt;choice/&gt;
+        &lt;choice_field/&gt;
+        &lt;choice_table/&gt;
+        &lt;column_label/&gt;
+        &lt;comments/&gt;
+        &lt;create_roles/&gt;
+        &lt;default_value/&gt;
+        &lt;defaultsort/&gt;
+        &lt;delete_roles/&gt;
+        &lt;dependent/&gt;
+        &lt;dependent_on_field/&gt;
+        &lt;display&gt;false&lt;/display&gt;
+        &lt;dynamic_creation&gt;false&lt;/dynamic_creation&gt;
+        &lt;dynamic_creation_script/&gt;
+        &lt;dynamic_default_value/&gt;
+        &lt;dynamic_ref_qual/&gt;
+        &lt;element&gt;event_sysid&lt;/element&gt;
+        &lt;element_reference&gt;false&lt;/element_reference&gt;
+        &lt;foreign_database/&gt;
+        &lt;function_definition/&gt;
+        &lt;function_field&gt;false&lt;/function_field&gt;
+        &lt;help/&gt;
+        &lt;hint/&gt;
+        &lt;internal_type display_value="String"&gt;string&lt;/internal_type&gt;
+        &lt;label&gt;Event Record sys_id&lt;/label&gt;
+        &lt;mandatory&gt;true&lt;/mandatory&gt;
+        &lt;max_length&gt;8000&lt;/max_length&gt;
+        &lt;model display_value="Decrement Waitlisted by 1"&gt;e4eab86e30a02010f8779128c972bd81&lt;/model&gt;
+        &lt;model_id&gt;e4eab86e30a02010f8779128c972bd81&lt;/model_id&gt;
+        &lt;model_table&gt;sys_hub_flow_snapshot&lt;/model_table&gt;
+        &lt;name&gt;var__m_sys_hub_flow_input_e4eab86e30a02010f8779128c972bd81&lt;/name&gt;
+        &lt;next_element/&gt;
+        &lt;order&gt;1&lt;/order&gt;
+        &lt;primary&gt;false&lt;/primary&gt;
+        &lt;read_only&gt;false&lt;/read_only&gt;
+        &lt;read_roles/&gt;
+        &lt;reference/&gt;
+        &lt;reference_cascade_rule/&gt;
+        &lt;reference_floats&gt;false&lt;/reference_floats&gt;
+        &lt;reference_key/&gt;
+        &lt;reference_qual/&gt;
+        &lt;reference_qual_condition/&gt;
+        &lt;reference_type/&gt;
+        &lt;sizeclass/&gt;
+        &lt;spell_check&gt;false&lt;/spell_check&gt;
+        &lt;staged&gt;false&lt;/staged&gt;
+        &lt;sys_class_name&gt;sys_hub_flow_input&lt;/sys_class_name&gt;
+        &lt;sys_created_by&gt;maint&lt;/sys_created_by&gt;
+        &lt;sys_created_on&gt;2020-11-20 22:34:13&lt;/sys_created_on&gt;
+        &lt;sys_id&gt;e4eab86e30a02010f8779128c972bd8f&lt;/sys_id&gt;
+        &lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;
+        &lt;sys_name/&gt;
+        &lt;sys_package/&gt;
+        &lt;sys_policy/&gt;
+        &lt;sys_scope display_value="Event Registration"&gt;be85368c21be9010f87719341d33f026&lt;/sys_scope&gt;
+        &lt;sys_update_name/&gt;
+        &lt;sys_updated_by&gt;maint&lt;/sys_updated_by&gt;
+        &lt;sys_updated_on&gt;2020-11-20 22:34:13&lt;/sys_updated_on&gt;
+        &lt;table_reference&gt;false&lt;/table_reference&gt;
+        &lt;text_index&gt;false&lt;/text_index&gt;
+        &lt;unique&gt;false&lt;/unique&gt;
+        &lt;use_dependent_field&gt;false&lt;/use_dependent_field&gt;
+        &lt;use_dynamic_default&gt;false&lt;/use_dynamic_default&gt;
+        &lt;use_reference_qualifier&gt;simple&lt;/use_reference_qualifier&gt;
+        &lt;virtual&gt;false&lt;/virtual&gt;
+        &lt;widget/&gt;
+        &lt;write_roles/&gt;
+        &lt;xml_view&gt;false&lt;/xml_view&gt;
+    &lt;/sys_hub_flow_input&gt;
+    &lt;sys_hub_action_instance action="delete_multiple" query="flow=e4eab86e30a02010f8779128c972bd81^sys_idNOT IN28eab86e30a02010f8779128c972bdb9,a4eab86e30a02010f8779128c972bdb2"/&gt;
+    &lt;sys_hub_action_instance action="INSERT_OR_UPDATE"&gt;
+        &lt;action_inputs/&gt;
+        &lt;action_inputs/&gt;
+        &lt;action_type display_value="Update Record"&gt;f9d01dd2c31332002841b63b12d3aea1&lt;/action_type&gt;
+        &lt;action_type_parent display_value="Update Record"&gt;baf174c8c3c232002841b63b12d3aee4&lt;/action_type_parent&gt;
+        &lt;comment&gt;Decrement the Waitlisted field by 1&lt;/comment&gt;
+        &lt;compiled_snapshot&gt;f9d01dd2c31332002841b63b12d3aea1&lt;/compiled_snapshot&gt;
+        &lt;display_text/&gt;
+        &lt;flow display_value="Decrement Waitlisted by 1"&gt;e4eab86e30a02010f8779128c972bd81&lt;/flow&gt;
+        &lt;order&gt;2&lt;/order&gt;
+        &lt;parent_ui_id/&gt;
+        &lt;sys_class_name&gt;sys_hub_action_instance&lt;/sys_class_name&gt;
+        &lt;sys_created_by&gt;maint&lt;/sys_created_by&gt;
+        &lt;sys_created_on&gt;2020-11-20 22:34:14&lt;/sys_created_on&gt;
+        &lt;sys_id&gt;28eab86e30a02010f8779128c972bdb9&lt;/sys_id&gt;
+        &lt;sys_mod_count&gt;2&lt;/sys_mod_count&gt;
+        &lt;sys_scope display_value="Event Registration"&gt;be85368c21be9010f87719341d33f026&lt;/sys_scope&gt;
+        &lt;sys_updated_by&gt;maint&lt;/sys_updated_by&gt;
+        &lt;sys_updated_on&gt;2020-11-20 22:34:14&lt;/sys_updated_on&gt;
+        &lt;ui_id&gt;7e00e0b4-8fba-4d66-be02-2b93927af928&lt;/ui_id&gt;
+    &lt;/sys_hub_action_instance&gt;
+    &lt;sys_variable_value action="delete_multiple" query="document_key=28eab86e30a02010f8779128c972bdb9"/&gt;
+    &lt;sys_variable_value action="INSERT_OR_UPDATE"&gt;
+        &lt;document&gt;sys_hub_action_instance&lt;/document&gt;
+        &lt;document_key&gt;28eab86e30a02010f8779128c972bdb9&lt;/document_key&gt;
+        &lt;order&gt;100&lt;/order&gt;
+        &lt;sys_class_name&gt;sys_variable_value&lt;/sys_class_name&gt;
+        &lt;sys_created_by&gt;maint&lt;/sys_created_by&gt;
+        &lt;sys_created_on&gt;2020-11-20 22:34:14&lt;/sys_created_on&gt;
+        &lt;sys_id&gt;24eab86e30a02010f8779128c972bdbb&lt;/sys_id&gt;
+        &lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;
+        &lt;sys_updated_by&gt;maint&lt;/sys_updated_by&gt;
+        &lt;sys_updated_on&gt;2020-11-20 22:34:14&lt;/sys_updated_on&gt;
+        &lt;value&gt;waitlisted=fd-scripted&lt;/value&gt;
+        &lt;variable display_value="Fields"&gt;02d01916c31332002841b63b12d3aeee&lt;/variable&gt;
+    &lt;/sys_variable_value&gt;
+    &lt;sys_variable_value action="INSERT_OR_UPDATE"&gt;
+        &lt;document&gt;sys_hub_action_instance&lt;/document&gt;
+        &lt;document_key&gt;28eab86e30a02010f8779128c972bdb9&lt;/document_key&gt;
+        &lt;order&gt;50&lt;/order&gt;
+        &lt;sys_class_name&gt;sys_variable_value&lt;/sys_class_name&gt;
+        &lt;sys_created_by&gt;maint&lt;/sys_created_by&gt;
+        &lt;sys_created_on&gt;2020-11-20 22:34:14&lt;/sys_created_on&gt;
+        &lt;sys_id&gt;e4eab86e30a02010f8779128c972bdbb&lt;/sys_id&gt;
+        &lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;
+        &lt;sys_updated_by&gt;maint&lt;/sys_updated_by&gt;
+        &lt;sys_updated_on&gt;2020-11-20 22:34:14&lt;/sys_updated_on&gt;
+        &lt;value&gt;x_snc_event_reg_event&lt;/value&gt;
+        &lt;variable display_value="Table"&gt;b5d01916c31332002841b63b12d3aec9&lt;/variable&gt;
+    &lt;/sys_variable_value&gt;
+    &lt;sys_element_mapping action="delete_multiple" query="id=28eab86e30a02010f8779128c972bdb9"/&gt;
+    &lt;sys_element_mapping action="INSERT_OR_UPDATE"&gt;
+        &lt;field&gt;record&lt;/field&gt;
+        &lt;id&gt;28eab86e30a02010f8779128c972bdb9&lt;/id&gt;
+        &lt;sys_created_by&gt;maint&lt;/sys_created_by&gt;
+        &lt;sys_created_on&gt;2020-11-20 22:34:14&lt;/sys_created_on&gt;
+        &lt;sys_id&gt;eceab86e30a02010f8779128c972bdba&lt;/sys_id&gt;
+        &lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;
+        &lt;sys_updated_by&gt;maint&lt;/sys_updated_by&gt;
+        &lt;sys_updated_on&gt;2020-11-20 22:34:14&lt;/sys_updated_on&gt;
+        &lt;table&gt;var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1&lt;/table&gt;
+        &lt;value&gt;{{24a52dc0-a896-4062-a033-fc0b8da1e665.Record}}&lt;/value&gt;
+    &lt;/sys_element_mapping&gt;
+    &lt;sys_element_mapping action="INSERT_OR_UPDATE"&gt;
+        &lt;field&gt;table_name&lt;/field&gt;
+        &lt;id&gt;28eab86e30a02010f8779128c972bdb9&lt;/id&gt;
+        &lt;sys_created_by&gt;maint&lt;/sys_created_by&gt;
+        &lt;sys_created_on&gt;2020-11-20 22:34:14&lt;/sys_created_on&gt;
+        &lt;sys_id&gt;2ceab86e30a02010f8779128c972bdba&lt;/sys_id&gt;
+        &lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;
+        &lt;sys_updated_by&gt;maint&lt;/sys_updated_by&gt;
+        &lt;sys_updated_on&gt;2020-11-20 22:34:14&lt;/sys_updated_on&gt;
+        &lt;table&gt;var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1&lt;/table&gt;
+        &lt;value/&gt;
+    &lt;/sys_element_mapping&gt;
+    &lt;sys_element_mapping action="INSERT_OR_UPDATE"&gt;
+        &lt;field&gt;values&lt;/field&gt;
+        &lt;id&gt;28eab86e30a02010f8779128c972bdb9&lt;/id&gt;
+        &lt;sys_created_by&gt;maint&lt;/sys_created_by&gt;
+        &lt;sys_created_on&gt;2020-11-20 22:34:14&lt;/sys_created_on&gt;
+        &lt;sys_id&gt;a0eab86e30a02010f8779128c972bdbb&lt;/sys_id&gt;
+        &lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;
+        &lt;sys_updated_by&gt;maint&lt;/sys_updated_by&gt;
+        &lt;sys_updated_on&gt;2020-11-20 22:34:14&lt;/sys_updated_on&gt;
+        &lt;table&gt;var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1&lt;/table&gt;
+        &lt;value/&gt;
+    &lt;/sys_element_mapping&gt;
+    &lt;sys_hub_input_scripts action="delete_multiple" query="instance=28eab86e30a02010f8779128c972bdb9^sys_idNOT IN28eab86e30a02010f8779128c972bdba"/&gt;
+    &lt;sys_hub_input_scripts action="INSERT_OR_UPDATE"&gt;
+        &lt;active&gt;true&lt;/active&gt;
+        &lt;input_name&gt;values&lt;/input_name&gt;
+        &lt;instance&gt;28eab86e30a02010f8779128c972bdb9&lt;/instance&gt;
+        &lt;referenced_table&gt;sys_hub_action_instance&lt;/referenced_table&gt;
+        &lt;script&gt;{"waitlisted":{"scriptActive":true,"script":"/*\n**Access Flow/Action data using the fd_data object. Script must return a value.\n**example: var shortDesc \u003d fd_data.trigger.current.short_description;\n**return shortDesc;\n*/\nvar waitlistCount \u003d fd_data._1__look_up_record.record.waitlisted -1;\nreturn waitlistCount;","savedValue":""}}&lt;/script&gt;
+        &lt;sys_created_by&gt;maint&lt;/sys_created_by&gt;
+        &lt;sys_created_on&gt;2020-11-20 22:34:14&lt;/sys_created_on&gt;
+        &lt;sys_id&gt;28eab86e30a02010f8779128c972bdba&lt;/sys_id&gt;
+        &lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;
+        &lt;sys_updated_by&gt;maint&lt;/sys_updated_by&gt;
+        &lt;sys_updated_on&gt;2020-11-20 22:34:14&lt;/sys_updated_on&gt;
+    &lt;/sys_hub_input_scripts&gt;
+    &lt;sys_hub_action_instance action="INSERT_OR_UPDATE"&gt;
+        &lt;action_inputs/&gt;
+        &lt;action_inputs/&gt;
+        &lt;action_type display_value="Look Up Record"&gt;9d09f99587003300663ca1bb36cb0ba3&lt;/action_type&gt;
+        &lt;action_type_parent display_value="Look Up Record"&gt;b93f42810b30030085c083eb37673a63&lt;/action_type_parent&gt;
+        &lt;comment&gt;Get event record&lt;/comment&gt;
+        &lt;compiled_snapshot&gt;9d09f99587003300663ca1bb36cb0ba3&lt;/compiled_snapshot&gt;
+        &lt;display_text/&gt;
+        &lt;flow display_value="Decrement Waitlisted by 1"&gt;e4eab86e30a02010f8779128c972bd81&lt;/flow&gt;
+        &lt;order&gt;1&lt;/order&gt;
+        &lt;parent_ui_id/&gt;
+        &lt;sys_class_name&gt;sys_hub_action_instance&lt;/sys_class_name&gt;
+        &lt;sys_created_by&gt;maint&lt;/sys_created_by&gt;
+        &lt;sys_created_on&gt;2020-11-20 22:34:13&lt;/sys_created_on&gt;
+        &lt;sys_id&gt;a4eab86e30a02010f8779128c972bdb2&lt;/sys_id&gt;
+        &lt;sys_mod_count&gt;2&lt;/sys_mod_count&gt;
+        &lt;sys_scope display_value="Event Registration"&gt;be85368c21be9010f87719341d33f026&lt;/sys_scope&gt;
+        &lt;sys_updated_by&gt;maint&lt;/sys_updated_by&gt;
+        &lt;sys_updated_on&gt;2020-11-20 22:34:14&lt;/sys_updated_on&gt;
+        &lt;ui_id&gt;24a52dc0-a896-4062-a033-fc0b8da1e665&lt;/ui_id&gt;
+    &lt;/sys_hub_action_instance&gt;
+    &lt;sys_variable_value action="delete_multiple" query="document_key=a4eab86e30a02010f8779128c972bdb2"/&gt;
+    &lt;sys_variable_value action="INSERT_OR_UPDATE"&gt;
+        &lt;document&gt;sys_hub_action_instance&lt;/document&gt;
+        &lt;document_key&gt;a4eab86e30a02010f8779128c972bdb2&lt;/document_key&gt;
+        &lt;order&gt;0&lt;/order&gt;
+        &lt;sys_class_name&gt;sys_variable_value&lt;/sys_class_name&gt;
+        &lt;sys_created_by&gt;maint&lt;/sys_created_by&gt;
+        &lt;sys_created_on&gt;2020-11-20 22:34:14&lt;/sys_created_on&gt;
+        &lt;sys_id&gt;a0eab86e30a02010f8779128c972bdb4&lt;/sys_id&gt;
+        &lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;
+        &lt;sys_updated_by&gt;maint&lt;/sys_updated_by&gt;
+        &lt;sys_updated_on&gt;2020-11-20 22:34:14&lt;/sys_updated_on&gt;
+        &lt;value&gt;x_snc_event_reg_event&lt;/value&gt;
+        &lt;variable display_value="Table"&gt;d909f99587003300663ca1bb36cb0ba4&lt;/variable&gt;
+    &lt;/sys_variable_value&gt;
+    &lt;sys_element_mapping action="delete_multiple" query="id=a4eab86e30a02010f8779128c972bdb2"/&gt;
+    &lt;sys_element_mapping action="INSERT_OR_UPDATE"&gt;
+        &lt;field&gt;conditions&lt;/field&gt;
+        &lt;id&gt;a4eab86e30a02010f8779128c972bdb2&lt;/id&gt;
+        &lt;sys_created_by&gt;maint&lt;/sys_created_by&gt;
+        &lt;sys_created_on&gt;2020-11-20 22:34:14&lt;/sys_created_on&gt;
+        &lt;sys_id&gt;6ceab86e30a02010f8779128c972bdb3&lt;/sys_id&gt;
+        &lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;
+        &lt;sys_updated_by&gt;maint&lt;/sys_updated_by&gt;
+        &lt;sys_updated_on&gt;2020-11-20 22:34:14&lt;/sys_updated_on&gt;
+        &lt;table&gt;var__m_sys_hub_action_input_9d09f99587003300663ca1bb36cb0ba3&lt;/table&gt;
+        &lt;value&gt;sys_id={{subflow.event_sysid}}&lt;/value&gt;
+    &lt;/sys_element_mapping&gt;
+    &lt;sys_element_mapping action="INSERT_OR_UPDATE"&gt;
+        &lt;field&gt;table&lt;/field&gt;
+        &lt;id&gt;a4eab86e30a02010f8779128c972bdb2&lt;/id&gt;
+        &lt;sys_created_by&gt;maint&lt;/sys_created_by&gt;
+        &lt;sys_created_on&gt;2020-11-20 22:34:14&lt;/sys_created_on&gt;
+        &lt;sys_id&gt;20eab86e30a02010f8779128c972bdb4&lt;/sys_id&gt;
+        &lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;
+        &lt;sys_updated_by&gt;maint&lt;/sys_updated_by&gt;
+        &lt;sys_updated_on&gt;2020-11-20 22:34:14&lt;/sys_updated_on&gt;
+        &lt;table&gt;var__m_sys_hub_action_input_9d09f99587003300663ca1bb36cb0ba3&lt;/table&gt;
+        &lt;value/&gt;
+    &lt;/sys_element_mapping&gt;
+    &lt;sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_e4eab86e30a02010f8779128c972bd81^sys_idNOT INa0eab86e30a02010f8779128c972bda3"/&gt;
+    &lt;sys_documentation action="INSERT_OR_UPDATE"&gt;
+        &lt;element&gt;event_sysid&lt;/element&gt;
+        &lt;help/&gt;
+        &lt;hint/&gt;
+        &lt;label&gt;Event Record sys_id&lt;/label&gt;
+        &lt;language&gt;en&lt;/language&gt;
+        &lt;name&gt;var__m_sys_hub_flow_input_e4eab86e30a02010f8779128c972bd81&lt;/name&gt;
+        &lt;plural/&gt;
+        &lt;sys_class_name&gt;sys_documentation&lt;/sys_class_name&gt;
+        &lt;sys_created_by&gt;maint&lt;/sys_created_by&gt;
+        &lt;sys_created_on&gt;2020-11-20 22:34:13&lt;/sys_created_on&gt;
+        &lt;sys_id&gt;a0eab86e30a02010f8779128c972bda3&lt;/sys_id&gt;
+        &lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;
+        &lt;sys_name/&gt;
+        &lt;sys_package display_value="Event Registration" source="x_snc_event_reg"&gt;be85368c21be9010f87719341d33f026&lt;/sys_package&gt;
+        &lt;sys_policy/&gt;
+        &lt;sys_scope display_value="Event Registration"&gt;be85368c21be9010f87719341d33f026&lt;/sys_scope&gt;
+        &lt;sys_update_name/&gt;
+        &lt;sys_updated_by&gt;maint&lt;/sys_updated_by&gt;
+        &lt;sys_updated_on&gt;2020-11-20 22:34:13&lt;/sys_updated_on&gt;
+        &lt;url/&gt;
+        &lt;url_target/&gt;
+    &lt;/sys_documentation&gt;
+&lt;/record_update&gt;</payload>
+        <payload_hash>-1598807098</payload_hash>
+        <record_name>Decrement Waitlisted by 1</record_name>
+        <reverted_from/>
+        <source>d30417d305202010f877bcf2bca66858</source>
+        <source_table>sys_upgrade_history</source_table>
+        <state>previous</state>
+        <sys_created_by>maint</sys_created_by>
+        <sys_created_on>2020-11-23 17:39:30</sys_created_on>
+        <sys_id>e4349fd305202010f877bcf2bca668d9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>175f6306ec90000001</sys_recorded_at>
+        <sys_updated_by>maint</sys_updated_by>
+        <sys_updated_on>2020-11-23 17:39:30</sys_updated_on>
+        <type>Flow</type>
+        <update_guid>a4349fd34320201020137fac657256d9</update_guid>
+        <update_guid_history>a4349fd34320201020137fac657256d9:-1598807098</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>maint</sys_created_by>
+        <sys_created_on>2020-11-23 22:15:23</sys_created_on>
+        <sys_db_object display_value="" name="sys_hub_flow">sys_hub_flow</sys_db_object>
+        <sys_id>33f4f15757104720947d1d9f57870ae1</sys_id>
+        <sys_metadata>803a7c2e30a02010f8779128c972bd21</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Decrement Waitlisted by 1</sys_name>
+        <sys_package display_value="Event Registration" source="x_snc_event_reg">be85368c21be9010f87719341d33f026</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Event Registration">be85368c21be9010f87719341d33f026</sys_scope>
+        <sys_scope_delete display_value="">691f41bc7e7f484c84baeffb71321c59</sys_scope_delete>
+        <sys_update_name>sys_hub_flow_803a7c2e30a02010f8779128c972bd21</sys_update_name>
+        <sys_update_version display_value="sys_hub_flow_803a7c2e30a02010f8779128c972bd21">e4349fd305202010f877bcf2bca668d9</sys_update_version>
+        <sys_updated_by>maint</sys_updated_by>
+        <sys_updated_on>2020-11-23 22:15:23</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

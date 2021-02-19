@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_sg_icon">
+    <sys_sg_icon action="INSERT_OR_UPDATE">
+        <icon/>
+        <name>All Events Icon</name>
+        <sys_class_name>sys_sg_icon</sys_class_name>
+        <sys_created_by>Helena.Qin</sys_created_by>
+        <sys_created_on>2020-11-05 20:34:31</sys_created_on>
+        <sys_id>7cafc361db50e410d6a1f9631d96195f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>All Events Icon</sys_name>
+        <sys_package display_value="Event Registration" source="x_snc_event_reg">be85368c21be9010f87719341d33f026</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Event Registration">be85368c21be9010f87719341d33f026</sys_scope>
+        <sys_update_name>sys_sg_icon_7cafc361db50e410d6a1f9631d96195f</sys_update_name>
+        <sys_updated_by>Helena.Qin</sys_updated_by>
+        <sys_updated_on>2020-11-05 20:34:31</sys_updated_on>
+        <type>font</type>
+    </sys_sg_icon>
+</record_update>

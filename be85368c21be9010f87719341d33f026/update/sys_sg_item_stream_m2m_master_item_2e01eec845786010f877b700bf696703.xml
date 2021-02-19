@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_sg_item_stream_m2m_master_item">
+    <sys_sg_item_stream_m2m_master_item action="INSERT_OR_UPDATE">
+        <item_stream display_value="Attendees Item Stream">1a016ac845786010f877b700bf6967e1</item_stream>
+        <master_item display_value="Attendees Main Item">6e01aec845786010f877b700bf6967ee</master_item>
+        <sys_class_name>sys_sg_item_stream_m2m_master_item</sys_class_name>
+        <sys_created_by>Helena.Qin</sys_created_by>
+        <sys_created_on>2020-11-25 21:51:26</sys_created_on>
+        <sys_id>2e01eec845786010f877b700bf696703</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Event Registration" source="x_snc_event_reg">be85368c21be9010f87719341d33f026</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Event Registration">be85368c21be9010f87719341d33f026</sys_scope>
+        <sys_update_name>sys_sg_item_stream_m2m_master_item_2e01eec845786010f877b700bf696703</sys_update_name>
+        <sys_updated_by>Helena.Qin</sys_updated_by>
+        <sys_updated_on>2020-11-25 21:51:26</sys_updated_on>
+    </sys_sg_item_stream_m2m_master_item>
+</record_update>

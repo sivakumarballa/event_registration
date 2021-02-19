@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="current" label="Record" language="en" table="var__m_sys_hub_flow_input_5ac69caf05a02010f877bcf2bca66802">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>current</element>
+            <help/>
+            <hint/>
+            <label>Record</label>
+            <language>en</language>
+            <name>var__m_sys_hub_flow_input_5ac69caf05a02010f877bcf2bca66802</name>
+            <plural/>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>maint</sys_created_by>
+            <sys_created_on>2020-11-23 22:30:27</sys_created_on>
+            <sys_id>96c69caf05a02010f877bcf2bca66812</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Record</sys_name>
+            <sys_package display_value="Event Registration" source="x_snc_event_reg">be85368c21be9010f87719341d33f026</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Event Registration">be85368c21be9010f87719341d33f026</sys_scope>
+            <sys_update_name>sys_documentation_var__m_sys_hub_flow_input_5ac69caf05a02010f877bcf2bca66802_current_en</sys_update_name>
+            <sys_updated_by>maint</sys_updated_by>
+            <sys_updated_on>2020-11-23 22:30:27</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="variable" label="result" language="en" table="var__m_sys_hub_action_output_2a00691ddb54a410d6a1f9631d961925">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>variable</element>
+            <help/>
+            <hint/>
+            <label>result</label>
+            <language>en</language>
+            <name>var__m_sys_hub_action_output_2a00691ddb54a410d6a1f9631d961925</name>
+            <plural/>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>jared.prim</sys_created_by>
+            <sys_created_on>2020-11-04 18:10:26</sys_created_on>
+            <sys_id>d0152511db94a410d6a1f9631d9619aa</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>result</sys_name>
+            <sys_package display_value="Event Registration" source="x_snc_event_reg">be85368c21be9010f87719341d33f026</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Event Registration">be85368c21be9010f87719341d33f026</sys_scope>
+            <sys_update_name>sys_documentation_var__m_sys_hub_action_output_2a00691ddb54a410d6a1f9631d961925_variable_en</sys_update_name>
+            <sys_updated_by>jared.prim</sys_updated_by>
+            <sys_updated_on>2020-11-04 18:10:26</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

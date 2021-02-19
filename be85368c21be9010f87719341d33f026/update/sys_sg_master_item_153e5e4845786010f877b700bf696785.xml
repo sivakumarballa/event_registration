@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_sg_master_item">
+    <sys_sg_master_item action="INSERT_OR_UPDATE">
+        <condition_order/>
+        <datasource_table>x_snc_event_reg_event</datasource_table>
+        <datasource_table_condition/>
+        <embedded_screen display_value="My Events">153e5e4845786010f877b700bf69676c</embedded_screen>
+        <item_view/>
+        <name>My Events Main Item</name>
+        <sys_class_name>sys_sg_master_item</sys_class_name>
+        <sys_created_by>Helena.Qin</sys_created_by>
+        <sys_created_on>2020-11-25 21:39:04</sys_created_on>
+        <sys_id>153e5e4845786010f877b700bf696785</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>My Events Main Item</sys_name>
+        <sys_package display_value="Event Registration" source="x_snc_event_reg">be85368c21be9010f87719341d33f026</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Event Registration">be85368c21be9010f87719341d33f026</sys_scope>
+        <sys_update_name>sys_sg_master_item_153e5e4845786010f877b700bf696785</sys_update_name>
+        <sys_updated_by>Helena.Qin</sys_updated_by>
+        <sys_updated_on>2020-11-25 21:39:04</sys_updated_on>
+        <use_view_config>true</use_view_config>
+        <view_config display_value="My Events View Config">5d3e5e4845786010f877b700bf696782</view_config>
+    </sys_sg_master_item>
+</record_update>

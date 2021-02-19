@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ux_page_property">
+    <sys_ux_page_property action="DELETE">
+        <choices/>
+        <description>User preferences</description>
+        <name>chrome_preferences</name>
+        <page display_value="Base agent workspace">fcf11ba80f0210107d20409dc4767eb2</page>
+        <required_translations>[]</required_translations>
+        <route/>
+        <suffix/>
+        <sys_class_name>sys_ux_page_property</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-25 21:01:10</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>0e8596c045786010f877b700bf696714</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>chrome_preferences</sys_name>
+        <sys_package display_value="Event Registration" source="x_snc_event_reg">be85368c21be9010f87719341d33f026</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Event Registration">be85368c21be9010f87719341d33f026</sys_scope>
+        <sys_update_name>sys_ux_page_property_0e8596c045786010f877b700bf696714</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-25 21:01:10</sys_updated_on>
+        <type>json</type>
+        <unique_name>x_snc_event_reg.fcf11ba80f0210107d20409dc4767eb2.root.chrome_preferences</unique_name>
+        <value>[
+  "workspace.notifications.inbox.desktop",
+  "workspace.notifications.inbox.audio",
+  "workspace.notifications.chat.desktop",
+  "workspace.notifications.chat.audio",
+  "workspace.showRibbon",
+  "workspace.showAgentAssist",
+  "workspace.wrapListText",
+  "workspace.notifications.showPopups",
+  "workspace.notifications.showBadgeCount",
+  "rowcount",
+  "ts.match",
+  "glide.ui.accessibility",
+  "glide.ui.report.accessibility.patterns",
+  "glide.ui.date_format",
+  "list_export.deliveryType",
+  "list_export.orientationType",
+  "list_export.fileType",
+  "list_export.email"
+]</value>
+    </sys_ux_page_property>
+    <sys_translated_text action="DELETE" query="documentkey=0e8596c045786010f877b700bf696714"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Event Registration">be85368c21be9010f87719341d33f026</application>
+        <file_path/>
+        <instance_id>0ed82a1f30202010f3e091a8a60bfd20</instance_id>
+        <instance_name>glide_db_dump</instance_name>
+        <name>sys_ux_page_property_0e8596c045786010f877b700bf696714</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ux_page_property"><sys_ux_page_property action="INSERT_OR_UPDATE"><choices/><description>User preferences</description><name>chrome_preferences</name><page display_value="Base agent workspace">fcf11ba80f0210107d20409dc4767eb2</page><required_translations>[]</required_translations><route/><suffix/><sys_class_name>sys_ux_page_property</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2020-11-25 21:01:10</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>0e8596c045786010f877b700bf696714</sys_id><sys_mod_count>0</sys_mod_count><sys_name>chrome_preferences</sys_name><sys_package display_value="Event Registration" source="x_snc_event_reg">be85368c21be9010f87719341d33f026</sys_package><sys_policy/><sys_scope display_value="Event Registration">be85368c21be9010f87719341d33f026</sys_scope><sys_update_name>sys_ux_page_property_0e8596c045786010f877b700bf696714</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2020-11-25 21:01:10</sys_updated_on><type>json</type><unique_name>x_snc_event_reg.fcf11ba80f0210107d20409dc4767eb2.root.chrome_preferences</unique_name><value>[
+  "workspace.notifications.inbox.desktop",
+  "workspace.notifications.inbox.audio",
+  "workspace.notifications.chat.desktop",
+  "workspace.notifications.chat.audio",
+  "workspace.showRibbon",
+  "workspace.showAgentAssist",
+  "workspace.wrapListText",
+  "workspace.notifications.showPopups",
+  "workspace.notifications.showBadgeCount",
+  "rowcount",
+  "ts.match",
+  "glide.ui.accessibility",
+  "glide.ui.report.accessibility.patterns",
+  "glide.ui.date_format",
+  "list_export.deliveryType",
+  "list_export.orientationType",
+  "list_export.fileType",
+  "list_export.email"
+]</value></sys_ux_page_property><sys_translated_text action="delete_multiple" query="documentkey=0e8596c045786010f877b700bf696714"/></record_update>]]></payload>
+        <payload_hash>-369142195</payload_hash>
+        <record_name>chrome_preferences</record_name>
+        <reverted_from/>
+        <source>61c78a8445386010f877b700bf6967e4</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-25 21:01:10</sys_created_on>
+        <sys_id>c68596c045786010f877b700bf696716</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1760135c7790000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-25 21:01:10</sys_updated_on>
+        <type>UX Page Property</type>
+        <update_guid>028596c066786010b5086fd35a112b16</update_guid>
+        <update_guid_history>028596c066786010b5086fd35a112b16:-369142195</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-25 21:02:19</sys_created_on>
+        <sys_db_object display_value="" name="sys_ux_page_property">sys_ux_page_property</sys_db_object>
+        <sys_id>26d1ad7fcf67420c941abf4d2b078d29</sys_id>
+        <sys_metadata>0e8596c045786010f877b700bf696714</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>chrome_preferences</sys_name>
+        <sys_package display_value="Event Registration" source="x_snc_event_reg">be85368c21be9010f87719341d33f026</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Event Registration">be85368c21be9010f87719341d33f026</sys_scope>
+        <sys_scope_delete display_value="">691f41bc7e7f484c84baeffb71321c59</sys_scope_delete>
+        <sys_update_name>sys_ux_page_property_0e8596c045786010f877b700bf696714</sys_update_name>
+        <sys_update_version display_value="sys_ux_page_property_0e8596c045786010f877b700bf696714">c68596c045786010f877b700bf696716</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-25 21:02:19</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

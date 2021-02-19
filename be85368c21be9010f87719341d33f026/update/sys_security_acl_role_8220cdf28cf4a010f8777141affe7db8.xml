@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role">
+    <sys_security_acl_role action="INSERT_OR_UPDATE">
+        <sys_class_name>sys_security_acl_role</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-12-04 03:51:36</sys_created_on>
+        <sys_id>8220cdf28cf4a010f8777141affe7db8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>.x_snc_event_reg.organizer</sys_name>
+        <sys_package display_value="Event Registration" source="x_snc_event_reg">be85368c21be9010f87719341d33f026</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Event Registration">be85368c21be9010f87719341d33f026</sys_scope>
+        <sys_security_acl display_value="fbcfb8fa8cb4a010f8777141affe7db8">5910c1368cf4a010f8777141affe7dc5</sys_security_acl>
+        <sys_update_name>sys_security_acl_role_8220cdf28cf4a010f8777141affe7db8</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-12-04 03:51:36</sys_updated_on>
+        <sys_user_role display_value="x_snc_event_reg.organizer" name="x_snc_event_reg.organizer">4eb5b68c21be9010f87719341d33f0ce</sys_user_role>
+        <transaction_id/>
+    </sys_security_acl_role>
+</record_update>

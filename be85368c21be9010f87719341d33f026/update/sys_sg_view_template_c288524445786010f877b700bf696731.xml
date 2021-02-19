@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_sg_view_template">
+    <sys_sg_view_template action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <description/>
+        <name>Event template</name>
+        <preview_image/>
+        <root_view_attrs_json/>
+        <sys_class_name>sys_sg_view_template</sys_class_name>
+        <sys_created_by>Helena.Qin</sys_created_by>
+        <sys_created_on>2020-11-25 21:14:31</sys_created_on>
+        <sys_id>c288524445786010f877b700bf696731</sys_id>
+        <sys_mod_count>18</sys_mod_count>
+        <sys_name>Event template</sys_name>
+        <sys_package display_value="Event Registration" source="x_snc_event_reg">be85368c21be9010f87719341d33f026</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Event Registration">be85368c21be9010f87719341d33f026</sys_scope>
+        <sys_update_name>sys_sg_view_template_c288524445786010f877b700bf696731</sys_update_name>
+        <sys_updated_by>Helena.Qin</sys_updated_by>
+        <sys_updated_on>2020-11-25 22:51:55</sys_updated_on>
+        <template_json>{"Type":"ViewGroup","Margin":{"Top":15,"Bottom":17},"Orientation":"Vertical","Alignment":"Left","Distribution":"Auto","Id":"Root","Children":[{"Type":"ViewGroup","Orientation":"Horizontal","Alignment":"Stretch","Distribution":"Auto","Children":[{"Type":"ViewGroup","Orientation":"Horizontal","Alignment":"Stretch","Distribution":"Auto","Children":[{"Type":"Text","TextColor":"#637274","Font":{"Weight":"regular","Size":14},"MaxLines":1,"textStyle":"custom","TextAlignment":"Left","CellId":"text_12","Id":"text_12"}]},{"Type":"ViewGroup","Orientation":"Vertical","Alignment":"Right","Distribution":"Equal","Children":[{"Type":"Text","TextColor":"#637274","Font":{"Weight":"regular","Size":14},"MaxLines":1,"textStyle":"custom","CellId":"text_03","Id":"text_03","TextAlignment":"Right","Margin":{}}]}]},{"Type":"ViewGroup","Orientation":"Horizontal","Alignment":"Stretch","Distribution":"Auto","Children":[{"Type":"ViewGroup","Orientation":"Horizontal","Alignment":"Stretch","Distribution":"Auto","Children":[{"Type":"Image","Scaling":"Fill","Height":80,"Width":80,"CornerRadius":40,"Margin":{"Right":8},"CellId":"image_01","Id":"image_01"},{"Type":"ViewGroup","Orientation":"Vertical","Alignment":"Stretch","Distribution":"Auto","Margin":{"Left":0},"Children":[{"Type":"Text","TextColor":"#333e3f","Font":{"Weight":"regular","Size":16},"MaxLines":2,"textStyle":"custom","CellId":"text_06","Id":"text_06","Margin":{"Bottom":10}},{"Type":"Text","TextColor":"#293E40","Font":{"Weight":"regular","Size":13},"MaxLines":1,"textStyle":"default","CellId":"text_10","Id":"text_10"},{"Type":"Text","TextColor":"#293E40","Font":{"Weight":"regular","Size":13},"MaxLines":1,"textStyle":"default","CellId":"text_11","Id":"text_11"}]}]}]}]}</template_json>
+    </sys_sg_view_template>
+    <sys_translated_text action="delete_multiple" query="documentkey=c288524445786010f877b700bf696731"/>
+</record_update>

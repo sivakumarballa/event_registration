@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="m2m_app_config_theme">
+    <m2m_app_config_theme action="DELETE">
+        <applicability/>
+        <order>0</order>
+        <sys_class_name>m2m_app_config_theme</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-25 21:09:17</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>0567160445786010f877b700bf69678b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package display_value="Event Registration" source="x_snc_event_reg">be85368c21be9010f87719341d33f026</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Event Registration">be85368c21be9010f87719341d33f026</sys_scope>
+        <sys_update_name>m2m_app_config_theme_0567160445786010f877b700bf69678b</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-25 21:09:17</sys_updated_on>
+        <theme display_value="Base Agent Workspace theme">c012213bc39b10101d590cf06e40dd32</theme>
+        <ux_app_configuration display_value="Event Reg Panel">59449a8045786010f877b700bf696701</ux_app_configuration>
+    </m2m_app_config_theme>
+<sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Event Registration">be85368c21be9010f87719341d33f026</application>
+        <file_path/>
+        <instance_id>d638292d1c3020101d9a9458d5e9e897</instance_id>
+        <instance_name>glide_db_dump</instance_name>
+        <name>m2m_app_config_theme_0567160445786010f877b700bf69678b</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="m2m_app_config_theme">
+    <m2m_app_config_theme action="INSERT_OR_UPDATE">
+        <applicability/>
+        <order>0</order>
+        <sys_class_name>m2m_app_config_theme</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-25 21:09:17</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>0567160445786010f877b700bf69678b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package display_value="Event Registration" source="x_snc_event_reg">be85368c21be9010f87719341d33f026</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Event Registration">be85368c21be9010f87719341d33f026</sys_scope>
+        <sys_update_name>m2m_app_config_theme_0567160445786010f877b700bf69678b</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-25 21:09:17</sys_updated_on>
+        <theme display_value="Base Agent Workspace theme">c012213bc39b10101d590cf06e40dd32</theme>
+        <ux_app_configuration display_value="Event Reg Panel">59449a8045786010f877b700bf696701</ux_app_configuration>
+    </m2m_app_config_theme>
+</record_update>]]></payload>
+        <payload_hash>170070172</payload_hash>
+        <record_name/>
+        <reverted_from/>
+        <source>644f3fa98c302010f8777141affe7dc2</source>
+        <source_table>sys_upgrade_history</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-30 20:34:13</sys_created_on>
+        <sys_id>405f33e98c302010f8777141affe7df9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1761adce6f90000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-30 20:34:13</sys_updated_on>
+        <type>UX App Theme</type>
+        <update_guid>005f33e9dc302010bbd41f0d9d0fcef9</update_guid>
+        <update_guid_history>005f33e9dc302010bbd41f0d9d0fcef9:170070172</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="">c56afbbe8c7ca010f8777141affe7de3</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-12-04 17:25:07</sys_created_on>
+        <sys_db_object display_value="" name="m2m_app_config_theme">m2m_app_config_theme</sys_db_object>
+        <sys_id>0e6f0159aa8e4f61a52da32867c7dd21</sys_id>
+        <sys_metadata>0567160445786010f877b700bf69678b</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Event Registration" source="x_snc_event_reg">be85368c21be9010f87719341d33f026</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Event Registration">be85368c21be9010f87719341d33f026</sys_scope>
+        <sys_scope_delete display_value="">691f41bc7e7f484c84baeffb71321c59</sys_scope_delete>
+        <sys_update_name>m2m_app_config_theme_0567160445786010f877b700bf69678b</sys_update_name>
+        <sys_update_version display_value="m2m_app_config_theme_0567160445786010f877b700bf69678b">405f33e98c302010f8777141affe7df9</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-12-04 17:25:07</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

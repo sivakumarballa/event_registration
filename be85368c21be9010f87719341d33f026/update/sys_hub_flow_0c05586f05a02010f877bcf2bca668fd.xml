@@ -1,0 +1,1889 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+    <sys_hub_flow action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <compiler_build>glide-trackappcreator-03-10-2015</compiler_build>
+        <copied_from/>
+        <copied_from_name/>
+        <description>Updates the Event Attendee and Waitlisted counts</description>
+        <internal_name>update_event_counts</internal_name>
+        <label_cache>[{"name":"c8d1abc9-6afd-43ed-9ce9-7770564455a6.context","label":"2➛Context","reference":"sys_flow_context","reference_display":"Flow engine context","type":"reference","base_type":"reference","attributes":{}},{"name":"165e4492-da84-4592-ab10-415b1db69639.context","label":"4➛Context","reference":"sys_flow_context","reference_display":"Flow engine context","type":"reference","base_type":"reference","attributes":{}},{"name":"6f914dc7-fc89-4c4a-9e7f-4dc3902f124c.Records","label":"1➛Attendee Records","reference":"x_snc_event_reg_attendee","reference_display":"Attendee","type":"records","base_type":"records","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"6f914dc7-fc89-4c4a-9e7f-4dc3902f124c.Table","label":"1➛Attendee Table","reference":"x_snc_event_reg_attendee","reference_display":"Attendee","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"6f914dc7-fc89-4c4a-9e7f-4dc3902f124c.Count","label":"1➛Count","reference_display":"Count","type":"integer","base_type":"integer","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"Created or Updated_1.current.event_name.sys_id","label":"Trigger➛Attendee Record➛Event Name➛Sys ID","reference":"","reference_display":"Sys ID","type":"GUID","base_type":"GUID","parent_table_name":"x_snc_event_reg_event","column_name":"sys_id"},{"name":"c3a4899a-1b3b-41ba-b86c-ed0b6c93d7b0.context","label":"2➛Context","reference":"sys_flow_context","reference_display":"Flow engine context","type":"reference","base_type":"reference","attributes":{}},{"name":"43de3cec-3401-4818-b7d5-0e891d9b401a.Records","label":"3➛Attendee Records","reference":"x_snc_event_reg_attendee","reference_display":"Attendee","type":"records","base_type":"records","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"43de3cec-3401-4818-b7d5-0e891d9b401a.Table","label":"3➛Attendee Table","reference":"x_snc_event_reg_attendee","reference_display":"Attendee","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"43de3cec-3401-4818-b7d5-0e891d9b401a.Count","label":"3➛Count","reference_display":"Count","type":"integer","base_type":"integer","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"Created or Updated_1.current.event_name","label":"Trigger➛Attendee Record➛Event Name","reference":"x_snc_event_reg_event","reference_display":"Event","type":"reference","base_type":"reference","parent_table_name":"x_snc_event_reg_attendee","column_name":"event_name"}]</label_cache>
+        <latest_snapshot>e7cd01ca8c3c2010f8777141affe7d56</latest_snapshot>
+        <master_snapshot>5ac69caf05a02010f877bcf2bca66802</master_snapshot>
+        <name>Update Event Counts</name>
+        <natlang/>
+        <outputs/>
+        <remote_trigger_id>e18dc98a8c3c2010f8777141affe7dca</remote_trigger_id>
+        <run_as>system</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>maint</sys_created_by>
+        <sys_created_on>2020-11-23 22:22:39</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>0c05586f05a02010f877bcf2bca668fd</sys_id>
+        <sys_mod_count>17</sys_mod_count>
+        <sys_name>Update Event Counts</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Event Registration" source="x_snc_event_reg">be85368c21be9010f87719341d33f026</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Event Registration">be85368c21be9010f87719341d33f026</sys_scope>
+        <sys_update_name>sys_hub_flow_0c05586f05a02010f877bcf2bca668fd</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-12-01 20:54:26</sys_updated_on>
+        <type>flow</type>
+    </sys_hub_flow>
+    <sys_translated_text action="delete_multiple" query="documentkey=0c05586f05a02010f877bcf2bca668fd"/>
+    <sys_variable_value action="delete_multiple" query="document_key=0c05586f05a02010f877bcf2bca668fd"/>
+    <sys_flow_record_trigger action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <condition table="x_snc_event_reg_attendee">attendee_statusVALCHANGES^attendee_statusINconfirmed,waitlisted,cancelled<item display_value="-- None --" endquery="false" field="attendee_status" goto="false" newquery="false" operator="VALCHANGES" or="false" value=""/>
+            <item display_value="confirmed,waitlisted,cancelled" endquery="false" field="attendee_status" goto="false" newquery="false" operator="IN" or="false" value="confirmed,waitlisted,cancelled"/>
+        </condition>
+        <name/>
+        <on_delete>false</on_delete>
+        <on_insert>true</on_insert>
+        <on_update>true</on_update>
+        <run_flow_in>background</run_flow_in>
+        <run_on_extended>false</run_on_extended>
+        <run_when_setting>both</run_when_setting>
+        <run_when_user_list/>
+        <run_when_user_setting>any</run_when_user_setting>
+        <sys_class_name>sys_flow_record_trigger</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-12-01 20:54:25</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>e18dc98a8c3c2010f8777141affe7dca</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope display_value="Event Registration">be85368c21be9010f87719341d33f026</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-12-01 20:54:25</sys_updated_on>
+        <table>x_snc_event_reg_attendee</table>
+    </sys_flow_record_trigger>
+    <sys_trigger_runner_mapping action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <data>{"table":"sys_trigger_runner_mapping","id":"ad8dc98a8c3c2010f8777141affe7dca","name":"trigger_runner","type":"java.util.Collections$UnmodifiableMap"}</data>
+        <identifier>0c05586f05a02010f877bcf2bca668fd</identifier>
+        <runner>FDTriggerRunner</runner>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-12-01 20:54:25</sys_created_on>
+        <sys_id>ad8dc98a8c3c2010f8777141affe7dca</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-12-01 20:54:25</sys_updated_on>
+        <trigger display_value="">e18dc98a8c3c2010f8777141affe7dca</trigger>
+    </sys_trigger_runner_mapping>
+    <sys_json_chunk action="INSERT_OR_UPDATE">
+        <data>H4sIAAAAAAAAAGXLWwqAIBBA0b3MdytwKxGD5fggGUFHLKK99yAo6Pce7ga5MtqYGgYGBaOeZpdTZQPdTc0TYy2UMYYioPrh0wuJBHbXl8T/jpc1r48mRlqE2JA5u9WxEOwH5v2lw4YAAAA=</data>
+        <document_id>ad8dc98a8c3c2010f8777141affe7dca</document_id>
+        <field>trigger_runner</field>
+        <length>144</length>
+        <position>0</position>
+        <source_table>sys_trigger_runner_mapping</source_table>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-12-01 20:54:25</sys_created_on>
+        <sys_id>658dc98a8c3c2010f8777141affe7dcb</sys_id>
+    </sys_json_chunk>
+    <sys_trigger_runner_mapping action="delete_multiple" query="identifier=0c05586f05a02010f877bcf2bca668fd^sys_idNOT INad8dc98a8c3c2010f8777141affe7dca"/>
+    <sys_hub_trigger_instance action="delete_multiple" query="flow=0c05586f05a02010f877bcf2bca668fd^sys_idNOT IN00c61caf05a02010f877bcf2bca66816"/>
+    <sys_hub_trigger_instance action="INSERT_OR_UPDATE">
+        <comment>On Attendee Status change</comment>
+        <display_text/>
+        <flow display_value="Update Event Counts">0c05586f05a02010f877bcf2bca668fd</flow>
+        <name>Created or Updated</name>
+        <remote_sys_id/>
+        <sys_created_by>maint</sys_created_by>
+        <sys_created_on>2020-11-23 22:30:17</sys_created_on>
+        <sys_id>00c61caf05a02010f877bcf2bca66816</sys_id>
+        <sys_mod_count>16</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-12-01 20:54:26</sys_updated_on>
+        <trigger_definition display_value="Created or Updated">a45d9180c32222002841b63b12d3aea7</trigger_definition>
+        <trigger_inputs/>
+        <trigger_outputs/>
+        <trigger_type>record_create_or_update</trigger_type>
+    </sys_hub_trigger_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=00c61caf05a02010f877bcf2bca66816"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>00c61caf05a02010f877bcf2bca66816</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>maint</sys_created_by>
+        <sys_created_on>2020-11-23 22:30:18</sys_created_on>
+        <sys_id>04c61caf05a02010f877bcf2bca66817</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>maint</sys_updated_by>
+        <sys_updated_on>2020-11-23 22:30:18</sys_updated_on>
+        <value>x_snc_event_reg_attendee</value>
+        <variable display_value="Table">cf1e1980c32222002841b63b12d3aea0</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>00c61caf05a02010f877bcf2bca66816</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>maint</sys_created_by>
+        <sys_created_on>2020-11-23 22:30:18</sys_created_on>
+        <sys_id>40c61caf05a02010f877bcf2bca66817</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>maint</sys_updated_by>
+        <sys_updated_on>2020-11-23 22:35:35</sys_updated_on>
+        <value>attendee_statusVALCHANGES^attendee_statusINconfirmed,waitlisted,cancelled</value>
+        <variable display_value="Condition">707dd180c32222002841b63b12d3aecb</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>00c61caf05a02010f877bcf2bca66816</document_key>
+        <order>200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>maint</sys_created_by>
+        <sys_created_on>2020-11-23 22:30:18</sys_created_on>
+        <sys_id>8cc61caf05a02010f877bcf2bca66816</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>maint</sys_updated_by>
+        <sys_updated_on>2020-11-23 22:30:18</sys_updated_on>
+        <value>every</value>
+        <variable display_value="Run Trigger">2b9def50c31132002841b63b12d3ae5b</variable>
+    </sys_variable_value>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=0c05586f05a02010f877bcf2bca668fd^sys_idNOT INc405586f05a02010f877bcf2bca668fe"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>0c05586f05a02010f877bcf2bca668fd</id>
+        <name>Update Event Counts</name>
+        <sys_created_by>maint</sys_created_by>
+        <sys_created_on>2020-11-23 22:22:39</sys_created_on>
+        <sys_id>c405586f05a02010f877bcf2bca668fe</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>maint</sys_updated_by>
+        <sys_updated_on>2020-11-23 22:22:39</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_hub_flow_input action="delete_multiple" query="model=0c05586f05a02010f877bcf2bca668fd^sys_idNOT IN84c61caf05a02010f877bcf2bca6680f,c0c61caf05a02010f877bcf2bca6680a,ccc61caf05a02010f877bcf2bca66804"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>table_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">table_name</internal_type>
+        <label>Table Name</label>
+        <mandatory>false</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Update Event Counts">0c05586f05a02010f877bcf2bca668fd</model>
+        <model_id>0c05586f05a02010f877bcf2bca668fd</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_0c05586f05a02010f877bcf2bca668fd</name>
+        <next_element/>
+        <order>101</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>maint</sys_created_by>
+        <sys_created_on>2020-11-23 22:30:17</sys_created_on>
+        <sys_id>84c61caf05a02010f877bcf2bca6680f</sys_id>
+        <sys_mod_count>9</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Event Registration">be85368c21be9010f87719341d33f026</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-12-01 20:54:26</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>child_label=FDChangeDetails,child_name=FDChangeDetails,child_type=object,child_type_label=Object,co_type_name=FD418d898a523c20102da76bc51b8603fa,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,pwd2droppable=true,uiType=array.object,uiTypeLabel=Array.Object</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>changed_fields</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Changed Fields</label>
+        <mandatory>false</mandatory>
+        <max_length>4000</max_length>
+        <model display_value="Update Event Counts">0c05586f05a02010f877bcf2bca668fd</model>
+        <model_id>0c05586f05a02010f877bcf2bca668fd</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_0c05586f05a02010f877bcf2bca668fd</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>maint</sys_created_by>
+        <sys_created_on>2020-11-23 22:30:17</sys_created_on>
+        <sys_id>c0c61caf05a02010f877bcf2bca6680a</sys_id>
+        <sys_mod_count>15</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Event Registration">be85368c21be9010f87719341d33f026</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-12-01 20:54:26</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=document_id</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent>table_name</dependent>
+        <dependent_on_field>table_name</dependent_on_field>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>current</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">document_id</internal_type>
+        <label>Record</label>
+        <mandatory>true</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Update Event Counts">0c05586f05a02010f877bcf2bca668fd</model>
+        <model_id>0c05586f05a02010f877bcf2bca668fd</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_0c05586f05a02010f877bcf2bca668fd</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>maint</sys_created_by>
+        <sys_created_on>2020-11-23 22:30:17</sys_created_on>
+        <sys_id>ccc61caf05a02010f877bcf2bca66804</sys_id>
+        <sys_mod_count>9</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Event Registration">be85368c21be9010f87719341d33f026</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-12-01 20:54:26</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_instance action="delete_multiple" query="flow=0c05586f05a02010f877bcf2bca668fd^sys_idNOT IN08c61caf05a02010f877bcf2bca6681e,54c61caf05a02010f877bcf2bca66845"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Look Up Records">43400a1587003300663ca1bb36cb0b4b</action_type>
+        <action_type_parent/>
+        <comment>Look up all confirmed attendees</comment>
+        <compiled_snapshot>43400a1587003300663ca1bb36cb0b4b</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Update Event Counts">0c05586f05a02010f877bcf2bca668fd</flow>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>maint</sys_created_by>
+        <sys_created_on>2020-11-23 22:30:18</sys_created_on>
+        <sys_id>08c61caf05a02010f877bcf2bca6681e</sys_id>
+        <sys_mod_count>44</sys_mod_count>
+        <sys_scope display_value="Event Registration">be85368c21be9010f87719341d33f026</sys_scope>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2020-12-01 20:55:39</sys_updated_on>
+        <ui_id>6f914dc7-fc89-4c4a-9e7f-4dc3902f124c</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=08c61caf05a02010f877bcf2bca6681e"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>08c61caf05a02010f877bcf2bca6681e</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>maint</sys_created_by>
+        <sys_created_on>2020-11-23 22:30:18</sys_created_on>
+        <sys_id>00c61caf05a02010f877bcf2bca66821</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>maint</sys_updated_by>
+        <sys_updated_on>2020-11-23 22:30:18</sys_updated_on>
+        <value>x_snc_event_reg_attendee</value>
+        <variable display_value="Table">8f400a1587003300663ca1bb36cb0b4b</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>08c61caf05a02010f877bcf2bca6681e</document_key>
+        <order>4</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>maint</sys_created_by>
+        <sys_created_on>2020-11-23 22:30:18</sys_created_on>
+        <sys_id>4cc61caf05a02010f877bcf2bca66820</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>maint</sys_updated_by>
+        <sys_updated_on>2020-11-23 22:30:18</sys_updated_on>
+        <value>10000</value>
+        <variable display_value="Max Results">4f400a1587003300663ca1bb36cb0b61</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=08c61caf05a02010f877bcf2bca6681e"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>conditions</field>
+        <id>08c61caf05a02010f877bcf2bca6681e</id>
+        <sys_created_by>maint</sys_created_by>
+        <sys_created_on>2020-11-23 22:30:18</sys_created_on>
+        <sys_id>08c61caf05a02010f877bcf2bca66820</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>maint</sys_updated_by>
+        <sys_updated_on>2020-11-23 22:32:40</sys_updated_on>
+        <table>var__m_sys_hub_action_input_43400a1587003300663ca1bb36cb0b4b</table>
+        <value>attendee_status=confirmed^event_name={{Created or Updated_1.current.event_name.sys_id}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>max_results</field>
+        <id>08c61caf05a02010f877bcf2bca6681e</id>
+        <sys_created_by>maint</sys_created_by>
+        <sys_created_on>2020-11-23 22:30:18</sys_created_on>
+        <sys_id>44c61caf05a02010f877bcf2bca66820</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>maint</sys_updated_by>
+        <sys_updated_on>2020-11-23 22:30:18</sys_updated_on>
+        <table>var__m_sys_hub_action_input_43400a1587003300663ca1bb36cb0b4b</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table</field>
+        <id>08c61caf05a02010f877bcf2bca6681e</id>
+        <sys_created_by>maint</sys_created_by>
+        <sys_created_on>2020-11-23 22:30:18</sys_created_on>
+        <sys_id>c8c61caf05a02010f877bcf2bca66820</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>maint</sys_updated_by>
+        <sys_updated_on>2020-11-23 22:30:18</sys_updated_on>
+        <table>var__m_sys_hub_action_input_43400a1587003300663ca1bb36cb0b4b</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Look Up Records">43400a1587003300663ca1bb36cb0b4b</action_type>
+        <action_type_parent/>
+        <comment>Look up all waitlisted attendees</comment>
+        <compiled_snapshot>43400a1587003300663ca1bb36cb0b4b</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Update Event Counts">0c05586f05a02010f877bcf2bca668fd</flow>
+        <order>3</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>maint</sys_created_by>
+        <sys_created_on>2020-11-23 22:30:18</sys_created_on>
+        <sys_id>54c61caf05a02010f877bcf2bca66845</sys_id>
+        <sys_mod_count>44</sys_mod_count>
+        <sys_scope display_value="Event Registration">be85368c21be9010f87719341d33f026</sys_scope>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2020-12-01 20:55:39</sys_updated_on>
+        <ui_id>43de3cec-3401-4818-b7d5-0e891d9b401a</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=54c61caf05a02010f877bcf2bca66845"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>54c61caf05a02010f877bcf2bca66845</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>maint</sys_created_by>
+        <sys_created_on>2020-11-23 22:30:18</sys_created_on>
+        <sys_id>dcc61caf05a02010f877bcf2bca66846</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>maint</sys_updated_by>
+        <sys_updated_on>2020-11-23 22:30:18</sys_updated_on>
+        <value>x_snc_event_reg_attendee</value>
+        <variable display_value="Table">8f400a1587003300663ca1bb36cb0b4b</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=54c61caf05a02010f877bcf2bca66845"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>conditions</field>
+        <id>54c61caf05a02010f877bcf2bca66845</id>
+        <sys_created_by>maint</sys_created_by>
+        <sys_created_on>2020-11-23 22:30:18</sys_created_on>
+        <sys_id>98c61caf05a02010f877bcf2bca66846</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>maint</sys_updated_by>
+        <sys_updated_on>2020-11-23 22:32:40</sys_updated_on>
+        <table>var__m_sys_hub_action_input_43400a1587003300663ca1bb36cb0b4b</table>
+        <value>attendee_status=waitlisted^event_name={{Created or Updated_1.current.event_name.sys_id}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table</field>
+        <id>54c61caf05a02010f877bcf2bca66845</id>
+        <sys_created_by>maint</sys_created_by>
+        <sys_created_on>2020-11-23 22:30:18</sys_created_on>
+        <sys_id>5cc61caf05a02010f877bcf2bca66846</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>maint</sys_updated_by>
+        <sys_updated_on>2020-11-23 22:30:18</sys_updated_on>
+        <table>var__m_sys_hub_action_input_43400a1587003300663ca1bb36cb0b4b</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_sub_flow_instance action="delete_multiple" query="flow=0c05586f05a02010f877bcf2bca668fd^sys_idNOT IN90c61caf05a02010f877bcf2bca66847,9d6cc20c45386010f877b700bf6967a8"/>
+    <sys_hub_sub_flow_instance action="INSERT_OR_UPDATE">
+        <comment>Set waitlisted count on event record</comment>
+        <display_text/>
+        <flow display_value="Update Event Counts">0c05586f05a02010f877bcf2bca668fd</flow>
+        <inputs/>
+        <inputs/>
+        <order>4</order>
+        <parent_ui_id/>
+        <subflow display_value="Set Waitlisted">f7d4586f05a02010f877bcf2bca6681b</subflow>
+        <subflow_instance_inputs/>
+        <sys_class_name>sys_hub_sub_flow_instance</sys_class_name>
+        <sys_created_by>maint</sys_created_by>
+        <sys_created_on>2020-11-23 22:30:18</sys_created_on>
+        <sys_id>90c61caf05a02010f877bcf2bca66847</sys_id>
+        <sys_mod_count>32</sys_mod_count>
+        <sys_scope display_value="Event Registration">be85368c21be9010f87719341d33f026</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-12-01 20:54:26</sys_updated_on>
+        <ui_id>165e4492-da84-4592-ab10-415b1db69639</ui_id>
+    </sys_hub_sub_flow_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=90c61caf05a02010f877bcf2bca66847"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_sub_flow_instance</document>
+        <document_key>90c61caf05a02010f877bcf2bca66847</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>maint</sys_created_by>
+        <sys_created_on>2020-11-23 22:30:18</sys_created_on>
+        <sys_id>14c61caf05a02010f877bcf2bca66856</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>maint</sys_updated_by>
+        <sys_updated_on>2020-11-23 22:30:18</sys_updated_on>
+        <value>1</value>
+        <variable display_value="wait_for_completion">5cc61caf05a02010f877bcf2bca66847</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_sub_flow_instance</document>
+        <document_key>90c61caf05a02010f877bcf2bca66847</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>maint</sys_created_by>
+        <sys_created_on>2020-11-23 22:30:18</sys_created_on>
+        <sys_id>94c61caf05a02010f877bcf2bca66855</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>maint</sys_updated_by>
+        <sys_updated_on>2020-11-23 22:30:18</sys_updated_on>
+        <value/>
+        <variable display_value="Waitlisted count">3fd4586f05a02010f877bcf2bca6681c</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=90c61caf05a02010f877bcf2bca66847"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>event</field>
+        <id>90c61caf05a02010f877bcf2bca66847</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-25 20:26:42</sys_created_on>
+        <sys_id>d1ad864c45386010f877b700bf6967c5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-25 20:26:42</sys_updated_on>
+        <table>var__m_sys_hub_flow_input_f7d4586f05a02010f877bcf2bca6681b</table>
+        <value>{{Created or Updated_1.current.event_name}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>event_sysid</field>
+        <id>90c61caf05a02010f877bcf2bca66847</id>
+        <sys_created_by>maint</sys_created_by>
+        <sys_created_on>2020-11-23 22:30:18</sys_created_on>
+        <sys_id>50c61caf05a02010f877bcf2bca66855</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>maint</sys_updated_by>
+        <sys_updated_on>2020-11-23 22:30:18</sys_updated_on>
+        <table>var__m_sys_hub_flow_input_f7d4586f05a02010f877bcf2bca6681b</table>
+        <value>{{Created or Updated_1.current.event_name.sys_id}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>waitlisted_count</field>
+        <id>90c61caf05a02010f877bcf2bca66847</id>
+        <sys_created_by>maint</sys_created_by>
+        <sys_created_on>2020-11-23 22:30:18</sys_created_on>
+        <sys_id>14c61caf05a02010f877bcf2bca66855</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>maint</sys_updated_by>
+        <sys_updated_on>2020-11-23 22:30:18</sys_updated_on>
+        <table>var__m_sys_hub_flow_input_f7d4586f05a02010f877bcf2bca6681b</table>
+        <value>{{43de3cec-3401-4818-b7d5-0e891d9b401a.Count}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>wait_for_completion</field>
+        <id>90c61caf05a02010f877bcf2bca66847</id>
+        <sys_created_by>maint</sys_created_by>
+        <sys_created_on>2020-11-23 22:30:18</sys_created_on>
+        <sys_id>90c61caf05a02010f877bcf2bca66856</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>maint</sys_updated_by>
+        <sys_updated_on>2020-11-23 22:30:18</sys_updated_on>
+        <table>var__m_sys_hub_sub_flow_instance_inputs_90c61caf05a02010f877bcf2bca66847</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_sub_flow_instance_inputs action="delete_multiple" query="model=90c61caf05a02010f877bcf2bca66847^sys_idNOT IN5cc61caf05a02010f877bcf2bca66847"/>
+    <sys_hub_sub_flow_instance_inputs action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,fd_hide_inline_script_widget=true,uiType=boolean,uiTypeLabel=True/False</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>wait_for_completion</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">boolean</internal_type>
+        <label>wait_for_completion</label>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <model display_value="">90c61caf05a02010f877bcf2bca66847</model>
+        <model_id>90c61caf05a02010f877bcf2bca66847</model_id>
+        <model_table>sys_hub_flow_logic_ext_input</model_table>
+        <name>var__m_sys_hub_sub_flow_instance_inputs_90c61caf05a02010f877bcf2bca66847</name>
+        <next_element/>
+        <order>0</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_sub_flow_instance_inputs</sys_class_name>
+        <sys_created_by>maint</sys_created_by>
+        <sys_created_on>2020-11-23 22:30:18</sys_created_on>
+        <sys_id>5cc61caf05a02010f877bcf2bca66847</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Event Registration">be85368c21be9010f87719341d33f026</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-25 20:21:15</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_sub_flow_instance_inputs>
+    <sys_hub_sub_flow_instance action="INSERT_OR_UPDATE">
+        <comment>Set Attendees count on event record</comment>
+        <display_text/>
+        <flow display_value="Update Event Counts">0c05586f05a02010f877bcf2bca668fd</flow>
+        <inputs/>
+        <inputs/>
+        <order>2</order>
+        <parent_ui_id/>
+        <subflow display_value="Set Attendees">6164906f05a02010f877bcf2bca668e6</subflow>
+        <subflow_instance_inputs/>
+        <sys_class_name>sys_hub_sub_flow_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-25 20:21:14</sys_created_on>
+        <sys_id>9d6cc20c45386010f877b700bf6967a8</sys_id>
+        <sys_mod_count>14</sys_mod_count>
+        <sys_scope display_value="Event Registration">be85368c21be9010f87719341d33f026</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-12-01 20:54:26</sys_updated_on>
+        <ui_id>c8d1abc9-6afd-43ed-9ce9-7770564455a6</ui_id>
+    </sys_hub_sub_flow_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=9d6cc20c45386010f877b700bf6967a8"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_sub_flow_instance</document>
+        <document_key>9d6cc20c45386010f877b700bf6967a8</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-25 20:21:14</sys_created_on>
+        <sys_id>956cc20c45386010f877b700bf6967bf</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-25 20:21:14</sys_updated_on>
+        <value/>
+        <variable display_value="Attendee count">a964906f05a02010f877bcf2bca668e7</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_sub_flow_instance</document>
+        <document_key>9d6cc20c45386010f877b700bf6967a8</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-25 20:21:15</sys_created_on>
+        <sys_id>996cc20c45386010f877b700bf6967c0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-25 20:21:15</sys_updated_on>
+        <value>1</value>
+        <variable display_value="wait_for_completion">956cc20c45386010f877b700bf6967aa</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=9d6cc20c45386010f877b700bf6967a8"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>attendee_count</field>
+        <id>9d6cc20c45386010f877b700bf6967a8</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-25 20:21:14</sys_created_on>
+        <sys_id>5d6cc20c45386010f877b700bf6967be</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-25 20:21:14</sys_updated_on>
+        <table>var__m_sys_hub_flow_input_6164906f05a02010f877bcf2bca668e6</table>
+        <value>{{6f914dc7-fc89-4c4a-9e7f-4dc3902f124c.Count}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>event</field>
+        <id>9d6cc20c45386010f877b700bf6967a8</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-25 20:26:42</sys_created_on>
+        <sys_id>ddad864c45386010f877b700bf6967bb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-25 20:26:42</sys_updated_on>
+        <table>var__m_sys_hub_flow_input_6164906f05a02010f877bcf2bca668e6</table>
+        <value>{{Created or Updated_1.current.event_name}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>event_sysid</field>
+        <id>9d6cc20c45386010f877b700bf6967a8</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-25 20:21:14</sys_created_on>
+        <sys_id>156cc20c45386010f877b700bf6967bf</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-25 20:21:14</sys_updated_on>
+        <table>var__m_sys_hub_flow_input_6164906f05a02010f877bcf2bca668e6</table>
+        <value>{{Created or Updated_1.current.event_name}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>wait_for_completion</field>
+        <id>9d6cc20c45386010f877b700bf6967a8</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-25 20:21:15</sys_created_on>
+        <sys_id>196cc20c45386010f877b700bf6967c0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-25 20:21:15</sys_updated_on>
+        <table>var__m_sys_hub_sub_flow_instance_inputs_9d6cc20c45386010f877b700bf6967a8</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_sub_flow_instance_inputs action="delete_multiple" query="model=9d6cc20c45386010f877b700bf6967a8^sys_idNOT IN956cc20c45386010f877b700bf6967aa"/>
+    <sys_hub_sub_flow_instance_inputs action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,fd_hide_inline_script_widget=true,uiType=boolean,uiTypeLabel=True/False</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>wait_for_completion</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">boolean</internal_type>
+        <label>wait_for_completion</label>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <model display_value="">9d6cc20c45386010f877b700bf6967a8</model>
+        <model_id>9d6cc20c45386010f877b700bf6967a8</model_id>
+        <model_table>sys_hub_flow_logic_ext_input</model_table>
+        <name>var__m_sys_hub_sub_flow_instance_inputs_9d6cc20c45386010f877b700bf6967a8</name>
+        <next_element/>
+        <order>0</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_sub_flow_instance_inputs</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-25 20:21:14</sys_created_on>
+        <sys_id>956cc20c45386010f877b700bf6967aa</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Event Registration">be85368c21be9010f87719341d33f026</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-12-01 20:54:19</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_sub_flow_instance_inputs>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_0c05586f05a02010f877bcf2bca668fd^sys_idNOT IN00c61caf05a02010f877bcf2bca66809,40c61caf05a02010f877bcf2bca66813,c0c61caf05a02010f877bcf2bca6680e"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>current</element>
+        <help/>
+        <hint/>
+        <label>Record</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_0c05586f05a02010f877bcf2bca668fd</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>maint</sys_created_by>
+        <sys_created_on>2020-11-23 22:30:17</sys_created_on>
+        <sys_id>00c61caf05a02010f877bcf2bca66809</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Record</sys_name>
+        <sys_package display_value="Event Registration" source="x_snc_event_reg">be85368c21be9010f87719341d33f026</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Event Registration">be85368c21be9010f87719341d33f026</sys_scope>
+        <sys_update_name>sys_documentation_var__m_sys_hub_flow_input_0c05586f05a02010f877bcf2bca668fd_current_en</sys_update_name>
+        <sys_updated_by>maint</sys_updated_by>
+        <sys_updated_on>2020-11-23 22:30:17</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>table_name</element>
+        <help/>
+        <hint/>
+        <label>Table Name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_0c05586f05a02010f877bcf2bca668fd</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>maint</sys_created_by>
+        <sys_created_on>2020-11-23 22:30:17</sys_created_on>
+        <sys_id>40c61caf05a02010f877bcf2bca66813</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Table Name</sys_name>
+        <sys_package display_value="Event Registration" source="x_snc_event_reg">be85368c21be9010f87719341d33f026</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Event Registration">be85368c21be9010f87719341d33f026</sys_scope>
+        <sys_update_name>sys_documentation_var__m_sys_hub_flow_input_0c05586f05a02010f877bcf2bca668fd_table_name_en</sys_update_name>
+        <sys_updated_by>maint</sys_updated_by>
+        <sys_updated_on>2020-11-23 22:30:17</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>changed_fields</element>
+        <help/>
+        <hint/>
+        <label>Changed Fields</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_0c05586f05a02010f877bcf2bca668fd</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>maint</sys_created_by>
+        <sys_created_on>2020-11-23 22:30:17</sys_created_on>
+        <sys_id>c0c61caf05a02010f877bcf2bca6680e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Changed Fields</sys_name>
+        <sys_package display_value="Event Registration" source="x_snc_event_reg">be85368c21be9010f87719341d33f026</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Event Registration">be85368c21be9010f87719341d33f026</sys_scope>
+        <sys_update_name>sys_documentation_var__m_sys_hub_flow_input_0c05586f05a02010f877bcf2bca668fd_changed_fields_en</sys_update_name>
+        <sys_updated_by>maint</sys_updated_by>
+        <sys_updated_on>2020-11-23 22:30:17</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_flow_trigger_plan action="delete_multiple" query="plan_id=0c05586f05a02010f877bcf2bca668fd^sys_idNOT INf6c69caf05a02010f877bcf2bca668f3"/>
+    <sys_flow_trigger_plan action="INSERT_OR_UPDATE">
+        <binding_strategy>com.snc.process_flow.engine.binding.Every</binding_strategy>
+        <plan>{"persistor":{"@class":".ChunkingPlanPersistor","table":"sys_flow_trigger_plan","id":"f6c69caf05a02010f877bcf2bca668f3","name":"plan"}}</plan>
+        <plan_id>0c05586f05a02010f877bcf2bca668fd</plan_id>
+        <snapshot>e7cd01ca8c3c2010f8777141affe7d56</snapshot>
+        <sys_created_by>maint</sys_created_by>
+        <sys_created_on>2020-11-23 22:30:29</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>f6c69caf05a02010f877bcf2bca668f3</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-12-01 20:54:25</sys_updated_on>
+        <trigger display_value="">e18dc98a8c3c2010f8777141affe7dca</trigger>
+    </sys_flow_trigger_plan>
+    <sys_hub_flow_snapshot action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description>Updates the Event Attendee and Waitlisted counts</description>
+        <internal_name>update_event_counts</internal_name>
+        <label_cache>[{"name":"c8d1abc9-6afd-43ed-9ce9-7770564455a6.context","label":"2➛Context","reference":"sys_flow_context","reference_display":"Flow engine context","type":"reference","base_type":"reference","attributes":{}},{"name":"165e4492-da84-4592-ab10-415b1db69639.context","label":"4➛Context","reference":"sys_flow_context","reference_display":"Flow engine context","type":"reference","base_type":"reference","attributes":{}},{"name":"6f914dc7-fc89-4c4a-9e7f-4dc3902f124c.Records","label":"1➛Attendee Records","reference":"x_snc_event_reg_attendee","reference_display":"Attendee","type":"records","base_type":"records","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"6f914dc7-fc89-4c4a-9e7f-4dc3902f124c.Table","label":"1➛Attendee Table","reference":"x_snc_event_reg_attendee","reference_display":"Attendee","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"6f914dc7-fc89-4c4a-9e7f-4dc3902f124c.Count","label":"1➛Count","reference_display":"Count","type":"integer","base_type":"integer","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"Created or Updated_1.current.event_name.sys_id","label":"Trigger➛Attendee Record➛Event Name➛Sys ID","reference":"","reference_display":"Sys ID","type":"GUID","base_type":"GUID","parent_table_name":"x_snc_event_reg_event","column_name":"sys_id"},{"name":"c3a4899a-1b3b-41ba-b86c-ed0b6c93d7b0.context","label":"2➛Context","reference":"sys_flow_context","reference_display":"Flow engine context","type":"reference","base_type":"reference","attributes":{}},{"name":"43de3cec-3401-4818-b7d5-0e891d9b401a.Records","label":"3➛Attendee Records","reference":"x_snc_event_reg_attendee","reference_display":"Attendee","type":"records","base_type":"records","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"43de3cec-3401-4818-b7d5-0e891d9b401a.Table","label":"3➛Attendee Table","reference":"x_snc_event_reg_attendee","reference_display":"Attendee","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"43de3cec-3401-4818-b7d5-0e891d9b401a.Count","label":"3➛Count","reference_display":"Count","type":"integer","base_type":"integer","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"Created or Updated_1.current.event_name","label":"Trigger➛Attendee Record➛Event Name","reference":"x_snc_event_reg_event","reference_display":"Event","type":"reference","base_type":"reference","parent_table_name":"x_snc_event_reg_attendee","column_name":"event_name"}]</label_cache>
+        <master>true</master>
+        <name>Update Event Counts</name>
+        <natlang/>
+        <outputs/>
+        <parent_flow display_value="Update Event Counts">0c05586f05a02010f877bcf2bca668fd</parent_flow>
+        <remote_trigger_id/>
+        <run_as>system</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow_snapshot</sys_class_name>
+        <sys_created_by>maint</sys_created_by>
+        <sys_created_on>2020-11-23 22:30:26</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>5ac69caf05a02010f877bcf2bca66802</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Event Registration">be85368c21be9010f87719341d33f026</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-12-01 20:54:23</sys_updated_on>
+        <type>flow</type>
+    </sys_hub_flow_snapshot>
+    <sys_translated_text action="delete_multiple" query="documentkey=5ac69caf05a02010f877bcf2bca66802"/>
+    <sys_variable_value action="delete_multiple" query="document_key=5ac69caf05a02010f877bcf2bca66802"/>
+    <sys_hub_trigger_instance action="delete_multiple" query="flow=5ac69caf05a02010f877bcf2bca66802^sys_idNOT IN1ac69caf05a02010f877bcf2bca6684a"/>
+    <sys_hub_trigger_instance action="INSERT_OR_UPDATE">
+        <comment>On Attendee Status change</comment>
+        <display_text/>
+        <flow display_value="Update Event Counts">5ac69caf05a02010f877bcf2bca66802</flow>
+        <name>Created or Updated</name>
+        <remote_sys_id/>
+        <sys_created_by>maint</sys_created_by>
+        <sys_created_on>2020-11-23 22:30:27</sys_created_on>
+        <sys_id>1ac69caf05a02010f877bcf2bca6684a</sys_id>
+        <sys_mod_count>16</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-12-01 20:54:25</sys_updated_on>
+        <trigger_definition display_value="Created or Updated">a45d9180c32222002841b63b12d3aea7</trigger_definition>
+        <trigger_inputs/>
+        <trigger_outputs/>
+        <trigger_type>record_create_or_update</trigger_type>
+    </sys_hub_trigger_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=1ac69caf05a02010f877bcf2bca6684a"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>1ac69caf05a02010f877bcf2bca6684a</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>maint</sys_created_by>
+        <sys_created_on>2020-11-23 22:30:27</sys_created_on>
+        <sys_id>12c69caf05a02010f877bcf2bca6684c</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>maint</sys_updated_by>
+        <sys_updated_on>2020-11-23 22:35:44</sys_updated_on>
+        <value>attendee_statusVALCHANGES^attendee_statusINconfirmed,waitlisted,cancelled</value>
+        <variable display_value="Condition">707dd180c32222002841b63b12d3aecb</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>1ac69caf05a02010f877bcf2bca6684a</document_key>
+        <order>200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>maint</sys_created_by>
+        <sys_created_on>2020-11-23 22:30:27</sys_created_on>
+        <sys_id>5ec69caf05a02010f877bcf2bca6684b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>maint</sys_updated_by>
+        <sys_updated_on>2020-11-23 22:30:27</sys_updated_on>
+        <value>every</value>
+        <variable display_value="Run Trigger">2b9def50c31132002841b63b12d3ae5b</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>1ac69caf05a02010f877bcf2bca6684a</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>maint</sys_created_by>
+        <sys_created_on>2020-11-23 22:30:27</sys_created_on>
+        <sys_id>d2c69caf05a02010f877bcf2bca6684c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>maint</sys_updated_by>
+        <sys_updated_on>2020-11-23 22:30:27</sys_updated_on>
+        <value>x_snc_event_reg_attendee</value>
+        <variable display_value="Table">cf1e1980c32222002841b63b12d3aea0</variable>
+    </sys_variable_value>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=5ac69caf05a02010f877bcf2bca66802^sys_idNOT IN5ec69caf05a02010f877bcf2bca66802"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>5ac69caf05a02010f877bcf2bca66802</id>
+        <name>Update Event Counts</name>
+        <sys_created_by>maint</sys_created_by>
+        <sys_created_on>2020-11-23 22:30:26</sys_created_on>
+        <sys_id>5ec69caf05a02010f877bcf2bca66802</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>maint</sys_updated_by>
+        <sys_updated_on>2020-11-23 22:30:26</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_hub_flow_input action="delete_multiple" query="model=5ac69caf05a02010f877bcf2bca66802^sys_idNOT IN5ac69caf05a02010f877bcf2bca66805,9ec69caf05a02010f877bcf2bca6681f,d2c69caf05a02010f877bcf2bca66816"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=document_id</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent>table_name</dependent>
+        <dependent_on_field>table_name</dependent_on_field>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>current</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">document_id</internal_type>
+        <label>Record</label>
+        <mandatory>true</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Update Event Counts">5ac69caf05a02010f877bcf2bca66802</model>
+        <model_id>5ac69caf05a02010f877bcf2bca66802</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_5ac69caf05a02010f877bcf2bca66802</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>maint</sys_created_by>
+        <sys_created_on>2020-11-23 22:30:27</sys_created_on>
+        <sys_id>5ac69caf05a02010f877bcf2bca66805</sys_id>
+        <sys_mod_count>10</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Event Registration">be85368c21be9010f87719341d33f026</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-12-01 20:54:23</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>table_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">table_name</internal_type>
+        <label>Table Name</label>
+        <mandatory>false</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Update Event Counts">5ac69caf05a02010f877bcf2bca66802</model>
+        <model_id>5ac69caf05a02010f877bcf2bca66802</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_5ac69caf05a02010f877bcf2bca66802</name>
+        <next_element/>
+        <order>101</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>maint</sys_created_by>
+        <sys_created_on>2020-11-23 22:30:27</sys_created_on>
+        <sys_id>9ec69caf05a02010f877bcf2bca6681f</sys_id>
+        <sys_mod_count>9</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Event Registration">be85368c21be9010f87719341d33f026</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-12-01 20:54:23</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>child_label=FDChangeDetails,child_name=FDChangeDetails,child_type=object,child_type_label=Object,co_type_name=FD418d898a523c20102da76bc51b8603fa,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,pwd2droppable=true,uiType=array.object,uiTypeLabel=Array.Object</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>changed_fields</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Changed Fields</label>
+        <mandatory>false</mandatory>
+        <max_length>4000</max_length>
+        <model display_value="Update Event Counts">5ac69caf05a02010f877bcf2bca66802</model>
+        <model_id>5ac69caf05a02010f877bcf2bca66802</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_5ac69caf05a02010f877bcf2bca66802</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>maint</sys_created_by>
+        <sys_created_on>2020-11-23 22:30:27</sys_created_on>
+        <sys_id>d2c69caf05a02010f877bcf2bca66816</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Event Registration">be85368c21be9010f87719341d33f026</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-12-01 20:54:23</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_instance action="delete_multiple" query="flow=5ac69caf05a02010f877bcf2bca66802^sys_idNOT IN9ac69caf05a02010f877bcf2bca66840,9ac69caf05a02010f877bcf2bca66848"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_type display_value="">5fcd01ca8c3c2010f8777141affe7d3f</action_type>
+        <action_type_parent display_value="Look Up Records">d1c56ec50b30030085c083eb37673a50</action_type_parent>
+        <comment>Look up all confirmed attendees</comment>
+        <compiled_snapshot>5fcd01ca8c3c2010f8777141affe7d3f</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Update Event Counts">5ac69caf05a02010f877bcf2bca66802</flow>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>maint</sys_created_by>
+        <sys_created_on>2020-11-23 22:30:27</sys_created_on>
+        <sys_id>9ac69caf05a02010f877bcf2bca66840</sys_id>
+        <sys_mod_count>34</sys_mod_count>
+        <sys_scope display_value="Event Registration">be85368c21be9010f87719341d33f026</sys_scope>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2020-12-01 20:55:39</sys_updated_on>
+        <ui_id>6f914dc7-fc89-4c4a-9e7f-4dc3902f124c</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=9ac69caf05a02010f877bcf2bca66840"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>9ac69caf05a02010f877bcf2bca66840</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>maint</sys_created_by>
+        <sys_created_on>2020-11-23 22:30:27</sys_created_on>
+        <sys_id>9ac69caf05a02010f877bcf2bca66842</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>maint</sys_updated_by>
+        <sys_updated_on>2020-11-23 22:30:27</sys_updated_on>
+        <value>x_snc_event_reg_attendee</value>
+        <variable display_value="Table">8f400a1587003300663ca1bb36cb0b4b</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>9ac69caf05a02010f877bcf2bca66840</document_key>
+        <order>4</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>maint</sys_created_by>
+        <sys_created_on>2020-11-23 22:30:27</sys_created_on>
+        <sys_id>d6c69caf05a02010f877bcf2bca66842</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>maint</sys_updated_by>
+        <sys_updated_on>2020-11-23 22:30:27</sys_updated_on>
+        <value>10000</value>
+        <variable display_value="Max Results">4f400a1587003300663ca1bb36cb0b61</variable>
+    </sys_variable_value>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_type display_value="">5fcd01ca8c3c2010f8777141affe7d3f</action_type>
+        <action_type_parent display_value="Look Up Records">d1c56ec50b30030085c083eb37673a50</action_type_parent>
+        <comment>Look up all waitlisted attendees</comment>
+        <compiled_snapshot>5fcd01ca8c3c2010f8777141affe7d3f</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Update Event Counts">5ac69caf05a02010f877bcf2bca66802</flow>
+        <order>3</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>maint</sys_created_by>
+        <sys_created_on>2020-11-23 22:30:27</sys_created_on>
+        <sys_id>9ac69caf05a02010f877bcf2bca66848</sys_id>
+        <sys_mod_count>34</sys_mod_count>
+        <sys_scope display_value="Event Registration">be85368c21be9010f87719341d33f026</sys_scope>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2020-12-01 20:55:39</sys_updated_on>
+        <ui_id>43de3cec-3401-4818-b7d5-0e891d9b401a</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=9ac69caf05a02010f877bcf2bca66848"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>9ac69caf05a02010f877bcf2bca66848</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>maint</sys_created_by>
+        <sys_created_on>2020-11-23 22:30:27</sys_created_on>
+        <sys_id>16c69caf05a02010f877bcf2bca6684a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>maint</sys_updated_by>
+        <sys_updated_on>2020-11-23 22:30:27</sys_updated_on>
+        <value>x_snc_event_reg_attendee</value>
+        <variable display_value="Table">8f400a1587003300663ca1bb36cb0b4b</variable>
+    </sys_variable_value>
+    <sys_hub_sub_flow_instance action="delete_multiple" query="flow=5ac69caf05a02010f877bcf2bca66802^sys_idNOT IN26c69caf05a02010f877bcf2bca6685c,9f6c460c45386010f877b700bf6967fe"/>
+    <sys_hub_sub_flow_instance action="INSERT_OR_UPDATE">
+        <comment>Set waitlisted count on event record</comment>
+        <display_text/>
+        <flow display_value="Update Event Counts">5ac69caf05a02010f877bcf2bca66802</flow>
+        <inputs/>
+        <inputs/>
+        <order>4</order>
+        <parent_ui_id/>
+        <subflow display_value="Set Waitlisted">f7d4586f05a02010f877bcf2bca6681b</subflow>
+        <subflow_instance_inputs/>
+        <sys_class_name>sys_hub_sub_flow_instance</sys_class_name>
+        <sys_created_by>maint</sys_created_by>
+        <sys_created_on>2020-11-23 22:30:27</sys_created_on>
+        <sys_id>26c69caf05a02010f877bcf2bca6685c</sys_id>
+        <sys_mod_count>20</sys_mod_count>
+        <sys_scope display_value="Event Registration">be85368c21be9010f87719341d33f026</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-12-01 20:54:23</sys_updated_on>
+        <ui_id>165e4492-da84-4592-ab10-415b1db69639</ui_id>
+    </sys_hub_sub_flow_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=26c69caf05a02010f877bcf2bca6685c"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_sub_flow_instance</document>
+        <document_key>26c69caf05a02010f877bcf2bca6685c</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>maint</sys_created_by>
+        <sys_created_on>2020-11-23 22:30:27</sys_created_on>
+        <sys_id>a6c69caf05a02010f877bcf2bca66875</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>maint</sys_updated_by>
+        <sys_updated_on>2020-11-23 22:30:27</sys_updated_on>
+        <value>1</value>
+        <variable display_value="wait_for_completion">eec69caf05a02010f877bcf2bca6685c</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_sub_flow_instance</document>
+        <document_key>26c69caf05a02010f877bcf2bca6685c</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>maint</sys_created_by>
+        <sys_created_on>2020-11-23 22:30:27</sys_created_on>
+        <sys_id>aac69caf05a02010f877bcf2bca66874</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>maint</sys_updated_by>
+        <sys_updated_on>2020-11-23 22:30:27</sys_updated_on>
+        <value/>
+        <variable display_value="Waitlisted count">3fd4586f05a02010f877bcf2bca6681c</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=26c69caf05a02010f877bcf2bca6685c"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>event</field>
+        <id>26c69caf05a02010f877bcf2bca6685c</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-25 20:26:49</sys_created_on>
+        <sys_id>47ad0a4c45386010f877b700bf6967d3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-25 20:26:49</sys_updated_on>
+        <table>var__m_sys_hub_flow_input_f7d4586f05a02010f877bcf2bca6681b</table>
+        <value>{{Created or Updated_1.current.event_name}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>event_sysid</field>
+        <id>26c69caf05a02010f877bcf2bca6685c</id>
+        <sys_created_by>maint</sys_created_by>
+        <sys_created_on>2020-11-23 22:30:27</sys_created_on>
+        <sys_id>66c69caf05a02010f877bcf2bca66874</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>maint</sys_updated_by>
+        <sys_updated_on>2020-11-23 22:30:27</sys_updated_on>
+        <table>var__m_sys_hub_flow_input_f7d4586f05a02010f877bcf2bca6681b</table>
+        <value>{{Created or Updated_1.current.event_name.sys_id}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>waitlisted_count</field>
+        <id>26c69caf05a02010f877bcf2bca6685c</id>
+        <sys_created_by>maint</sys_created_by>
+        <sys_created_on>2020-11-23 22:30:27</sys_created_on>
+        <sys_id>2ac69caf05a02010f877bcf2bca66874</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>maint</sys_updated_by>
+        <sys_updated_on>2020-11-23 22:30:27</sys_updated_on>
+        <table>var__m_sys_hub_flow_input_f7d4586f05a02010f877bcf2bca6681b</table>
+        <value>{{43de3cec-3401-4818-b7d5-0e891d9b401a.Count}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>wait_for_completion</field>
+        <id>26c69caf05a02010f877bcf2bca6685c</id>
+        <sys_created_by>maint</sys_created_by>
+        <sys_created_on>2020-11-23 22:30:27</sys_created_on>
+        <sys_id>26c69caf05a02010f877bcf2bca66875</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>maint</sys_updated_by>
+        <sys_updated_on>2020-11-23 22:30:27</sys_updated_on>
+        <table>var__m_sys_hub_sub_flow_instance_inputs_26c69caf05a02010f877bcf2bca6685c</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_sub_flow_instance_inputs action="delete_multiple" query="model=26c69caf05a02010f877bcf2bca6685c^sys_idNOT INeec69caf05a02010f877bcf2bca6685c"/>
+    <sys_hub_sub_flow_instance_inputs action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,fd_hide_inline_script_widget=true,uiType=boolean,uiTypeLabel=True/False</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>wait_for_completion</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">boolean</internal_type>
+        <label>wait_for_completion</label>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <model display_value="">26c69caf05a02010f877bcf2bca6685c</model>
+        <model_id>26c69caf05a02010f877bcf2bca6685c</model_id>
+        <model_table>sys_hub_flow_logic_ext_input</model_table>
+        <name>var__m_sys_hub_sub_flow_instance_inputs_26c69caf05a02010f877bcf2bca6685c</name>
+        <next_element/>
+        <order>0</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_sub_flow_instance_inputs</sys_class_name>
+        <sys_created_by>maint</sys_created_by>
+        <sys_created_on>2020-11-23 22:30:27</sys_created_on>
+        <sys_id>eec69caf05a02010f877bcf2bca6685c</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Event Registration">be85368c21be9010f87719341d33f026</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-25 20:21:23</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_sub_flow_instance_inputs>
+    <sys_hub_sub_flow_instance action="INSERT_OR_UPDATE">
+        <comment>Set Attendees count on event record</comment>
+        <display_text/>
+        <flow display_value="Update Event Counts">5ac69caf05a02010f877bcf2bca66802</flow>
+        <inputs/>
+        <inputs/>
+        <order>2</order>
+        <parent_ui_id/>
+        <subflow display_value="Set Attendees">6164906f05a02010f877bcf2bca668e6</subflow>
+        <subflow_instance_inputs/>
+        <sys_class_name>sys_hub_sub_flow_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-25 20:21:23</sys_created_on>
+        <sys_id>9f6c460c45386010f877b700bf6967fe</sys_id>
+        <sys_mod_count>12</sys_mod_count>
+        <sys_scope display_value="Event Registration">be85368c21be9010f87719341d33f026</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-12-01 20:54:23</sys_updated_on>
+        <ui_id>c8d1abc9-6afd-43ed-9ce9-7770564455a6</ui_id>
+    </sys_hub_sub_flow_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=9f6c460c45386010f877b700bf6967fe"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_sub_flow_instance</document>
+        <document_key>9f6c460c45386010f877b700bf6967fe</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-25 20:21:23</sys_created_on>
+        <sys_id>d36c860c45386010f877b700bf69670d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-25 20:21:23</sys_updated_on>
+        <value/>
+        <variable display_value="Attendee count">a964906f05a02010f877bcf2bca668e7</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_sub_flow_instance</document>
+        <document_key>9f6c460c45386010f877b700bf6967fe</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-25 20:21:23</sys_created_on>
+        <sys_id>df6c860c45386010f877b700bf69670d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-25 20:21:23</sys_updated_on>
+        <value>1</value>
+        <variable display_value="wait_for_completion">5b6c460c45386010f877b700bf6967ff</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=9f6c460c45386010f877b700bf6967fe"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>attendee_count</field>
+        <id>9f6c460c45386010f877b700bf6967fe</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-25 20:21:23</sys_created_on>
+        <sys_id>9f6c860c45386010f877b700bf69670c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-25 20:21:23</sys_updated_on>
+        <table>var__m_sys_hub_flow_input_6164906f05a02010f877bcf2bca668e6</table>
+        <value>{{6f914dc7-fc89-4c4a-9e7f-4dc3902f124c.Count}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>event</field>
+        <id>9f6c460c45386010f877b700bf6967fe</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-25 20:26:49</sys_created_on>
+        <sys_id>83ad0a4c45386010f877b700bf6967cd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-25 20:26:49</sys_updated_on>
+        <table>var__m_sys_hub_flow_input_6164906f05a02010f877bcf2bca668e6</table>
+        <value>{{Created or Updated_1.current.event_name}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>event_sysid</field>
+        <id>9f6c460c45386010f877b700bf6967fe</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-25 20:21:23</sys_created_on>
+        <sys_id>536c860c45386010f877b700bf69670d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-25 20:21:23</sys_updated_on>
+        <table>var__m_sys_hub_flow_input_6164906f05a02010f877bcf2bca668e6</table>
+        <value>{{Created or Updated_1.current.event_name}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>wait_for_completion</field>
+        <id>9f6c460c45386010f877b700bf6967fe</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-25 20:21:23</sys_created_on>
+        <sys_id>5f6c860c45386010f877b700bf69670d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-25 20:21:23</sys_updated_on>
+        <table>var__m_sys_hub_sub_flow_instance_inputs_9f6c460c45386010f877b700bf6967fe</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_sub_flow_instance_inputs action="delete_multiple" query="model=9f6c460c45386010f877b700bf6967fe^sys_idNOT IN5b6c460c45386010f877b700bf6967ff"/>
+    <sys_hub_sub_flow_instance_inputs action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,fd_hide_inline_script_widget=true,uiType=boolean,uiTypeLabel=True/False</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>wait_for_completion</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">boolean</internal_type>
+        <label>wait_for_completion</label>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <model display_value="">9f6c460c45386010f877b700bf6967fe</model>
+        <model_id>9f6c460c45386010f877b700bf6967fe</model_id>
+        <model_table>sys_hub_flow_logic_ext_input</model_table>
+        <name>var__m_sys_hub_sub_flow_instance_inputs_9f6c460c45386010f877b700bf6967fe</name>
+        <next_element/>
+        <order>0</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_sub_flow_instance_inputs</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-25 20:21:23</sys_created_on>
+        <sys_id>5b6c460c45386010f877b700bf6967ff</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Event Registration">be85368c21be9010f87719341d33f026</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-12-01 20:54:22</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_sub_flow_instance_inputs>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_5ac69caf05a02010f877bcf2bca66802^sys_idNOT IN1ac69caf05a02010f877bcf2bca66825,52c69caf05a02010f877bcf2bca6681c,96c69caf05a02010f877bcf2bca66812"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>table_name</element>
+        <help/>
+        <hint/>
+        <label>Table Name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_5ac69caf05a02010f877bcf2bca66802</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>maint</sys_created_by>
+        <sys_created_on>2020-11-23 22:30:27</sys_created_on>
+        <sys_id>1ac69caf05a02010f877bcf2bca66825</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Table Name</sys_name>
+        <sys_package display_value="Event Registration" source="x_snc_event_reg">be85368c21be9010f87719341d33f026</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Event Registration">be85368c21be9010f87719341d33f026</sys_scope>
+        <sys_update_name>sys_documentation_var__m_sys_hub_flow_input_5ac69caf05a02010f877bcf2bca66802_table_name_en</sys_update_name>
+        <sys_updated_by>maint</sys_updated_by>
+        <sys_updated_on>2020-11-23 22:30:27</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>changed_fields</element>
+        <help/>
+        <hint/>
+        <label>Changed Fields</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_5ac69caf05a02010f877bcf2bca66802</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>maint</sys_created_by>
+        <sys_created_on>2020-11-23 22:30:27</sys_created_on>
+        <sys_id>52c69caf05a02010f877bcf2bca6681c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Changed Fields</sys_name>
+        <sys_package display_value="Event Registration" source="x_snc_event_reg">be85368c21be9010f87719341d33f026</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Event Registration">be85368c21be9010f87719341d33f026</sys_scope>
+        <sys_update_name>sys_documentation_var__m_sys_hub_flow_input_5ac69caf05a02010f877bcf2bca66802_changed_fields_en</sys_update_name>
+        <sys_updated_by>maint</sys_updated_by>
+        <sys_updated_on>2020-11-23 22:30:27</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>current</element>
+        <help/>
+        <hint/>
+        <label>Record</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_5ac69caf05a02010f877bcf2bca66802</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>maint</sys_created_by>
+        <sys_created_on>2020-11-23 22:30:27</sys_created_on>
+        <sys_id>96c69caf05a02010f877bcf2bca66812</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Record</sys_name>
+        <sys_package display_value="Event Registration" source="x_snc_event_reg">be85368c21be9010f87719341d33f026</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Event Registration">be85368c21be9010f87719341d33f026</sys_scope>
+        <sys_update_name>sys_documentation_var__m_sys_hub_flow_input_5ac69caf05a02010f877bcf2bca66802_current_en</sys_update_name>
+        <sys_updated_by>maint</sys_updated_by>
+        <sys_updated_on>2020-11-23 22:30:27</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+</record_update>

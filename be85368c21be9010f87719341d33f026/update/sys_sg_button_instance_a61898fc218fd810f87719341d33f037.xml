@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_sg_button_instance">
+    <sys_sg_button_instance action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <button display_value="Edit Button (Event)">87facfd82107d810f87719341d33f038</button>
+        <color_theme>primary</color_theme>
+        <description/>
+        <field_name/>
+        <icon/>
+        <label>Edit Event</label>
+        <location>top</location>
+        <name>Edit Event</name>
+        <order>10</order>
+        <parent>f92c1e1421c3d810f87719341d33f009</parent>
+        <parent_table>sys_sg_screen</parent_table>
+        <sys_class_name>sys_sg_button_instance</sys_class_name>
+        <sys_created_by>brian.alson</sys_created_by>
+        <sys_created_on>2020-09-01 19:58:43</sys_created_on>
+        <sys_id>a61898fc218fd810f87719341d33f037</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>Edit Event</sys_name>
+        <sys_package display_value="Event Registration" source="x_snc_event_reg">be85368c21be9010f87719341d33f026</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Event Registration">be85368c21be9010f87719341d33f026</sys_scope>
+        <sys_update_name>sys_sg_button_instance_a61898fc218fd810f87719341d33f037</sys_update_name>
+        <sys_updated_by>Helena.Qin</sys_updated_by>
+        <sys_updated_on>2020-11-09 17:40:30</sys_updated_on>
+        <table>x_snc_event_reg_event</table>
+    </sys_sg_button_instance>
+    <sys_translated_text action="delete_multiple" query="documentkey=a61898fc218fd810f87719341d33f037"/>
+</record_update>

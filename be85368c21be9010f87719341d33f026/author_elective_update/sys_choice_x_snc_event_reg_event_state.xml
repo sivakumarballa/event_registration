@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="state" table="x_snc_event_reg_event" version="3">
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>state</element>
+            <name>x_snc_event_reg_event</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>brian.alson</sys_created_by>
+            <sys_created_on>2020-08-19 13:56:19</sys_created_on>
+            <sys_id>efd47edac1166010f877538420acbef0</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>state</sys_name>
+            <sys_package display_value="Event Registration" source="x_snc_event_reg">be85368c21be9010f87719341d33f026</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Event Registration">be85368c21be9010f87719341d33f026</sys_scope>
+            <sys_update_name>sys_choice_x_snc_event_reg_event_state</sys_update_name>
+            <sys_updated_by>brian.alson</sys_updated_by>
+            <sys_updated_on>2020-08-19 13:56:19</sys_updated_on>
+        </sys_choice_set>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>state</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Draft</label>
+            <language>en</language>
+            <name>x_snc_event_reg_event</name>
+            <sequence>10</sequence>
+            <synonyms/>
+            <sys_created_by>brian.alson</sys_created_by>
+            <sys_created_on>2020-08-19 13:56:19</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>f85844a4217ad010f87719341d33f04a</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>brian.alson</sys_updated_by>
+            <sys_updated_on>2020-08-19 13:56:24</sys_updated_on>
+            <value>-5</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>state</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Published</label>
+            <language>en</language>
+            <name>x_snc_event_reg_event</name>
+            <sequence>20</sequence>
+            <synonyms/>
+            <sys_created_by>brian.alson</sys_created_by>
+            <sys_created_on>2020-08-19 13:56:29</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>6378c8a4217ad010f87719341d33f0c4</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>brian.alson</sys_updated_by>
+            <sys_updated_on>2020-08-19 13:56:32</sys_updated_on>
+            <value>1</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>state</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Rescheduled</label>
+            <language>en</language>
+            <name>x_snc_event_reg_event</name>
+            <sequence>30</sequence>
+            <synonyms/>
+            <sys_created_by>brian.alson</sys_created_by>
+            <sys_created_on>2020-08-19 13:56:37</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>3588c8a4217ad010f87719341d33f0ba</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>brian.alson</sys_updated_by>
+            <sys_updated_on>2020-08-19 13:57:08</sys_updated_on>
+            <value>2</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>state</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Cancelled</label>
+            <language>en</language>
+            <name>x_snc_event_reg_event</name>
+            <sequence>40</sequence>
+            <synonyms/>
+            <sys_created_by>brian.alson</sys_created_by>
+            <sys_created_on>2020-08-19 13:56:54</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>bb8888a4217ad010f87719341d33f0e9</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>brian.alson</sys_updated_by>
+            <sys_updated_on>2020-08-19 13:57:06</sys_updated_on>
+            <value>10</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>state</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Expired</label>
+            <language>en</language>
+            <name>x_snc_event_reg_event</name>
+            <sequence>50</sequence>
+            <synonyms/>
+            <sys_created_by>brian.alson</sys_created_by>
+            <sys_created_on>2020-08-19 13:57:12</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>7f9888a4217ad010f87719341d33f025</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>brian.alson</sys_updated_by>
+            <sys_updated_on>2020-08-19 13:57:15</sys_updated_on>
+            <value>20</value>
+        </sys_choice>
+    </sys_choice>
+</record_update>

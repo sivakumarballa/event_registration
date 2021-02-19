@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_email">
+    <sys_script_email action="INSERT_OR_UPDATE">
+        <name>event_registration_footer</name>
+        <new_lines_to_html>false</new_lines_to_html>
+        <script><![CDATA[(function runMailScript(/* GlideRecord */ current, /* TemplatePrinter */ template,
+          /* Optional EmailOutbound */ email, /* Optional GlideRecord */ email_action,
+          /* Optional GlideRecord */ event) {
+
+
+var renderedHtml = '<br/?'+
+'<table>'+
+'<tr style="border-collapse: collapse">'+
+'    <td style="margin: 0; padding: 30px" align="left">'+
+'      <table'+
+'        style="'+
+'          mso-table-lspace: 0pt;'+
+'          mso-table-rspace: 0pt;'+
+'          border-collapse: collapse;'+
+'          border-spacing: 0px;'+
+'        "'+
+'        width="100%"'+
+'        cellspacing="0"'+
+'        cellpadding="0"'+
+'      >'+
+'        <tbody>'+
+'          <tr style="border-collapse: collapse">'+
+'            <td'+
+'              style="padding: 0; margin: 0; width: 540px"'+
+'              align="center"'+
+'              valign="top"'+
+'            >'+
+'              <p style="font-size: 14; color: #667274">'+
+'                This email was sent by your company\'s event'+
+'                management system'+
+'              </p>'+
+'              <p style="font-size: 14; color: #667274">'+
+'                © 2020 ${attendee_name.company} | All'+
+'                Rights Reserved '+
+'              </p>'+
+'            </td>'+
+'          </tr>'+
+'        </tbody>'+
+'      </table>'+
+'    </td>'+
+'  </tr>'+
+'</table>';
+	
+template.print(renderedHtml);
+
+})(current, template, email, email_action, event);]]></script>
+        <sys_class_name>sys_script_email</sys_class_name>
+        <sys_created_by>gregory.burger</sys_created_by>
+        <sys_created_on>2020-12-01 17:16:55</sys_created_on>
+        <sys_id>ff8b5cca8cb82010f8777141affe7daf</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>event_registration_footer</sys_name>
+        <sys_package display_value="Event Registration" source="x_snc_event_reg">be85368c21be9010f87719341d33f026</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Event Registration">be85368c21be9010f87719341d33f026</sys_scope>
+        <sys_update_name>sys_script_email_ff8b5cca8cb82010f8777141affe7daf</sys_update_name>
+        <sys_updated_by>gregory.burger</sys_updated_by>
+        <sys_updated_on>2020-12-01 17:16:55</sys_updated_on>
+    </sys_script_email>
+</record_update>

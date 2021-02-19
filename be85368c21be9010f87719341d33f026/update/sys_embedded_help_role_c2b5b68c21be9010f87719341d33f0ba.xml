@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_embedded_help_role">
+    <sys_embedded_help_role action="INSERT_OR_UPDATE">
+        <order>1000</order>
+        <role display_value="x_snc_event_reg.attendee" name="x_snc_event_reg.attendee">bdb5b68c21be9010f87719341d33f0b5</role>
+        <sys_class_name>sys_embedded_help_role</sys_class_name>
+        <sys_created_by>brian.alson</sys_created_by>
+        <sys_created_on>2020-08-18 13:16:12</sys_created_on>
+        <sys_id>c2b5b68c21be9010f87719341d33f0ba</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>bdb5b68c21be9010f87719341d33f0b5</sys_name>
+        <sys_package display_value="Event Registration" source="x_snc_event_reg">be85368c21be9010f87719341d33f026</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Event Registration">be85368c21be9010f87719341d33f026</sys_scope>
+        <sys_update_name>sys_embedded_help_role_c2b5b68c21be9010f87719341d33f0ba</sys_update_name>
+        <sys_updated_by>brian.alson</sys_updated_by>
+        <sys_updated_on>2020-08-18 13:16:12</sys_updated_on>
+    </sys_embedded_help_role>
+</record_update>

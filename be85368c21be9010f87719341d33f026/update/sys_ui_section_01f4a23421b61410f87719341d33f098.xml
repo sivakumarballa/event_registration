@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_section caption="Notes" section_id="01f4a23421b61410f87719341d33f098" sys_domain="global" table="x_snc_event_reg_attendee" version="3" view="">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>attendee_notes</element>
+            <position>0</position>
+            <sys_created_by>jeremy.duncan</sys_created_by>
+            <sys_created_on>2020-08-20 19:58:45</sys_created_on>
+            <sys_id>0e05e23421b61410f87719341d33f0a4</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Notes" display_value="Notes" name="x_snc_event_reg_attendee" sys_domain="global" view="Default view">01f4a23421b61410f87719341d33f098</sys_ui_section>
+            <sys_updated_by>jeremy.duncan</sys_updated_by>
+            <sys_updated_on>2020-08-20 19:58:45</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>organizer_notes</element>
+            <position>1</position>
+            <sys_created_by>jeremy.duncan</sys_created_by>
+            <sys_created_on>2020-08-20 19:58:45</sys_created_on>
+            <sys_id>8e05e23421b61410f87719341d33f0a4</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Notes" display_value="Notes" name="x_snc_event_reg_attendee" sys_domain="global" view="Default view">01f4a23421b61410f87719341d33f098</sys_ui_section>
+            <sys_updated_by>jeremy.duncan</sys_updated_by>
+            <sys_updated_on>2020-08-20 19:58:45</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>activity.xml</element>
+            <position>2</position>
+            <sys_created_by>jeremy.duncan</sys_created_by>
+            <sys_created_on>2020-08-20 19:58:45</sys_created_on>
+            <sys_id>0205e23421b61410f87719341d33f0a5</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter display_value="Activities (filtered)">444ea5c6bf310100e628555b3f0739d6</sys_ui_formatter>
+            <sys_ui_section caption="Notes" display_value="Notes" name="x_snc_event_reg_attendee" sys_domain="global" view="Default view">01f4a23421b61410f87719341d33f098</sys_ui_section>
+            <sys_updated_by>jeremy.duncan</sys_updated_by>
+            <sys_updated_on>2020-08-20 19:58:45</sys_updated_on>
+            <sys_user/>
+            <type>formatter</type>
+        </sys_ui_element>
+        <sys_ui_section action="INSERT_OR_UPDATE">
+            <caption>Notes</caption>
+            <header>false</header>
+            <name>x_snc_event_reg_attendee</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>jeremy.duncan</sys_created_by>
+            <sys_created_on>2020-08-20 19:58:25</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>01f4a23421b61410f87719341d33f098</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_snc_event_reg_attendee</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Event Registration" source="x_snc_event_reg">be85368c21be9010f87719341d33f026</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Event Registration">be85368c21be9010f87719341d33f026</sys_scope>
+            <sys_update_name>sys_ui_section_01f4a23421b61410f87719341d33f098</sys_update_name>
+            <sys_updated_by>jeremy.duncan</sys_updated_by>
+            <sys_updated_on>2020-08-20 19:58:25</sys_updated_on>
+            <sys_user/>
+            <title>false</title>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+</record_update>

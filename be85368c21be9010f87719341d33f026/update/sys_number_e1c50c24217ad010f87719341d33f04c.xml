@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_number">
+    <sys_number action="INSERT_OR_UPDATE">
+        <category display_value="" name="x_snc_event_reg_event">x_snc_event_reg_event</category>
+        <maximum_digits>7</maximum_digits>
+        <number>1000</number>
+        <prefix>EVT</prefix>
+        <sys_class_name>sys_number</sys_class_name>
+        <sys_created_by>brian.alson</sys_created_by>
+        <sys_created_on>2020-08-19 13:44:27</sys_created_on>
+        <sys_id>e1c50c24217ad010f87719341d33f04c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>EVT</sys_name>
+        <sys_package display_value="Event Registration" source="x_snc_event_reg">be85368c21be9010f87719341d33f026</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Event Registration">be85368c21be9010f87719341d33f026</sys_scope>
+        <sys_update_name>sys_number_e1c50c24217ad010f87719341d33f04c</sys_update_name>
+        <sys_updated_by>brian.alson</sys_updated_by>
+        <sys_updated_on>2020-08-19 13:44:27</sys_updated_on>
+    </sys_number>
+</record_update>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element audit="true" label="Attendee" max_length="40" name="x_snc_event_reg_attendee" sizeclass="0" type="collection">
+        <element attributes="edge_encryption_enabled=true,encode_utf8=false" default="javascript: gs.getUserID();" label="Attendee Name" mandatory="true" max_length="32" name="attendee_name" reference="sys_user" type="reference"/>
+        <element label="Attendee Notes" max_length="4000" name="attendee_notes" type="journal"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" default="not_submitted" label="Attendee Status" mandatory="true" max_length="40" name="attendee_status" read_only="true" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Not submitted" sequence="0" value="not_submitted"/>
+                <element inactive_on_update="false" label="Confirmed" sequence="1" value="confirmed"/>
+                <element inactive_on_update="false" label="Waitlisted" sequence="2" value="waitlisted"/>
+                <element inactive_on_update="false" label="Cancelled" sequence="3" value="cancelled"/>
+                <element inactive_on_update="false" label="Event ended" sequence="4" value="event_ended"/>
+            </choice>
+        </element>
+        <element default="javascript:new GlideDateTime().getDisplayValue()" label="Date Submitted" mandatory="true" max_length="40" name="date_submitted" read_only="true" type="glide_date_time"/>
+        <element attributes="edge_encryption_enabled=true,encode_utf8=false" label="Event Name" mandatory="true" max_length="32" name="event_name" reference="x_snc_event_reg_event" type="reference"/>
+        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" read_only="true" type="string"/>
+        <element label="Organizer Notes" max_length="4000" name="organizer_notes" type="journal"/>
+        <element attributes="edge_encryption_enabled=true" default="javascript:current.getTableName();" label="Class" max_length="80" name="sys_class_name" type="sys_class_name"/>
+        <index name="index">
+            <element name="attendee_name"/>
+        </index>
+        <index name="index2">
+            <element name="event_name"/>
+        </index>
+        <index name="index3">
+            <element name="sys_class_name"/>
+        </index>
+    </element>
+</database>

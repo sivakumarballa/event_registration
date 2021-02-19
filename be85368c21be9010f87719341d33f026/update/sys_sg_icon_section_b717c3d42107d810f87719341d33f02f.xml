@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_sg_icon_section">
+    <sys_sg_icon_section action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <applets>712c521421c3d810f87719341d33f0e6,0c6ce61c21c3d810f87719341d33f00f</applets>
+        <data_item/>
+        <display_feed_count>false</display_feed_count>
+        <hide_header>false</hide_header>
+        <hide_section_if_empty>false</hide_section_if_empty>
+        <orientation>horizontal</orientation>
+        <required_roles/>
+        <sys_class_name>sys_sg_icon_section</sys_class_name>
+        <sys_created_by>brian.alson</sys_created_by>
+        <sys_created_on>2020-08-31 19:26:26</sys_created_on>
+        <sys_id>b717c3d42107d810f87719341d33f02f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Event Management</sys_name>
+        <sys_package display_value="Event Registration" source="x_snc_event_reg">be85368c21be9010f87719341d33f026</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Event Registration">be85368c21be9010f87719341d33f026</sys_scope>
+        <sys_update_name>sys_sg_icon_section_b717c3d42107d810f87719341d33f02f</sys_update_name>
+        <sys_updated_by>brian.alson</sys_updated_by>
+        <sys_updated_on>2020-08-31 19:26:26</sys_updated_on>
+        <table/>
+        <title>Event Management</title>
+        <visible_condition/>
+    </sys_sg_icon_section>
+</record_update>

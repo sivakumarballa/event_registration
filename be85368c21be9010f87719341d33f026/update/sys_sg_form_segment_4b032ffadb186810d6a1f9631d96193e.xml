@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_sg_form_segment">
+    <sys_sg_form_segment action="INSERT_OR_UPDATE">
+        <embedded_screen display_value="Activity">fa032ffadb186810d6a1f9631d961938</embedded_screen>
+        <form display_value="All Events">f4afc361db50e410d6a1f9631d961962</form>
+        <header_view_config/>
+        <is_sticky>false</is_sticky>
+        <order>40</order>
+        <sys_class_name>sys_sg_form_segment</sys_class_name>
+        <sys_created_by>Helena.Qin</sys_created_by>
+        <sys_created_on>2020-11-09 19:11:44</sys_created_on>
+        <sys_id>4b032ffadb186810d6a1f9631d96193e</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Event Registration" source="x_snc_event_reg">be85368c21be9010f87719341d33f026</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Event Registration">be85368c21be9010f87719341d33f026</sys_scope>
+        <sys_update_name>sys_sg_form_segment_4b032ffadb186810d6a1f9631d96193e</sys_update_name>
+        <sys_updated_by>Helena.Qin</sys_updated_by>
+        <sys_updated_on>2020-11-09 19:16:09</sys_updated_on>
+    </sys_sg_form_segment>
+</record_update>

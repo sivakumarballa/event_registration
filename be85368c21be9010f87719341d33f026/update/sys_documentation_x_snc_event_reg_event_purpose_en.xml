@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="purpose" label="Purpose" language="en" table="x_snc_event_reg_event">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>purpose</element>
+            <help/>
+            <hint/>
+            <label>Purpose</label>
+            <language>en</language>
+            <name>x_snc_event_reg_event</name>
+            <plural>Purposes</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>brian.alson</sys_created_by>
+            <sys_created_on>2020-08-19 13:50:34</sys_created_on>
+            <sys_id>abd47edac1166010f877538420acbed8</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Purpose</sys_name>
+            <sys_package display_value="Event Registration" source="x_snc_event_reg">be85368c21be9010f87719341d33f026</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Event Registration">be85368c21be9010f87719341d33f026</sys_scope>
+            <sys_update_name>sys_documentation_x_snc_event_reg_event_purpose_en</sys_update_name>
+            <sys_updated_by>brian.alson</sys_updated_by>
+            <sys_updated_on>2020-08-19 13:50:34</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

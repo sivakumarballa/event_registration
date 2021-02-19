@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ux_list">
+    <sys_ux_list action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <category display_value="Events">ae04a68c45786010f877b700bf696776</category>
+        <columns>number,event_name,organizer,date_from,state</columns>
+        <condition table="x_snc_event_reg_event">organizerDYNAMIC90d1921e5f510100a9ad2572f2b477fe^state!=10^EQ<item endquery="false" field="organizer" goto="false" newquery="false" operator="DYNAMIC" or="false" value="90d1921e5f510100a9ad2572f2b477fe"/>
+            <item display_value="Cancelled" endquery="false" field="state" goto="false" newquery="false" operator="!=" or="false" value="10"/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </condition>
+        <configuration display_value="Event Registration List">3ae3268c45786010f877b700bf69678e</configuration>
+        <groups/>
+        <list_attributes/>
+        <order>10</order>
+        <roles/>
+        <sys_class_name>sys_ux_list</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-25 22:08:05</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>fe346a8c45786010f877b700bf6967c0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>My events</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Event Registration" source="x_snc_event_reg">be85368c21be9010f87719341d33f026</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Event Registration">be85368c21be9010f87719341d33f026</sys_scope>
+        <sys_update_name>sys_ux_list_fe346a8c45786010f877b700bf6967c0</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-25 22:08:05</sys_updated_on>
+        <table>x_snc_event_reg_event</table>
+        <title>My events</title>
+    </sys_ux_list>
+</record_update>

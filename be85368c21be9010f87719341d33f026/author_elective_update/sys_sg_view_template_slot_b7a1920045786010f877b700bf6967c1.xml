@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_sg_view_template_slot">
+    <sys_sg_view_template_slot action="DELETE">
+        <name>image_04</name>
+        <sys_class_name>sys_sg_view_template_slot</sys_class_name>
+        <sys_created_by>Helena.Qin</sys_created_by>
+        <sys_created_on>2020-11-25 20:44:21</sys_created_on>
+        <sys_id>b7a1920045786010f877b700bf6967c1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>image_04</sys_name>
+        <sys_package display_value="Event Registration" source="x_snc_event_reg">be85368c21be9010f87719341d33f026</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Event Registration">be85368c21be9010f87719341d33f026</sys_scope>
+        <sys_update_name>sys_sg_view_template_slot_b7a1920045786010f877b700bf6967c1</sys_update_name>
+        <sys_updated_by>Helena.Qin</sys_updated_by>
+        <sys_updated_on>2020-11-25 20:44:21</sys_updated_on>
+        <type>Image</type>
+        <view_template display_value="My Events view template">12cf798045386010f877b700bf696781</view_template>
+    </sys_sg_view_template_slot>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Event Registration">be85368c21be9010f87719341d33f026</application>
+        <file_path/>
+        <instance_id>0ed82a1f30202010f3e091a8a60bfd20</instance_id>
+        <instance_name>glide_db_dump</instance_name>
+        <name>sys_sg_view_template_slot_b7a1920045786010f877b700bf6967c1</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_sg_view_template_slot"><sys_sg_view_template_slot action="INSERT_OR_UPDATE"><name>image_04</name><sys_class_name>sys_sg_view_template_slot</sys_class_name><sys_created_by>Helena.Qin</sys_created_by><sys_created_on>2020-11-25 20:44:21</sys_created_on><sys_id>b7a1920045786010f877b700bf6967c1</sys_id><sys_mod_count>0</sys_mod_count><sys_name>image_04</sys_name><sys_package display_value="Event Registration" source="x_snc_event_reg">be85368c21be9010f87719341d33f026</sys_package><sys_policy/><sys_scope display_value="Event Registration">be85368c21be9010f87719341d33f026</sys_scope><sys_update_name>sys_sg_view_template_slot_b7a1920045786010f877b700bf6967c1</sys_update_name><sys_updated_by>Helena.Qin</sys_updated_by><sys_updated_on>2020-11-25 20:44:21</sys_updated_on><type>Image</type><view_template display_value="My Events view template">12cf798045386010f877b700bf696781</view_template></sys_sg_view_template_slot></record_update>]]></payload>
+        <payload_hash>-2010733052</payload_hash>
+        <record_name>image_04</record_name>
+        <reverted_from/>
+        <source>8f99ca4845386010f877b700bf696719</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>Helena.Qin</sys_created_by>
+        <sys_created_on>2020-11-25 20:44:21</sys_created_on>
+        <sys_id>f7a1920045786010f877b700bf6967c5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>176012661a80000001</sys_recorded_at>
+        <sys_updated_by>Helena.Qin</sys_updated_by>
+        <sys_updated_on>2020-11-25 20:44:21</sys_updated_on>
+        <type>View Template Slot</type>
+        <update_guid>33a19200097860102da890bddbae45c5</update_guid>
+        <update_guid_history>33a19200097860102da890bddbae45c5:-2010733052</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>Helena.Qin</sys_created_by>
+        <sys_created_on>2020-11-25 21:14:13</sys_created_on>
+        <sys_db_object display_value="" name="sys_sg_view_template_slot">sys_sg_view_template_slot</sys_db_object>
+        <sys_id>090fac451b9c45d0a1b43b46cae00864</sys_id>
+        <sys_metadata>b7a1920045786010f877b700bf6967c1</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>image_04</sys_name>
+        <sys_package display_value="Event Registration" source="x_snc_event_reg">be85368c21be9010f87719341d33f026</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Event Registration">be85368c21be9010f87719341d33f026</sys_scope>
+        <sys_scope_delete display_value="">691f41bc7e7f484c84baeffb71321c59</sys_scope_delete>
+        <sys_update_name>sys_sg_view_template_slot_b7a1920045786010f877b700bf6967c1</sys_update_name>
+        <sys_update_version display_value="sys_sg_view_template_slot_b7a1920045786010f877b700bf6967c1">f7a1920045786010f877b700bf6967c5</sys_update_version>
+        <sys_updated_by>Helena.Qin</sys_updated_by>
+        <sys_updated_on>2020-11-25 21:14:13</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

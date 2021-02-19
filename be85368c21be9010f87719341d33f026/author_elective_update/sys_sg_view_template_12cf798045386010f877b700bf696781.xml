@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_sg_view_template">
+    <sys_sg_view_template action="DELETE">
+        <active>true</active>
+        <description/>
+        <name>My Events view template</name>
+        <preview_image/>
+        <root_view_attrs_json/>
+        <sys_class_name>sys_sg_view_template</sys_class_name>
+        <sys_created_by>Helena.Qin</sys_created_by>
+        <sys_created_on>2020-11-25 19:26:24</sys_created_on>
+        <sys_id>12cf798045386010f877b700bf696781</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>My Events view template</sys_name>
+        <sys_package display_value="Event Registration" source="x_snc_event_reg">be85368c21be9010f87719341d33f026</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Event Registration">be85368c21be9010f87719341d33f026</sys_scope>
+        <sys_update_name>sys_sg_view_template_12cf798045386010f877b700bf696781</sys_update_name>
+        <sys_updated_by>Helena.Qin</sys_updated_by>
+        <sys_updated_on>2020-11-25 19:56:17</sys_updated_on>
+        <template_json>{"Type":"ViewGroup","Margin":{"Top":15,"Bottom":17},"Orientation":"Vertical","Alignment":"Left","Distribution":"Auto","Id":"Root","Children":[{"Type":"ViewGroup","Orientation":"Horizontal","Alignment":"Stretch","Distribution":"Auto","Children":[{"Type":"ViewGroup","Orientation":"Horizontal","Alignment":"Stretch","Distribution":"Auto","Children":[{"Type":"Text","TextColor":"#293E40","Font":{"Weight":"regular","Size":13},"MaxLines":1,"textStyle":"default","CellId":"text_02","Id":"text_02"}]},{"Type":"ViewGroup","Orientation":"Horizontal","Alignment":"Stretch","Distribution":"Auto","Children":[{"Type":"Text","TextColor":"#293E40","Font":{"Weight":"regular","Size":13},"MaxLines":1,"textStyle":"default","CellId":"text_03","Id":"text_03"}]}]}]}</template_json>
+    </sys_sg_view_template>
+    <sys_translated_text action="DELETE" query="documentkey=12cf798045386010f877b700bf696781"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Event Registration">be85368c21be9010f87719341d33f026</application>
+        <file_path/>
+        <instance_id>0ed82a1f30202010f3e091a8a60bfd20</instance_id>
+        <instance_name>glide_db_dump</instance_name>
+        <name>sys_sg_view_template_12cf798045386010f877b700bf696781</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_sg_view_template"><sys_sg_view_template action="INSERT_OR_UPDATE"><active>true</active><description/><name>My Events view template</name><preview_image/><root_view_attrs_json/><sys_class_name>sys_sg_view_template</sys_class_name><sys_created_by>Helena.Qin</sys_created_by><sys_created_on>2020-11-25 19:26:24</sys_created_on><sys_id>12cf798045386010f877b700bf696781</sys_id><sys_mod_count>2</sys_mod_count><sys_name>My Events view template</sys_name><sys_package display_value="Event Registration" source="x_snc_event_reg">be85368c21be9010f87719341d33f026</sys_package><sys_policy/><sys_scope display_value="Event Registration">be85368c21be9010f87719341d33f026</sys_scope><sys_update_name>sys_sg_view_template_12cf798045386010f877b700bf696781</sys_update_name><sys_updated_by>Helena.Qin</sys_updated_by><sys_updated_on>2020-11-25 19:56:17</sys_updated_on><template_json>{"Type":"ViewGroup","Margin":{"Top":15,"Bottom":17},"Orientation":"Vertical","Alignment":"Left","Distribution":"Auto","Id":"Root","Children":[{"Type":"ViewGroup","Orientation":"Horizontal","Alignment":"Stretch","Distribution":"Auto","Children":[{"Type":"ViewGroup","Orientation":"Horizontal","Alignment":"Stretch","Distribution":"Auto","Children":[{"Type":"Text","TextColor":"#293E40","Font":{"Weight":"regular","Size":13},"MaxLines":1,"textStyle":"default","CellId":"text_02","Id":"text_02"}]},{"Type":"ViewGroup","Orientation":"Horizontal","Alignment":"Stretch","Distribution":"Auto","Children":[{"Type":"Text","TextColor":"#293E40","Font":{"Weight":"regular","Size":13},"MaxLines":1,"textStyle":"default","CellId":"text_03","Id":"text_03"}]}]}]}</template_json></sys_sg_view_template><sys_translated_text action="delete_multiple" query="documentkey=12cf798045386010f877b700bf696781"/></record_update>]]></payload>
+        <payload_hash>-1345600687</payload_hash>
+        <record_name>My Events view template</record_name>
+        <reverted_from/>
+        <source>b0990e4845386010f877b700bf69673e</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-25 20:08:58</sys_created_on>
+        <sys_id>e5994e4845386010f877b700bf69671e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1760105fdc40000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-25 20:08:58</sys_updated_on>
+        <type>View Template</type>
+        <update_guid>37a68a84b83860106a3e00daece81c81</update_guid>
+        <update_guid_history>37a68a84b83860106a3e00daece81c81:-1345600687,5479ce086b386010b234ae29d4a7bd4a:1489840477,37a68a84b83860106a3e00daece81c81:-1345600687,08b5ce448238601093d84793da67b689:-1429997217,c6df7580b73860108ab7fc1d9e80b43c:-237416492</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>Helena.Qin</sys_created_by>
+        <sys_created_on>2020-11-25 21:14:14</sys_created_on>
+        <sys_db_object display_value="" name="sys_sg_view_template">sys_sg_view_template</sys_db_object>
+        <sys_id>31842c2dc15e41b48c89bb004c8e33d1</sys_id>
+        <sys_metadata>12cf798045386010f877b700bf696781</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>My Events view template</sys_name>
+        <sys_package display_value="Event Registration" source="x_snc_event_reg">be85368c21be9010f87719341d33f026</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Event Registration">be85368c21be9010f87719341d33f026</sys_scope>
+        <sys_scope_delete display_value="">691f41bc7e7f484c84baeffb71321c59</sys_scope_delete>
+        <sys_update_name>sys_sg_view_template_12cf798045386010f877b700bf696781</sys_update_name>
+        <sys_update_version display_value="sys_sg_view_template_12cf798045386010f877b700bf696781">e5994e4845386010f877b700bf69671e</sys_update_version>
+        <sys_updated_by>Helena.Qin</sys_updated_by>
+        <sys_updated_on>2020-11-25 21:14:14</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

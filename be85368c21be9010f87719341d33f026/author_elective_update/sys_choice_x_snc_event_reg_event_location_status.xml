@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="status" table="x_snc_event_reg_event_location" version="3">
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>status</element>
+            <name>x_snc_event_reg_event_location</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>jeremy.duncan</sys_created_by>
+            <sys_created_on>2020-08-19 17:46:35</sys_created_on>
+            <sys_id>53d47edac1166010f877538420acbec0</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>status</sys_name>
+            <sys_package display_value="Event Registration" source="x_snc_event_reg">be85368c21be9010f87719341d33f026</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Event Registration">be85368c21be9010f87719341d33f026</sys_scope>
+            <sys_update_name>sys_choice_x_snc_event_reg_event_location_status</sys_update_name>
+            <sys_updated_by>jeremy.duncan</sys_updated_by>
+            <sys_updated_on>2020-08-19 17:46:35</sys_updated_on>
+        </sys_choice_set>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>status</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Available</label>
+            <language>en</language>
+            <name>x_snc_event_reg_event_location</name>
+            <sequence>0</sequence>
+            <synonyms/>
+            <sys_created_by>jeremy.duncan</sys_created_by>
+            <sys_created_on>2020-08-19 17:46:35</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>9c3d34e021fad010f87719341d33f060</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>jeremy.duncan</sys_updated_by>
+            <sys_updated_on>2020-08-19 17:46:35</sys_updated_on>
+            <value>available</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>status</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Temporarily Unavailable</label>
+            <language>en</language>
+            <name>x_snc_event_reg_event_location</name>
+            <sequence>1</sequence>
+            <synonyms/>
+            <sys_created_by>jeremy.duncan</sys_created_by>
+            <sys_created_on>2020-08-19 17:46:35</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>903d34e021fad010f87719341d33f062</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>jeremy.duncan</sys_updated_by>
+            <sys_updated_on>2020-08-19 17:46:35</sys_updated_on>
+            <value>temp_unavailable</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>status</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Closed</label>
+            <language>en</language>
+            <name>x_snc_event_reg_event_location</name>
+            <sequence>2</sequence>
+            <synonyms/>
+            <sys_created_by>jeremy.duncan</sys_created_by>
+            <sys_created_on>2020-08-19 17:46:35</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>103d34e021fad010f87719341d33f063</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>jeremy.duncan</sys_updated_by>
+            <sys_updated_on>2020-08-19 17:46:35</sys_updated_on>
+            <value>closed</value>
+        </sys_choice>
+    </sys_choice>
+</record_update>

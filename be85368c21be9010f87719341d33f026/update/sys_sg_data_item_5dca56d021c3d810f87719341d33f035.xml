@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_sg_data_item">
+    <sys_sg_data_item action="INSERT_OR_UPDATE">
+        <condition_type>declarative</condition_type>
+        <description>Get all the attendees for upcoming events that I'm the organizer for</description>
+        <group_by/>
+        <instance_relative_url_qc/>
+        <name>My Attendees DI</name>
+        <query_condition table="x_snc_event_reg_attendee">event_name.organizerDYNAMIC90d1921e5f510100a9ad2572f2b477fe^event_name.date_from&gt;=javascript:gs.beginningOfToday()<item endquery="false" field="event_name.organizer" goto="false" newquery="false" operator="DYNAMIC" or="false" value="90d1921e5f510100a9ad2572f2b477fe"/>
+            <item endquery="false" field="event_name.date_from" goto="false" newquery="false" operator="&gt;=" or="false" value="javascript:gs.beginningOfToday()"/>
+        </query_condition>
+        <query_condition_script/>
+        <sys_class_name>sys_sg_data_item</sys_class_name>
+        <sys_created_by>brian.alson</sys_created_by>
+        <sys_created_on>2020-08-31 16:12:39</sys_created_on>
+        <sys_id>5dca56d021c3d810f87719341d33f035</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>My Attendees DI</sys_name>
+        <sys_package display_value="Event Registration" source="x_snc_event_reg">be85368c21be9010f87719341d33f026</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Event Registration">be85368c21be9010f87719341d33f026</sys_scope>
+        <sys_update_name>sys_sg_data_item_5dca56d021c3d810f87719341d33f035</sys_update_name>
+        <sys_updated_by>brian.alson</sys_updated_by>
+        <sys_updated_on>2020-08-31 16:12:39</sys_updated_on>
+        <table>x_snc_event_reg_attendee</table>
+    </sys_sg_data_item>
+    <sys_translated_text action="delete_multiple" query="documentkey=5dca56d021c3d810f87719341d33f035"/>
+</record_update>
